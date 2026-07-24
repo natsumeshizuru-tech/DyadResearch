@@ -1,0 +1,30 @@
+# Paper reproduction protocol report
+
+- Experiment ID: 259
+- Paper: `gtja_short_cycle`
+- Protocol: `paper_strict`
+- Status: `not_run`
+- Comparability level: `A`
+- Result hash: `8339b810322cd7a28921ee54c2516ec20e0ad09c46e80a79c9373bb1769310dc`
+- Git commit: `137409e177e94e093c31965a7ca0e0579b0b5dfc`
+
+## Formula ledger
+
+- Total records: 191
+- Executable records: 28
+- Manifest hash: `dcd001ae81b2f70782018ab7fb2dad17bd2ce53745f9e7f4c68ee678a4ecebb5`
+- Synthetic smoke: 28 passed,
+  0 failed
+
+## Blockers
+
+- formula implementation coverage is 28/191
+- historical industry snapshots are unavailable
+- historical CSI 500 weights are unavailable
+- consensus fields EPIBS, EGIB and EGIB_S are unavailable
+
+## Permitted claims
+
+- Formula records retain source expressions and explicit implementation status.
+- Transparent reconstruction is not an exact CNE5 or optimizer reproduction.
+- No performance number is reported for this blocked protocol.

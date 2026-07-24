@@ -1,0 +1,3560 @@
+schema_version: 1.0.0
+paper_id: gtja_short_cycle
+version: '2026-07-25'
+factors:
+- paper_id: gtja_short_cycle
+  factor_id: alpha001
+  title: Alpha 1
+  source_expression: (-1 * CORR(RANK(DELTA(LOG(VOLUME), 1)), RANK(((CLOSE - OPEN) / OPEN)), 6))
+  normalized_expression: -1 * correlation(rank(delta(log(volume), 1)), rank((close - open) / open), 6)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  - volume
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha002
+  title: Alpha 2
+  source_expression: (-1 * DELTA((((CLOSE - LOW) - (HIGH - CLOSE)) / (HIGH - LOW)), 1))
+  normalized_expression: -1 * delta(((close - low) - (high - close)) / (high - low), 1)
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha003
+  title: Alpha 3
+  source_expression: SUM((CLOSE=DELAY(CLOSE,1)?0:CLOSE-(CLOSE>DELAY(CLOSE,1)?MIN(LOW,DELAY(CLOSE,1)):MAX(HIGH,D ELAY(CLOSE,1)))),6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha004
+  title: Alpha 4
+  source_expression: '((((SUM(CLOSE, 8) / 8) + STD(CLOSE, 8)) < (SUM(CLOSE, 2) / 2)) ? ( -1 * 1) : (((SUM(CLOSE, 2) / 2) <
+    ((SUM(CLOSE, 8) / 8) - STD(CLOSE, 8))) ? 1 : (((1 < (VOLUME / MEAN(VOLUME,20))) || ((VOLUME / MEAN(VOLUME,20)) == 1))
+    ? 1 : (-1 * 1))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha005
+  title: Alpha 5
+  source_expression: (-1 * TSMAX(CORR(TSRANK(VOLUME, 5), TSRANK(HIGH, 5), 5), 3))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha006
+  title: Alpha 6
+  source_expression: (RANK(SIGN(DELTA((((OPEN * 0.85) + (HIGH * 0.15))), 4)))* -1)
+  normalized_expression: -1 * rank(sign(delta(open * 0.85 + high * 0.15, 4)))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - high
+  required_history: 4
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha007
+  title: Alpha 7
+  source_expression: ((RANK(MAX((VWAP - CLOSE), 3)) + RANK(MIN((VWAP - CLOSE), 3))) * RANK(DELTA(VOLUME, 3)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 3
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha008
+  title: Alpha 8
+  source_expression: RANK(DELTA(((((HIGH + LOW) / 2) * 0.2) + (VWAP * 0.8)), 4) * -1)
+  normalized_expression: -1 * rank(delta(((high + low) / 2) * 0.2 + vwap * 0.8, 4))
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - low
+  - vwap
+  required_history: 4
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha009
+  title: Alpha 9
+  source_expression: SMA(((HIGH+LOW)/2-(DELAY(HIGH,1)+DELAY(LOW,1))/2)*(HIGH-LOW)/VOLUME,7,2)
+  normalized_expression: sma((((high + low) / 2) - ((delay(high, 1) + delay(low, 1)) / 2)) * (high - low) / volume, 7, 2)
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - low
+  - volume
+  required_history: 7
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha010
+  title: Alpha 10
+  source_expression: '(RANK(MAX(((RET < 0) ? STD(RET, 20) : CLOSE)^2),5))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha011
+  title: Alpha 11
+  source_expression: SUM(((CLOSE-LOW)-(HIGH-CLOSE))./(HIGH-LOW).*VOLUME,6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha012
+  title: Alpha 12
+  source_expression: (RANK((OPEN - (SUM(VWAP , 10) / 10)))) * (-1 * (RANK(ABS((CLOSE - VWAP)))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - vwap
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha013
+  title: Alpha 13
+  source_expression: (((HIGH * LOW)^0.5) - VWAP)
+  normalized_expression: signed_power(high * low, 0.5) - vwap
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - low
+  - vwap
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha014
+  title: Alpha 14
+  source_expression: CLOSE-DELAY(CLOSE,5)
+  normalized_expression: close - delay(close, 5)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha015
+  title: Alpha 15
+  source_expression: OPEN/DELAY(CLOSE,1)-1
+  normalized_expression: open / delay(close, 1) - 1
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha016
+  title: Alpha 16
+  source_expression: (-1 * TSMAX(RANK(CORR(RANK(VOLUME), RANK(VWAP), 5)), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha017
+  title: Alpha 17
+  source_expression: RANK((VWAP - MAX(VWAP , 15)))^DELTA(CLOSE, 5)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 15
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha018
+  title: Alpha 18
+  source_expression: CLOSE/DELAY(CLOSE,5)
+  normalized_expression: close / delay(close, 5)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha019
+  title: Alpha 19
+  source_expression: (CLOSE<DELAY(CLOSE,5)?(CLOSE-DELAY(CLOSE,5))/DELAY(CLOSE,5):(CLOSE=DELAY(CLOSE,5)?0:(CLOSE-D ELAY(CLOSE,5))/CLOSE))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha020
+  title: Alpha 20
+  source_expression: (CLOSE-DELAY(CLOSE,6))/DELAY(CLOSE,6)*100
+  normalized_expression: (close - delay(close, 6)) / delay(close, 6) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha021
+  title: Alpha 21
+  source_expression: REGBETA(MEAN(CLOSE,6),SEQUENCE(6))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha022
+  title: Alpha 22
+  source_expression: SMEAN(((CLOSE-MEAN(CLOSE,6))/MEAN(CLOSE,6)-DELAY((CLOSE-MEAN(CLOSE,6))/MEAN(CLOSE,6),3)),12,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha023
+  title: Alpha 23
+  source_expression: SMA((CLOSE>DELAY(CLOSE,1)?STD(CLOSE:20),0),20,1)/(SMA((CLOSE>DELAY(CLOSE,1)?STD(CLOSE,20):0),20,1 )+SMA((CLOSE<=DELAY(CLOSE,1)?STD(CLOSE,20):0),20,1))*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha024
+  title: Alpha 24
+  source_expression: SMA(CLOSE-DELAY(CLOSE,5),5,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha025
+  title: Alpha 25
+  source_expression: ((-1 * RANK((DELTA(CLOSE, 7) * (1 - RANK(DECAYLINEAR((VOLUME / MEAN(VOLUME,20)), 9)))))) * (1 + RANK(SUM(RET,
+    250))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 250
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha026
+  title: Alpha 26
+  source_expression: ((((SUM(CLOSE, 7) / 7) - CLOSE)) + ((CORR(VWAP , DELAY(CLOSE, 5), 230))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 230
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha027
+  title: Alpha 27
+  source_expression: WMA((CLOSE-DELAY(CLOSE,3))/DELAY(CLOSE,3)*100+(CLOSE-DELAY(CLOSE,6))/DELAY(CLOSE,6)*100,12)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha028
+  title: Alpha 28
+  source_expression: 3*SMA((CLOSE-TSMIN(LOW,9))/(TSMAX(HIGH,9)-TSMIN(LOW,9))*100,3,1)-2*SMA(SMA((CLOSE-TSMIN(LOW,9))/( MAX(HIGH,9)-TSMAX(LOW,9))*100,3,1),3,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha029
+  title: Alpha 29
+  source_expression: (CLOSE-DELAY(CLOSE,6))/DELAY(CLOSE,6)*VOLUME
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha030
+  title: Alpha 30
+  source_expression: WMA((REGRESI(CLOSE/DELAY(CLOSE)-1,MKT,SMB,HML，60))^2,20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - mkt
+  - smb
+  - hml
+  required_history: 60
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: unavailable_dependency
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha031
+  title: Alpha 31
+  source_expression: (CLOSE-MEAN(CLOSE,12))/MEAN(CLOSE,12)*100
+  normalized_expression: (close - mean(close, 12)) / mean(close, 12) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha032
+  title: Alpha 32
+  source_expression: (-1 * SUM(RANK(CORR(RANK(HIGH), RANK(VOLUME), 3)), 3))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 3
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha033
+  title: Alpha 33
+  source_expression: ((((-1 * TSMIN(LOW, 5)) + DELAY(TSMIN(LOW, 5), 5)) * RANK(((SUM(RET, 240) - SUM(RET, 20)) / 220))) *
+    TSRANK(VOLUME, 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  required_history: 240
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha034
+  title: Alpha 34
+  source_expression: MEAN(CLOSE,12)/CLOSE
+  normalized_expression: mean(close, 12) / close
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha035
+  title: Alpha 35
+  source_expression: (MIN(RANK(DECAYLINEAR(DELTA(OPEN, 1), 15)), RANK(DECAYLINEAR(CORR((VOLUME), ((OPEN * 0.65) + (OPEN *0.35)),
+    17),7))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 17
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha036
+  title: Alpha 36
+  source_expression: RANK(SUM(CORR(RANK(VOLUME), RANK(VWAP)), 6), 2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha037
+  title: Alpha 37
+  source_expression: (-1 * RANK(((SUM(OPEN, 5) * SUM(RET, 5)) - DELAY((SUM(OPEN, 5) * SUM(RET, 5)), 10))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha038
+  title: Alpha 38
+  source_expression: '(((SUM(HIGH, 20) / 20) < HIGH) ? (-1 * DELTA(HIGH, 2)) : 0)'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha039
+  title: Alpha 39
+  source_expression: ((RANK(DECAYLINEAR(DELTA((CLOSE), 2),8)) - RANK(DECAYLINEAR(CORR(((VWAP * 0.3) + (OPEN * 0.7)), SUM(MEAN(VOLUME,180),
+    37), 14), 12))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - volume
+  - vwap
+  required_history: 180
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha040
+  title: Alpha 40
+  source_expression: SUM((CLOSE>DELAY(CLOSE,1)?VOLUME:0),26)/SUM((CLOSE<=DELAY(CLOSE,1)?VOLUME:0),26)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha041
+  title: Alpha 41
+  source_expression: (RANK(MAX(DELTA((VWAP), 3), 5))* -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha042
+  title: Alpha 42
+  source_expression: ((-1 * RANK(STD(HIGH, 10))) * CORR(HIGH, VOLUME, 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha043
+  title: Alpha 43
+  source_expression: SUM((CLOSE>DELAY(CLOSE,1)?VOLUME:(CLOSE<DELAY(CLOSE,1)?-VOLUME:0)),6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha044
+  title: Alpha 44
+  source_expression: (TSRANK(DECAYLINEAR(CORR(((LOW )), MEAN(VOLUME,10), 7), 6),4) + TSRANK(DECAYLINEAR(DELTA((VWAP), 3),
+    10), 15))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 15
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha045
+  title: Alpha 45
+  source_expression: (RANK(DELTA((((CLOSE * 0.6) + (OPEN *0.4))), 1)) * RANK(CORR(VWAP , MEAN(VOLUME,150), 15)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - volume
+  - vwap
+  required_history: 150
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha046
+  title: Alpha 46
+  source_expression: (MEAN(CLOSE,3)+MEAN(CLOSE,6)+MEAN(CLOSE,12)+MEAN(CLOSE,24))/(4*CLOSE)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 24
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha047
+  title: Alpha 47
+  source_expression: SMA((TSMAX(HIGH,6)-CLOSE)/(TSMAX(HIGH,6)-TSMIN(LOW,6))*100,9,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha048
+  title: Alpha 48
+  source_expression: (-1*((RANK(((SIGN((CLOSE - DELAY(CLOSE, 1))) + SIGN((DELAY(CLOSE, 1) - DELAY(CLOSE, 2)))) + SIGN((DELAY(CLOSE,
+    2) - DELAY(CLOSE, 3)))))) * SUM(VOLUME, 5)) / SUM(VOLUME, 20))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha049
+  title: Alpha 49
+  source_expression: SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(LOW-DELAY(L OW,1)))),12)/(SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(L
+    OW-DELAY(LOW,1)))),12)+SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HI GH,1)),ABS(LOW-DELAY(LOW,1)))),12))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha050
+  title: Alpha 50
+  source_expression: 'SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(LOW-DELAY(L OW,1)))),12)/(SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(L
+    OW-DELAY(LOW,1)))),12)+SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HI GH,1)),ABS(LOW-DELAY(LOW,1)))),12))-SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HI
+    GH-DELAY(HIGH,1)),ABS(LOW-DELAY(LOW,1)))),12)/(SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0: MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(LOW-DELAY(LOW,1)))),12)+SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELA
+    Y(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(LOW-DELAY(LOW,1)))),12))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha051
+  title: Alpha 51
+  source_expression: SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(LOW-DELAY(L OW,1)))),12)/(SUM(((HIGH+LOW)<=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HIGH,1)),ABS(L
+    OW-DELAY(LOW,1)))),12)+SUM(((HIGH+LOW)>=(DELAY(HIGH,1)+DELAY(LOW,1))?0:MAX(ABS(HIGH-DELAY(HI GH,1)),ABS(LOW-DELAY(LOW,1)))),12))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha052
+  title: Alpha 52
+  source_expression: SUM(MAX(0,HIGH-DELAY((HIGH+LOW+CLOSE)/3,1)),26)/SUM(MAX(0,DELAY((HIGH+LOW+CLOSE)/3,1)-L),26)* 100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha053
+  title: Alpha 53
+  source_expression: COUNT(CLOSE>DELAY(CLOSE,1),12)/12*100
+  normalized_expression: count(close > delay(close, 1), 12) / 12 * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 12
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha054
+  title: Alpha 54
+  source_expression: (-1 * RANK((STD(ABS(CLOSE - OPEN)) + (CLOSE - OPEN)) + CORR(CLOSE, OPEN,10)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha055
+  title: Alpha 55
+  source_expression: SUM(16*(CLOSE-DELAY(CLOSE,1)+(CLOSE-OPEN)/2+DELAY(CLOSE,1)-DELAY(OPEN,1))/((ABS(HIGH-DELAY(CL OSE,1))>ABS(LOW-DELAY(CLOSE,1))
+    & ABS(HIGH-DELAY(CLOSE,1))>ABS(HIGH-DELAY(LOW,1))?ABS(HIGH-DELAY(CLOSE,1))+ABS(LOW-DELAY(CLOS E,1))/2+ABS(DELAY(CLOSE,1)-DELAY(OPEN,1))/4:(ABS(LOW-DELAY(CLOSE,1))>ABS(HIGH-DELAY(LOW,1))
+    & ABS(LOW-DELAY(CLOSE,1))>ABS(HIGH-DELAY(CLOSE,1))?ABS(LOW-DELAY(CLOSE,1))+ABS(HIGH-DELAY(CLO SE,1))/2+ABS(DELAY(CLOSE,1)-DELAY(OPEN,1))/4:ABS(HIGH-DELAY(LOW,1))+ABS(DELAY(CLOSE,1)-DELAY(OP
+    EN,1))/4)))*MAX(ABS(HIGH-DELAY(CLOSE,1)),ABS(LOW-DELAY(CLOSE,1))),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha056
+  title: Alpha 56
+  source_expression: (RANK((OPEN - TSMIN(OPEN, 12))) < RANK((RANK(CORR(SUM(((HIGH + LOW) / 2), 19), SUM(MEAN(VOLUME,40), 19),
+    13))^5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - volume
+  required_history: 40
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha057
+  title: Alpha 57
+  source_expression: SMA((CLOSE-TSMIN(LOW,9))/(TSMAX(HIGH,9)-TSMIN(LOW,9))*100,3,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha058
+  title: Alpha 58
+  source_expression: COUNT(CLOSE>DELAY(CLOSE,1),20)/20*100
+  normalized_expression: count(close > delay(close, 1), 20) / 20 * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 12
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha059
+  title: Alpha 59
+  source_expression: SUM((CLOSE=DELAY(CLOSE,1)?0:CLOSE-(CLOSE>DELAY(CLOSE,1)?MIN(LOW,DELAY(CLOSE,1)):MAX(HIGH,D ELAY(CLOSE,1)))),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha060
+  title: Alpha 60
+  source_expression: SUM(((CLOSE-LOW)-(HIGH-CLOSE))./(HIGH-LOW).*VOLUME,20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha061
+  title: Alpha 61
+  source_expression: (MAX(RANK(DECAYLINEAR(DELTA(VWAP , 1), 12)), RANK(DECAYLINEAR(RANK(CORR((LOW),MEAN(VOLUME,80), 8)), 17)))
+    * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 80
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha062
+  title: Alpha 62
+  source_expression: (-1 * CORR(HIGH, RANK(VOLUME), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha063
+  title: Alpha 63
+  source_expression: SMA(MAX(CLOSE-DELAY(CLOSE,1),0),6,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),6,1)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha064
+  title: Alpha 64
+  source_expression: (MAX(RANK(DECAYLINEAR(CORR(RANK(VWAP), RANK(VOLUME), 4), 4)), RANK(DECAYLINEAR(MAX(CORR(RANK(CLOSE),
+    RANK(MEAN(VOLUME,60)), 4), 13), 14))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha065
+  title: Alpha 65
+  source_expression: MEAN(CLOSE,6)/CLOSE
+  normalized_expression: mean(close, 6) / close
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha066
+  title: Alpha 66
+  source_expression: (CLOSE-MEAN(CLOSE,6))/MEAN(CLOSE,6)*100
+  normalized_expression: (close - mean(close, 6)) / mean(close, 6) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha067
+  title: Alpha 67
+  source_expression: SMA(MAX(CLOSE-DELAY(CLOSE,1),0),24,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),24,1)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha068
+  title: Alpha 68
+  source_expression: SMA(((HIGH+LOW)/2-(DELAY(HIGH,1)+DELAY(LOW,1))/2)*(HIGH-LOW)/VOLUME,15,2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  required_history: 15
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha069
+  title: Alpha 69
+  source_expression: (SUM(DTM,20)>SUM(DBM,20) ？(SUM(DTM,20)-SUM(DBM,20))/SUM(DTM,20)：(SUM(DTM,20)=SUM(DBM,20)？ 0：(SUM(DTM,20)-SUM(DBM,20))/SUM(DBM,20)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields: []
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha070
+  title: Alpha 70
+  source_expression: STD(AMOUNT,6)
+  normalized_expression: stddev(amount, 6)
+  implementation: restricted_expression_ast
+  required_fields:
+  - amount
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha071
+  title: Alpha 71
+  source_expression: (CLOSE-MEAN(CLOSE,24))/MEAN(CLOSE,24)*100
+  normalized_expression: (close - mean(close, 24)) / mean(close, 24) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha072
+  title: Alpha 72
+  source_expression: SMA((TSMAX(HIGH,6)-CLOSE)/(TSMAX(HIGH,6)-TSMIN(LOW,6))*100,15,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha073
+  title: Alpha 73
+  source_expression: ((TSRANK(DECAYLINEAR(DECAYLINEAR(CORR((CLOSE), VOLUME, 10), 16), 4), 5) - RANK(DECAYLINEAR(CORR(VWAP
+    , MEAN(VOLUME,30), 4),3))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 30
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha074
+  title: Alpha 74
+  source_expression: (RANK(CORR(SUM(((LOW * 0.35) + (VWAP * 0.65)), 20), SUM(MEAN(VOLUME,40), 20), 7)) + RANK(CORR(RANK(VWAP),
+    RANK(VOLUME), 6)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 40
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha075
+  title: Alpha 75
+  source_expression: COUNT(CLOSE>OPEN & BANCHMARKINDEXCLOSE<BANCHMARKINDEXOPEN,50)/COUNT(BANCHMARKINDEXCLOSE<BANCHMARKIN DEXOPEN,50)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 50
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha076
+  title: Alpha 76
+  source_expression: STD(ABS((CLOSE/DELAY(CLOSE,1)-1))/VOLUME,20)/MEAN(ABS((CLOSE/DELAY(CLOSE,1)-1))/VOLUME,20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha077
+  title: Alpha 77
+  source_expression: MIN(RANK(DECAYLINEAR(((((HIGH + LOW) / 2) + HIGH) - (VWAP + HIGH)), 20)), RANK(DECAYLINEAR(CORR(((HIGH
+    + LOW) / 2), MEAN(VOLUME,40), 3), 6)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  - vwap
+  required_history: 40
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha078
+  title: Alpha 78
+  source_expression: ((HIGH+LOW+CLOSE)/3-MA((HIGH+LOW+CLOSE)/3,12))/(0.015*MEAN(ABS(CLOSE-MEAN((HIGH+LOW+CLOS E)/3,12)),12))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha079
+  title: Alpha 79
+  source_expression: SMA(MAX(CLOSE-DELAY(CLOSE,1),0),12,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),12,1)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha080
+  title: Alpha 80
+  source_expression: (VOLUME-DELAY(VOLUME,5))/DELAY(VOLUME,5)*100
+  normalized_expression: (volume - delay(volume, 5)) / delay(volume, 5) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - volume
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha081
+  title: Alpha 81
+  source_expression: SMA(VOLUME,21,2)
+  normalized_expression: sma(volume, 21, 2)
+  implementation: restricted_expression_ast
+  required_fields:
+  - volume
+  required_history: 21
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha082
+  title: Alpha 82
+  source_expression: SMA((TSMAX(HIGH,6)-CLOSE)/(TSMAX(HIGH,6)-TSMIN(LOW,6))*100,20,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha083
+  title: Alpha 83
+  source_expression: (-1 * RANK(COVIANCE(RANK(HIGH), RANK(VOLUME), 5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha084
+  title: Alpha 84
+  source_expression: SUM((CLOSE>DELAY(CLOSE,1)?VOLUME:(CLOSE<DELAY(CLOSE,1)?-VOLUME:0)),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha085
+  title: Alpha 85
+  source_expression: (TSRANK((VOLUME / MEAN(VOLUME,20)), 20) * TSRANK((-1 * DELTA(CLOSE, 7)), 8))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha086
+  title: Alpha 86
+  source_expression: '((0.25 < (((DELAY(CLOSE, 20) - DELAY(CLOSE, 10)) / 10) - ((DELAY(CLOSE, 10) - CLOSE) / 10))) ? ( -1
+    * 1) : (((((DELAY(CLOSE, 20) - DELAY(CLOSE, 10)) / 10) - ((DELAY(CLOSE, 10) - CLOSE) / 10)) < 0) ? 1 : (( -1 * 1) * (CLOSE
+    - DELAY(CLOSE, 1)))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha087
+  title: Alpha 87
+  source_expression: ((RANK(DECAYLINEAR(DELTA(VWAP , 4), 7)) + TSRANK(DECAYLINEAR(((((LOW * 0.9) + (LOW * 0.1)) - VWAP) /
+    (OPEN - ((HIGH + LOW) / 2))), 11), 7)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - vwap
+  required_history: 11
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha088
+  title: Alpha 88
+  source_expression: (CLOSE-DELAY(CLOSE,20))/DELAY(CLOSE,20)*100
+  normalized_expression: (close - delay(close, 20)) / delay(close, 20) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 13
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha089
+  title: Alpha 89
+  source_expression: 2*(SMA(CLOSE,13,2)-SMA(CLOSE,27,2)-SMA(SMA(CLOSE,13,2)-SMA(CLOSE,27,2),10,2))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 27
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha090
+  title: Alpha 90
+  source_expression: ( RANK(CORR(RANK(VWAP), RANK(VOLUME), 5)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha091
+  title: Alpha 91
+  source_expression: ((RANK((CLOSE - MAX(CLOSE, 5)))*RANK(CORR((MEAN(VOLUME,40)), LOW, 5))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - close
+  - volume
+  required_history: 40
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha092
+  title: Alpha 92
+  source_expression: (MAX(RANK(DECAYLINEAR(DELTA(((CLOSE * 0.35) + (VWAP *0.65)), 2), 3)), TSRANK(DECAYLINEAR(ABS(CORR((MEAN(VOLUME,180)),
+    CLOSE, 13)), 5), 15)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 180
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha093
+  title: Alpha 93
+  source_expression: SUM((OPEN>=DELAY(OPEN,1)?0:MAX((OPEN-LOW),(OPEN-DELAY(OPEN,1)))),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - low
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha094
+  title: Alpha 94
+  source_expression: SUM((CLOSE>DELAY(CLOSE,1)?VOLUME:(CLOSE<DELAY(CLOSE,1)?-VOLUME:0)),30)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 30
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha095
+  title: Alpha 95
+  source_expression: STD(AMOUNT,20)
+  normalized_expression: stddev(amount, 20)
+  implementation: restricted_expression_ast
+  required_fields:
+  - amount
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 14
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha096
+  title: Alpha 96
+  source_expression: SMA(SMA((CLOSE-TSMIN(LOW,9))/(TSMAX(HIGH,9)-TSMIN(LOW,9))*100,3,1),3,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha097
+  title: Alpha 97
+  source_expression: STD(VOLUME,10)
+  normalized_expression: stddev(volume, 10)
+  implementation: restricted_expression_ast
+  required_fields:
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 14
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha098
+  title: Alpha 98
+  source_expression: '((((DELTA((SUM(CLOSE, 100) / 100), 100) / DELAY(CLOSE, 100)) < 0.05) || ((DELTA((SUM(CLOSE, 100) / 100),
+    100) / DELAY(CLOSE, 100)) == 0.05)) ? (-1 * (CLOSE - TSMIN(CLOSE, 100))) : (-1 * DELTA(CLOSE, 3)))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha099
+  title: Alpha 99
+  source_expression: (-1 * RANK(COVIANCE(RANK(CLOSE), RANK(VOLUME), 5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha100
+  title: Alpha 100
+  source_expression: STD(VOLUME,20)
+  normalized_expression: stddev(volume, 20)
+  implementation: restricted_expression_ast
+  required_fields:
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 14
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha101
+  title: Alpha 101
+  source_expression: ((RANK(CORR(CLOSE, SUM(MEAN(VOLUME,30), 37), 15)) < RANK(CORR(RANK(((HIGH * 0.1) + (VWAP * 0.9))), RANK(VOLUME),
+    11))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  - vwap
+  required_history: 37
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha102
+  title: Alpha 102
+  source_expression: SMA(MAX(VOLUME-DELAY(VOLUME,1),0),6,1)/SMA(ABS(VOLUME-DELAY(VOLUME,1)),6,1)*100
+  normalized_expression: sma(max(volume - delay(volume, 1), 0), 6, 1) / sma(abs(volume - delay(volume, 1)), 6, 1) * 100
+  implementation: restricted_expression_ast
+  required_fields:
+  - volume
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 14
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha103
+  title: Alpha 103
+  source_expression: ((20-LOWDAY(LOW,20))/20)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha104
+  title: Alpha 104
+  source_expression: (-1 * (DELTA(CORR(HIGH, VOLUME, 5), 5) * RANK(STD(CLOSE, 20))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha105
+  title: Alpha 105
+  source_expression: (-1 * CORR(RANK(OPEN), RANK(VOLUME), 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha106
+  title: Alpha 106
+  source_expression: CLOSE-DELAY(CLOSE,20)
+  normalized_expression: close - delay(close, 20)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 14
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha107
+  title: Alpha 107
+  source_expression: (((-1 * RANK((OPEN - DELAY(HIGH, 1)))) * RANK((OPEN - DELAY(CLOSE, 1)))) * RANK((OPEN - DELAY(LOW, 1))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha108
+  title: Alpha 108
+  source_expression: ((RANK((HIGH - MIN(HIGH, 2)))^RANK(CORR((VWAP), (MEAN(VOLUME,120)), 6))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  - vwap
+  required_history: 120
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha109
+  title: Alpha 109
+  source_expression: SMA(HIGH-LOW,10,2)/SMA(SMA(HIGH-LOW,10,2),10,2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 10
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha110
+  title: Alpha 110
+  source_expression: SUM(MAX(0,HIGH-DELAY(CLOSE,1)),20)/SUM(MAX(0,DELAY(CLOSE,1)-LOW),20)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha111
+  title: Alpha 111
+  source_expression: SMA(VOL*((CLOSE-LOW)-(HIGH-CLOSE))/(HIGH-LOW),11,2)-SMA(VOL*((CLOSE-LOW)-(HIGH-CLOSE))/(HIGH-L OW),4,2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 11
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha112
+  title: Alpha 112
+  source_expression: (SUM((CLOSE-DELAY(CLOSE,1)>0?CLOSE-DELAY(CLOSE,1):0),12)-SUM((CLOSE-DELAY(CLOSE,1)<0?ABS(CLOS E-DELAY(CLOSE,1)):0),12))/(SUM((CLOSE-DELAY(CLOSE,1)>0?CLOSE-DELAY(CLOSE,1):0),12)+SUM((CLOSE-DE
+    LAY(CLOSE,1)<0?ABS(CLOSE-DELAY(CLOSE,1)):0),12))*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha113
+  title: Alpha 113
+  source_expression: (-1 * ((RANK((SUM(DELAY(CL OSE, 5), 20) / 20)) * CORR(CLOSE, VOLUME, 2)) * RANK(CORR(SUM(CLOSE, 5), SUM(CLOSE,
+    20), 2))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha114
+  title: Alpha 114
+  source_expression: ((RANK(DELAY(((HIGH - LOW) / (SUM(CLOSE, 5) / 5)), 2)) * RANK(RANK(VOLUME))) / (((HIGH - LOW) / (SUM(CLOSE,
+    5) / 5)) / (VWAP - CLOSE)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha115
+  title: Alpha 115
+  source_expression: (RANK(CORR(((HIGH * 0.9) + (CLOSE * 0.1)), MEAN(VOLUME,30), 10))^RANK(CORR(TSRANK(((HIGH + LOW) / 2),
+    4), TSRANK(VOLUME, 10), 7)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 30
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha116
+  title: Alpha 116
+  source_expression: REGBETA(CLOSE,SEQUENCE,20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha117
+  title: Alpha 117
+  source_expression: ((TSRANK(VOLUME, 32) * (1 - TSRANK(((CLOSE + HIGH) - LOW), 16))) * (1 - TSRANK(RET, 32)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 32
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha118
+  title: Alpha 118
+  source_expression: SUM(HIGH-OPEN,20)/SUM(OPEN-LOW,20)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha119
+  title: Alpha 119
+  source_expression: (RANK(DECAYLINEAR(CORR(VWAP , SUM(MEAN(VOLUME,5), 26), 5), 7)) - RANK(DECAYLINEAR(TSRANK(MIN(CORR(RANK(OPEN),
+    RANK(MEAN(VOLUME,15)), 21), 9), 7), 8)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  - vwap
+  required_history: 26
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha120
+  title: Alpha 120
+  source_expression: (RANK((VWAP - CLOSE)) / RANK((VWAP + CLOSE)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha121
+  title: Alpha 121
+  source_expression: ((RANK((VWAP - MIN(VWAP , 12)))^TSRANK(CORR(TSRANK(VWAP , 20), TSRANK(MEAN(VOLUME,60), 2), 18), 3)) *
+    -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha122
+  title: Alpha 122
+  source_expression: (SMA(SMA(SMA(LOG(CLOSE),13,2),13,2),13,2)-DELAY(SMA(SMA(SMA(LOG(CLOSE),13,2),13,2),13,2),1))/DELAY(SM
+    A(SMA(SMA(LOG(CLOSE),13,2),13,2),13,2),1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 13
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha123
+  title: Alpha 123
+  source_expression: ((RANK(CORR(SUM(((HIGH + LOW) / 2), 20), SUM(MEAN(VOLUME,60), 20), 9)) < RANK(CORR(LOW, VOLUME, 6)))
+    * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha124
+  title: Alpha 124
+  source_expression: (CLOSE - VWAP) / DECAYLINEAR(RANK(TSMAX(CLOSE, 30)),2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 30
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha125
+  title: Alpha 125
+  source_expression: (RANK(DECAYLINEAR(CORR((VWAP), MEAN(VOLUME,80),17), 20)) / RANK(DECAYLINEAR(DELTA(((CLOSE * 0.5) + (VWAP
+    * 0.5)), 3), 16)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 80
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha126
+  title: Alpha 126
+  source_expression: (CLOSE+HIGH+LOW)/3
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 3
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha127
+  title: Alpha 127
+  source_expression: (MEAN((100*(CLOSE-MAX(CLOSE,12))/(MAX(CLOSE,12)))^2))^(1/2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha128
+  title: Alpha 128
+  source_expression: 100-(100/(1+SUM(((HIGH+LOW+CLOSE)/3>DELAY((HIGH+LOW+CLOSE)/3,1)?(HIGH+LOW+CLOSE)/3*VOLUM E:0),14)/SUM(((HIGH+LOW+CLOSE)/3<DELAY((HIGH+LOW+CLOSE)/3,1)?(HIGH+LOW+CLOSE)/3*VOLUME:0),
+    14)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha129
+  title: Alpha 129
+  source_expression: SUM((CLOSE-DELAY(CLOSE,1)<0?ABS(CLOSE-DELAY(CLOSE,1)):0),12)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha130
+  title: Alpha 130
+  source_expression: (RANK(DECAYLINEAR(CORR(((HIGH + LOW) / 2), MEAN(VOL UME,40), 9), 10)) / RANK(DECAYLINEAR(CORR(RANK(VWAP),
+    RANK(VOLUME), 7),3)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  - vwap
+  required_history: 40
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha131
+  title: Alpha 131
+  source_expression: (RANK(DELAT(VWAP , 1))^TSRANK(CORR(CLOSE,MEAN(VOLUME,50), 18), 18))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 50
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha132
+  title: Alpha 132
+  source_expression: MEAN(AMOUNT,20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - amount
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha133
+  title: Alpha 133
+  source_expression: ((20-HIGHDAY(HIGH,20))/20)*100-((20-LOWDAY(LOW,20))/20)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha134
+  title: Alpha 134
+  source_expression: (CLOSE-DELAY(CLOSE,12))/DELAY(CLOSE,12)*VOLUME
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha135
+  title: Alpha 135
+  source_expression: SMA(DELAY(CLOSE/DELAY(CLOSE,20),1),20,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha136
+  title: Alpha 136
+  source_expression: ((-1 * RANK(DELTA(RET, 3))) * CORR(OPEN, VOLUME, 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha137
+  title: Alpha 137
+  source_expression: 16*(CLOSE-DELAY(CLOSE,1)+(CLOSE-OPEN)/2+DELAY(CLOSE,1)-DELAY(OPEN,1))/((ABS(HIGH-DELAY(CLOSE, 1))>ABS(LOW-DELAY(CLOSE,1))
+    & ABS(HIGH-DELAY(CLOSE,1))>ABS(HIGH-DELAY(LOW,1))?ABS(HIGH-DELAY(CLOSE,1))+ABS(LOW-DELAY(CLOS E,1))/2+ABS(DELAY(CLOSE,1)-DELAY(OPEN,1))/4:(ABS(LOW-DELAY(CLOSE,1))>ABS(HIGH-DELAY(LOW,1))
+    & ABS(LOW-DELAY(CLOSE,1))>ABS(HIGH-DELAY(CLOSE,1))?ABS(LOW-DELAY(CLOSE,1))+ABS(HIGH-DELAY(CLO SE,1))/2+ABS(DELAY(CLOSE,1)-DELAY(OPEN,1))/4:ABS(HIGH-DELAY(LOW,1))+ABS(DELAY(CLOSE,1)-DELAY(OP
+    EN,1))/4)))*MAX(ABS(HIGH-DELAY(CLOSE,1)),ABS(LOW-DELAY(CLOSE,1)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 16
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha138
+  title: Alpha 138
+  source_expression: ((RANK(DECAYLINEAR(DELTA((((LOW * 0.7) + (VWAP *0.3))), 3), 20)) - TSRANK(DECAYLINEAR(TSRANK(CORR(TSRANK(LOW,
+    8), TSRANK(MEAN(VOLUME,60), 17), 5), 19), 16), 7)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha139
+  title: Alpha 139
+  source_expression: (-1 * CORR(OPEN, VOLUME, 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha140
+  title: Alpha 140
+  source_expression: MIN(RANK(DECAYLINEAR(((RANK(OPEN) + RANK(LOW)) - (RANK(HIGH) + RANK(CLOSE))), 8)), TSRANK(DECAYLINEAR(CORR(TSRANK(CLOSE,
+    8), TSRANK(MEAN(VOLUME,60), 20), 8), 7), 3))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  - volume
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha141
+  title: Alpha 141
+  source_expression: (RANK(CORR(RANK(HIGH), RANK(MEAN(VOLUME,15)), 9))* -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 15
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha142
+  title: Alpha 142
+  source_expression: (((-1 * RANK(TSRANK(CLOSE, 10))) * RANK(DELTA(DELTA(CLOSE, 1), 1))) * RANK(TS RANK((VOLUME /MEAN(VOLUME,20)),
+    5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha143
+  title: Alpha 143
+  source_expression: CLOSE>DELAY(CLOSE,1)?(CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1)*SELF:SELF
+  normalized_expression: self_previous * where(close > delay(close, 1), (close - delay(close, 1)) / delay(close, 1), 1)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 15
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: gtja_short_cycle
+  factor_id: alpha144
+  title: Alpha 144
+  source_expression: SUMIF(ABS(CLOSE/DELAY(CLOSE,1)-1)/AMOUNT,20,CLOSE<DELAY(CLOSE,1))/COUNT(CLOSE<DELAY(CLOSE, 1),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - amount
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha145
+  title: Alpha 145
+  source_expression: (MEAN(VOLUME,9)-MEAN(VOLUME,26))/MEAN(VOLUME,12)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha146
+  title: Alpha 146
+  source_expression: MEAN((CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1)-SMA((CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1),61,2),20)*(( CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1)-SMA((CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1),61,2))/SMA(((CLOS
+    E-DELAY(CLOSE,1))/DELAY(CLOSE,1)-((CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1)-SMA((CLOSE-DELAY(CLOSE, 1))/DELAY(CLOSE,1),61,2)))^2,60);
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 61
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha147
+  title: Alpha 147
+  source_expression: REGBETA(MEAN(CLOSE,12),SEQUENCE(12))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha148
+  title: Alpha 148
+  source_expression: ((RANK(CORR((OPEN), SUM(MEAN(VOLUME,60), 9), 6)) < RANK((OPEN - TSMIN(OPEN, 14)))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 60
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha149
+  title: Alpha 149
+  source_expression: REGBETA(FILTER(CLOSE/DELAY(CLOSE,1)-1,BANCHMARKINDEXCLOSE<DELAY(BANCHMARKINDEXCLOSE,1) ),FILTER(BANCHMARKINDEXCLOSE/DELAY(BANCHMARKINDEXCLOSE,1)-1,BANCHMARKINDEXCLOSE<DELA
+    Y(BANCHMARKINDEXCLOSE,1)),252)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 252
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha150
+  title: Alpha 150
+  source_expression: (CLOSE+HIGH+LOW)/3*VOLUME
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 3
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha151
+  title: Alpha 151
+  source_expression: SMA(CLOSE-DELAY(CLOSE,20),20,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha152
+  title: Alpha 152
+  source_expression: SMA(MEAN(DELAY(SMA(DELAY(CLOSE/DELAY(CLOSE,9),1),9,1),1),12)-MEAN(DELAY(SMA(DELAY(CLOSE/DELAY (CLOSE,9),1),9,1),1),26),9,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 26
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha153
+  title: Alpha 153
+  source_expression: (MEAN(CLOSE,3)+MEAN(CLOSE,6)+MEAN(CLOSE,12)+MEAN(CLOSE,24))/4
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 24
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha154
+  title: Alpha 154
+  source_expression: (((VWAP - MIN(VWAP , 16))) < (CORR(VWAP , MEAN(VOLUME,180), 18)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 180
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha155
+  title: Alpha 155
+  source_expression: SMA(VOLUME,13,2)-SMA(VOLUME,27,2)-SMA(SMA(VOLUME,13,2)-SMA(VOLUME,27,2),10,2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  required_history: 27
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha156
+  title: Alpha 156
+  source_expression: (MAX(RANK(DECAYLINEAR(DELTA(VWAP , 5), 3)), RANK(DECAYLINEAR(((DELTA(((OPEN * 0.15) + (LOW *0.85)), 2)
+    / ((OPEN * 0.15) + (LOW * 0.85))) * -1), 3))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - low
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha157
+  title: Alpha 157
+  source_expression: (MIN(PROD(RANK(RANK(LOG(SUM(TSMIN(RANK(RANK((-1 * RANK(DELTA((CLOSE - 1), 5))))), 2), 1)))), 1), 5) +
+    TSRANK(DELAY((-1 * RET), 6), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha158
+  title: Alpha 158
+  source_expression: ((HIGH-SMA(CLOSE,15,2))-(LOW-SMA(CLOSE,15,2)))/CLOSE
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 15
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha159
+  title: Alpha 159
+  source_expression: ((CLOSE-SUM(MIN(LOW,DELAY(CLOSE,1)),6))/SUM(MAX(HGIH,DELAY(CLOSE,1))-MIN(LOW,DELAY(CLOSE,1)),6) *12*24+(CLOSE-SUM(MIN(LOW,DELAY(CLOSE,1)),12))/SUM(MAX(HGIH,DELAY(CLOSE,1))-MIN(LOW,DELAY(CL
+    OSE,1)),12)*6*24+(CLOSE-SUM(MIN(LOW,DELAY(CLOSE,1)),24))/SUM(MAX(HGIH,DELAY(CLOSE,1))-MIN(LOW,D ELAY(CLOSE,1)),24)*6*24)*100/(6*12+6*24+12*24)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha160
+  title: Alpha 160
+  source_expression: SMA((CLOSE<=DELAY(CLOSE,1)?STD(CLOSE,20):0),20,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha161
+  title: Alpha 161
+  source_expression: MEAN(MAX(MAX((HIGH-LOW),ABS(DELAY(CLOSE,1)-HIGH)),ABS(DELAY(CLOSE,1)-LOW)),12)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha162
+  title: Alpha 162
+  source_expression: (SMA(MAX(CLOSE-DELAY(CLOSE,1),0),12,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),12,1)*100-MIN(SMA(MAX(CLOS E-DELAY(CLOSE,1),0),12,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),12,1)*100,12))/(MAX(SMA(MAX(CLOSE-DELAY(C
+    LOSE,1),0),12,1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),12,1)*100,12)-MIN(SMA(MAX(CLOSE-DELAY(CLOSE,1),0),12, 1)/SMA(ABS(CLOSE-DELAY(CLOSE,1)),12,1)*100,12))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha163
+  title: Alpha 163
+  source_expression: RANK(((((-1 * RET) * MEAN(VOLUME,20)) * VWAP) * (HIGH - CLOSE)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha164
+  title: Alpha 164
+  source_expression: SMA((((CLOSE>DELAY(CLOSE,1))?1/(CLOSE-DELAY(CLOSE,1)):1)-MIN(((CLOSE>DELAY(CLOSE,1))?1/(CLOSE-D ELAY(CLOSE,1)):1),12))/(HIGH-LOW)*100,13,2)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha165
+  title: Alpha 165
+  source_expression: MAX(SUMAC(CLOSE-MEAN(CLOSE,48)))-MIN(SUMAC(CLOSE-MEAN(CLOSE,48)))/STD(CLOSE,48)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 48
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha166
+  title: Alpha 166
+  source_expression: -20* （ 20-1 ） ^1.5*SUM(CLOSE/DELAY(CLOSE,1)-1-MEAN(CLOSE/DELAY(CLOSE,1)-1,20),20)/((20-1)*(20-2)(SUM((CLOSE/DELA
+    Y(CLOSE,1),20)^2,20))^1.5)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha167
+  title: Alpha 167
+  source_expression: SUM((CLOSE-DELAY(CLOSE,1)>0?CLOSE-DELAY(CLOSE,1):0),12)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha168
+  title: Alpha 168
+  source_expression: (-1*VOLUME/MEAN(VOLUME,20))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha169
+  title: Alpha 169
+  source_expression: SMA(MEAN(DELAY(SMA(CLOSE-DELAY(CLOSE,1),9,1),1),12)-MEAN(DELAY(SMA(CLOSE-DELAY(CLOSE,1),9,1),1), 26),10,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 26
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha170
+  title: Alpha 170
+  source_expression: ((((RANK((1 / CLOSE)) * VOLUME) / MEAN(VOLUME,20)) * ((HIGH * RANK((HIGH - CLOSE))) / (SUM(HIGH, 5) /
+    5))) - RANK((VWAP - DELAY(VWAP , 5))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha171
+  title: Alpha 171
+  source_expression: ((-1 * ((LOW - CLOSE) * (OPEN^5))) / ((CLOSE - HIGH) * (CLOSE^5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha172
+  title: Alpha 172
+  source_expression: MEAN(ABS(SUM((LD>0 & LD>HD)?LD:0,14)*100/ SUM(TR,14)-SUM((HD>0 & HD>LD)?HD:0,14)*100/SUM(TR,14))/(SUM((LD>0
+    & LD>HD)?LD:0,14)*100/ SUM(TR,14)+SUM((HD>0 & HD>LD)?HD:0,14)*100/SUM(TR,14))*100,6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields: []
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha173
+  title: Alpha 173
+  source_expression: 3*SMA(CLOSE,13,2)-2*SMA(SMA(CLOSE,13,2),13,2)+SMA(SMA(SMA(LOG(CLOSE),13,2),13,2),13,2);
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 13
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha174
+  title: Alpha 174
+  source_expression: SMA((CLOSE>DELAY(CLOSE,1)?STD(CLOSE,20):0),20,1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha175
+  title: Alpha 175
+  source_expression: MEAN(MAX(MAX((HIGH-LOW),ABS(DELAY(CLOSE,1)-HIGH)),ABS(DELAY(CLOSE,1)-LOW)),6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha176
+  title: Alpha 176
+  source_expression: CORR(RANK(((CLOSE - TSMIN(LOW, 12)) / (TSMAX(HIGH, 12) - TSMIN(LOW,12)))), RANK(VOLUME), 6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 12
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha177
+  title: Alpha 177
+  source_expression: ((20-HIGHDAY(HIGH,20))/20)*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha178
+  title: Alpha 178
+  source_expression: (CLOSE-DELAY(CLOSE,1))/DELAY(CLOSE,1)*VOLUME
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha179
+  title: Alpha 179
+  source_expression: (RANK(CORR(VWAP , VOLUME, 4)) *RANK(CORR(RANK(LOW), RANK(MEAN(VOLUME,50)), 12)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 50
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha180
+  title: Alpha 180
+  source_expression: '((MEAN(VOLUME,20) < VOLUME) ? ((-1 * TSRANK(ABS(DELTA(CLOSE, 7)), 60)) * SIGN(DELTA(CLOSE, 7)) : ( -1
+    * VOLUME)))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 60
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 16
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha181
+  title: Alpha 181
+  source_expression: SUM(((CLOSE/DELAY(CLOSE,1)-1)-MEAN((CLOSE/DELAY(CLOSE,1)-1),20))-(BANCHMARKINDEXCLOSE-MEAN(B ANCHMARKINDEXCLOSE,20))^2,20)/SUM((BANCHMARKINDEXCLOSE-MEAN(BANCHMARKINDEXCLOSE,20))^3)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha182
+  title: Alpha 182
+  source_expression: COUNT((CLOSE>OPEN & BANCHMARKINDEXCLOSE>BANCHMARKINDEXOPEN)OR(CLOSE<OPEN & BANCHMARKINDEXCLOSE<BANCHMARKINDEXOPEN),20)/20
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes:
+  - Source contains typography, spelling or delimiter ambiguity.
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha183
+  title: Alpha 183
+  source_expression: MAX(SUMAC(CLOSE-MEAN(CLOSE,24)))-MIN(SUMAC(CLOSE-MEAN(CLOSE,24)))/STD(CLOSE,24)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 24
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha184
+  title: Alpha 184
+  source_expression: (RANK(CORR(DELAY((OPEN - CLOSE), 1), CLOSE, 200)) + RANK((OPEN - CLOSE)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 200
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha185
+  title: Alpha 185
+  source_expression: RANK((-1 * ((1 - (OPEN / CLOSE))^2)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 2
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha186
+  title: Alpha 186
+  source_expression: (MEAN(ABS(SUM((LD>0 & LD>HD)?LD:0,14)*100/ SUM(TR,14)-SUM((HD>0 & HD>LD)?HD:0,14)*100/SUM(TR,14))/(SUM((LD>0
+    & LD>HD)?LD:0,14)*100/ SUM(TR,14)+SUM((HD>0 & HD>LD)?HD:0,14)*100/SUM(TR,14))*100,6)+DELAY(MEAN(ABS(SUM((LD>0 & LD>HD)?LD:0,14)*100/SUM(TR,14)-SUM((HD>0
+    & HD>LD)?HD:0,14)*100/ SUM(TR,14))/(SUM((LD>0 & LD>HD)?LD:0,14)*100/SUM(TR,14)+SUM((HD>0 & HD>LD)?HD:0,14)*100/SUM(TR,14))*100,6),6))/2
+  normalized_expression: ''
+  implementation: ''
+  required_fields: []
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha187
+  title: Alpha 187
+  source_expression: SUM((OPEN<=DELAY(OPEN,1)?0:MAX((HIGH-OPEN),(OPEN-DELAY(OPEN,1)))),20)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha188
+  title: Alpha 188
+  source_expression: ((HIGH-LOW–SMA(HIGH-LOW,11,2))/SMA(HIGH-LOW,11,2))*100
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha189
+  title: Alpha 189
+  source_expression: MEAN(ABS(CLOSE-MEAN(CLOSE,6)),6)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 6
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha190
+  title: Alpha 190
+  source_expression: LOG((COUNT(CLOSE/DELAY(CLOSE)-1>((CLOSE/DELAY(CLOSE,19))^(1/20)-1),20)-1)*(SUMIF(((CLOSE/DELAY(C LOSE)-1-(CLOSE/DELAY(CLOSE,19))^(1/20)-1))^2,20,CLOSE/DELAY(CLOSE)-1<(CLOSE/DELAY(CLOSE,19))^(1/20)-
+    1))/((COUNT((CLOSE/DELAY(CLOSE)-1<(CLOSE/DELAY(CLOSE,19))^(1/20)-1),20))*(SUMIF((CLOSE/DELAY(CLOS E)-1-((CLOSE/DELAY(CLOSE,19))^(1/20)-1))^2,20,CLOSE/DELAY(CLOSE)-1>(CLOSE/DELAY(CLOSE,19))^(1/20)-1)))
+    )
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 17
+  tests: []
+- paper_id: gtja_short_cycle
+  factor_id: alpha191
+  title: Alpha 191
+  source_expression: ((CORR(MEAN(VOLUME,20), LOW, 5) + ((HIGH + LOW) / 2)) - CLOSE)
+  normalized_expression: correlation(mean(volume, 20), low, 5) + ((high + low) / 2) - close
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 17
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel

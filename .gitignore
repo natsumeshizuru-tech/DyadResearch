@@ -37,3 +37,8 @@ research.db
 data/sqlite/
 examples/sample_data/sqlite/
 var/
+tmp/
+site/
+qmt_big/config_local.py
+qmt_big/execution_plan.csv
+qmt_big/execution_report.csv

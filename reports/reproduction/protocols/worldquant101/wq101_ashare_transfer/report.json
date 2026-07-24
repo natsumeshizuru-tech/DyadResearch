@@ -1,0 +1,59 @@
+{
+  "blockers": [
+    "formula implementation coverage is 15/101",
+    "full formula coverage and historical industry snapshots are unavailable"
+  ],
+  "claims": [
+    "Formula records retain source expressions and explicit implementation status.",
+    "Local A-share evidence is not the paper's proprietary return reproduction.",
+    "No performance number is reported for this blocked protocol."
+  ],
+  "comparability_level": "D",
+  "data_capability_hash": "364c44b2f8682a49923e2249f3f6b6b2e5b72831e2472d3b0cb6abd3b6dabab9",
+  "experiment_id": 258,
+  "formula_validation": {
+    "implemented": 15,
+    "manifest_hash": "fc85735496f1e763676d8d483f7e21a1cff09cab7af494852870757b989e3f31",
+    "paper_id": "worldquant101",
+    "result_hash": "21a4c73fdf5e34ef3416208c927c186eafe1ab6ea449b8d55f08034e409bc501",
+    "status_counts": {
+      "assumption": 0,
+      "corrected_typo": 0,
+      "exact": 0,
+      "normalized": 15,
+      "not_implemented": 68,
+      "unavailable_dependency": 18
+    },
+    "total": 101
+  },
+  "git_commit": "137409e177e94e093c31965a7ca0e0579b0b5dfc",
+  "paper_id": "worldquant101",
+  "protocol": "wq101_ashare_transfer",
+  "result_hash": "85b8d1276c8e5df9ae06b3467f56f52c07891e0de2b50c33a6bcc76d92d4d24b",
+  "schema_version": "1.0.0",
+  "status": "not_run",
+  "synthetic_smoke": {
+    "attempted": 15,
+    "failed": 0,
+    "failures": {},
+    "output_hash": "544062a72c0d768cee1fb97e3c03f1ba17d54ec4f3dcd92fe06537d574e5400a",
+    "passed": 15,
+    "passed_factor_ids": [
+      "alpha002",
+      "alpha003",
+      "alpha004",
+      "alpha005",
+      "alpha006",
+      "alpha012",
+      "alpha013",
+      "alpha015",
+      "alpha018",
+      "alpha020",
+      "alpha037",
+      "alpha042",
+      "alpha054",
+      "alpha065",
+      "alpha101"
+    ]
+  }
+}

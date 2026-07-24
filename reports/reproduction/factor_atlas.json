@@ -1,0 +1,4490 @@
+{
+  "records": [
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha001",
+      "family": "volatility",
+      "fingerprint": "d2274c33df8b8046",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "returns"
+      ],
+      "required_history": 20,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha002",
+      "family": "correlation",
+      "fingerprint": "768618923487cfcf",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "volume"
+      ],
+      "required_history": 6,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha003",
+      "family": "correlation",
+      "fingerprint": "85a1f49b60c67fd9",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha004",
+      "family": "position",
+      "fingerprint": "f8d396202fb0a752",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low"
+      ],
+      "required_history": 9,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha005",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "cc5f03b549d307c8",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "vwap"
+      ],
+      "required_history": 10,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha006",
+      "family": "correlation",
+      "fingerprint": "585b92af7f166aa8",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha007",
+      "family": "liquidity_or_volume",
+      "fingerprint": "4506aabe47f479de",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 60,
+      "source_page": 8
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha008",
+      "family": "momentum_or_reversal",
+      "fingerprint": "09a28cdd374d3d0d",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "returns"
+      ],
+      "required_history": 10,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha009",
+      "family": "momentum_or_reversal",
+      "fingerprint": "bdf3dc946916b2d7",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha010",
+      "family": "momentum_or_reversal",
+      "fingerprint": "7f918e9fe5d8abeb",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 4,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha011",
+      "family": "liquidity_or_volume",
+      "fingerprint": "6b019b2200c60e23",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 3,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha012",
+      "family": "liquidity_or_volume",
+      "fingerprint": "c3ad34b05967d806",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 1,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha013",
+      "family": "correlation",
+      "fingerprint": "7f4820deba4b18a6",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha014",
+      "family": "correlation",
+      "fingerprint": "052e405bf71e6651",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "volume",
+        "returns"
+      ],
+      "required_history": 10,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha015",
+      "family": "correlation",
+      "fingerprint": "742b8451987f68e1",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 3,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha016",
+      "family": "correlation",
+      "fingerprint": "60a934d0b25a9c5f",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha017",
+      "family": "liquidity_or_volume",
+      "fingerprint": "395d4d4a3b4d597e",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha018",
+      "family": "correlation",
+      "fingerprint": "22d6c4e22884365d",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 10,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha019",
+      "family": "momentum_or_reversal",
+      "fingerprint": "589a84c123d29be6",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "returns"
+      ],
+      "required_history": 250,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha020",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "a49fee8084bd70ed",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha021",
+      "family": "volatility",
+      "fingerprint": "4e4e407b1d5a3466",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 8,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha022",
+      "family": "correlation",
+      "fingerprint": "8c0368af9d0f4172",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "gtja_short_cycle:alpha038"
+      ],
+      "factor_id": "alpha023",
+      "family": "momentum_or_reversal",
+      "fingerprint": "5a712a40793cc4f2",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high"
+      ],
+      "required_history": 20,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha024",
+      "family": "momentum_or_reversal",
+      "fingerprint": "cb6a801df5b8db2b",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 9
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha025",
+      "family": "liquidity_or_volume",
+      "fingerprint": "357142b46f7cc854",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "close",
+        "vwap",
+        "returns"
+      ],
+      "required_history": 1,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha026",
+      "family": "correlation",
+      "fingerprint": "ae6143df64e06733",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha027",
+      "family": "correlation",
+      "fingerprint": "8c2bb745942b69f0",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 6,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha028",
+      "family": "correlation",
+      "fingerprint": "38acfe031a610098",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha029",
+      "family": "momentum_or_reversal",
+      "fingerprint": "25e5b8f984f9bdb5",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "returns"
+      ],
+      "required_history": 6,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha030",
+      "family": "liquidity_or_volume",
+      "fingerprint": "0413cb4c8227aef9",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha031",
+      "family": "correlation",
+      "fingerprint": "1c9010fba7caab40",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha032",
+      "family": "correlation",
+      "fingerprint": "e5787c42a94b1d89",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 230,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha033",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "3528eae52516685f",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha034",
+      "family": "volatility",
+      "fingerprint": "83194edd75ab0bac",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "returns"
+      ],
+      "required_history": 5,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha035",
+      "family": "liquidity_or_volume",
+      "fingerprint": "c3e471e84c0b4a4e",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume",
+        "returns"
+      ],
+      "required_history": 32,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha036",
+      "family": "correlation",
+      "fingerprint": "b35c7a217d097ec5",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "volume",
+        "vwap",
+        "returns"
+      ],
+      "required_history": 200,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha037",
+      "family": "correlation",
+      "fingerprint": "e2f9d35761db6f6d",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 200,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha038",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "4f349248e853e38b",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 10,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha039",
+      "family": "liquidity_or_volume",
+      "fingerprint": "e63f921598326934",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume",
+        "returns"
+      ],
+      "required_history": 250,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha040",
+      "family": "correlation",
+      "fingerprint": "cf397d797de1aa40",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha041",
+      "family": "other",
+      "fingerprint": "ad80c72041834281",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 1,
+      "source_page": 10
+    },
+    {
+      "delay": 0,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha042",
+      "family": "position",
+      "fingerprint": "fbd26ab0994ff247",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 1,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha043",
+      "family": "liquidity_or_volume",
+      "fingerprint": "a5edcfed278c9e6e",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 10
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha044",
+      "family": "correlation",
+      "fingerprint": "5ba50243e41d217e",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha045",
+      "family": "correlation",
+      "fingerprint": "61a371bd14bce825",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "gtja_short_cycle:alpha086"
+      ],
+      "factor_id": "alpha046",
+      "family": "momentum_or_reversal",
+      "fingerprint": "411b8fd35ac0934d",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha047",
+      "family": "liquidity_or_volume",
+      "fingerprint": "3ea6c8b08613f5b9",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 0,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha048",
+      "family": "correlation",
+      "fingerprint": "f76b0857c47a7cfd",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 250,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha049",
+      "family": "momentum_or_reversal",
+      "fingerprint": "fdbf14b381164c66",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha050",
+      "family": "correlation",
+      "fingerprint": "48a0b2dcc839c6ea",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha051",
+      "family": "momentum_or_reversal",
+      "fingerprint": "ce1565cc82ed4443",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha052",
+      "family": "liquidity_or_volume",
+      "fingerprint": "8ced86cdf6240d9f",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "volume",
+        "returns"
+      ],
+      "required_history": 240,
+      "source_page": 11
+    },
+    {
+      "delay": 0,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha053",
+      "family": "momentum_or_reversal",
+      "fingerprint": "85951e3e96f285eb",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 9,
+      "source_page": 11
+    },
+    {
+      "delay": 0,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha054",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "ac57c90727794965",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha055",
+      "family": "correlation",
+      "fingerprint": "a27069adedd02afe",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 12,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha056",
+      "family": "momentum_or_reversal",
+      "fingerprint": "cbac00f1c3d6c488",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "returns",
+        "cap"
+      ],
+      "required_history": 10,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha057",
+      "family": "position",
+      "fingerprint": "016d0a182260f058",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 30,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha058",
+      "family": "correlation",
+      "fingerprint": "05027088b4b617dc",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 7,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha059",
+      "family": "correlation",
+      "fingerprint": "5a0b96822f58ef90",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 16,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha060",
+      "family": "volatility",
+      "fingerprint": "eb81ed77f3097346",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha061",
+      "family": "correlation",
+      "fingerprint": "54da1c3173d67a66",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "vwap"
+      ],
+      "required_history": 80,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha062",
+      "family": "correlation",
+      "fingerprint": "68ae7d12e9a503f3",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 22,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha063",
+      "family": "correlation",
+      "fingerprint": "30b0094a9a5a284a",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "vwap"
+      ],
+      "required_history": 80,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha064",
+      "family": "correlation",
+      "fingerprint": "a0f1b4ae82f06f47",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha065",
+      "family": "correlation",
+      "fingerprint": "3a173e6f43735641",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "vwap"
+      ],
+      "required_history": 13,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha066",
+      "family": "momentum_or_reversal",
+      "fingerprint": "d6fbeda05ee474a1",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 11,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha067",
+      "family": "correlation",
+      "fingerprint": "ec5f0d3db0c4324c",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "vwap"
+      ],
+      "required_history": 6,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha068",
+      "family": "correlation",
+      "fingerprint": "c95b645798043fec",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 13,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha069",
+      "family": "correlation",
+      "fingerprint": "3348d67746e92c99",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 9,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha070",
+      "family": "correlation",
+      "fingerprint": "52b245aae6325a11",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 17,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha071",
+      "family": "correlation",
+      "fingerprint": "70ac28dd8f611f5a",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "low",
+        "close",
+        "vwap"
+      ],
+      "required_history": 80,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha072",
+      "family": "correlation",
+      "fingerprint": "8fd4adf4c41c1581",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 18,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha073",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c3b842c8d61dc7e6",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "low",
+        "vwap"
+      ],
+      "required_history": 16,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha074",
+      "family": "correlation",
+      "fingerprint": "1f8a02d27adf8054",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 37,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha075",
+      "family": "correlation",
+      "fingerprint": "0ee0329ebf097b59",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 12,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha076",
+      "family": "correlation",
+      "fingerprint": "ccad7bc229e5004c",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "vwap"
+      ],
+      "required_history": 19,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha077",
+      "family": "correlation",
+      "fingerprint": "71b6d1a92e6ae314",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha078",
+      "family": "correlation",
+      "fingerprint": "883b092dcbfb2aac",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 19,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha079",
+      "family": "correlation",
+      "fingerprint": "c16f83c7f2640e2b",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "vwap"
+      ],
+      "required_history": 50,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha080",
+      "family": "correlation",
+      "fingerprint": "d4c02b75aceed2dd",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high"
+      ],
+      "required_history": 5,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha081",
+      "family": "correlation",
+      "fingerprint": "19a0fcd484f77075",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 49,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha082",
+      "family": "correlation",
+      "fingerprint": "b998bd087d86bc82",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 17,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "gtja_short_cycle:alpha114"
+      ],
+      "factor_id": "alpha083",
+      "family": "volatility",
+      "fingerprint": "75f5a64674e3a439",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha084",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c42cd2a0ccafb03a",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha085",
+      "family": "correlation",
+      "fingerprint": "838bdb38455be532",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha086",
+      "family": "correlation",
+      "fingerprint": "aa7defafffaf2be3",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "close",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha087",
+      "family": "correlation",
+      "fingerprint": "2156330b462b7ce1",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 14,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha088",
+      "family": "correlation",
+      "fingerprint": "a87da9eb26032d00",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha089",
+      "family": "correlation",
+      "fingerprint": "622f293e5b0430d3",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "vwap"
+      ],
+      "required_history": 15,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha090",
+      "family": "correlation",
+      "fingerprint": "9439f5715f36bdd7",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha091",
+      "family": "correlation",
+      "fingerprint": "7799d4d83066a152",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 16,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha092",
+      "family": "correlation",
+      "fingerprint": "41cd1d0ab54d45b9",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 18,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha093",
+      "family": "correlation",
+      "fingerprint": "5499b8f8a274a2f9",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 19,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha094",
+      "family": "correlation",
+      "fingerprint": "c13d38c43aaf5252",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "vwap"
+      ],
+      "required_history": 19,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha095",
+      "family": "correlation",
+      "fingerprint": "24a15db85980930b",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low"
+      ],
+      "required_history": 19,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha096",
+      "family": "correlation",
+      "fingerprint": "a015c5da0f217e1c",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 14,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha097",
+      "family": "correlation",
+      "fingerprint": "649c0ad52fa31ae5",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "low",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha098",
+      "family": "correlation",
+      "fingerprint": "8bda71b4ee7fc961",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "vwap"
+      ],
+      "required_history": 26,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha099",
+      "family": "correlation",
+      "fingerprint": "80626a900d6bdb62",
+      "formula_status": "not_implemented",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "volume"
+      ],
+      "required_history": 19,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha100",
+      "family": "correlation",
+      "fingerprint": "126f632caa0bace0",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 30,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha101",
+      "family": "volatility",
+      "fingerprint": "eef27dd7a1306ff8",
+      "formula_status": "normalized",
+      "paper_id": "worldquant101",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha001",
+      "family": "correlation",
+      "fingerprint": "1689a5e4441dba73",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close",
+        "volume"
+      ],
+      "required_history": 6,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha002",
+      "family": "volatility",
+      "fingerprint": "d1ab8334e1f66554",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha003",
+      "family": "momentum_or_reversal",
+      "fingerprint": "50bcfa25eb832ad9",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha004",
+      "family": "volatility",
+      "fingerprint": "f21779c85e75ad19",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha005",
+      "family": "correlation",
+      "fingerprint": "a54874ee213bd833",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha006",
+      "family": "momentum_or_reversal",
+      "fingerprint": "899dfc42b9b808c5",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high"
+      ],
+      "required_history": 4,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha007",
+      "family": "liquidity_or_volume",
+      "fingerprint": "806e470aa049ecd5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 3,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha008",
+      "family": "momentum_or_reversal",
+      "fingerprint": "f824968695f4d5e7",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 4,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha009",
+      "family": "volatility",
+      "fingerprint": "de57ca9d6f02d458",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "volume"
+      ],
+      "required_history": 7,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha010",
+      "family": "volatility",
+      "fingerprint": "3ec0289900fde0c2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha011",
+      "family": "volatility",
+      "fingerprint": "3cdcbc41d5f69661",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 6,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha012",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "21c9c7b7c7135411",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close",
+        "vwap"
+      ],
+      "required_history": 10,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha013",
+      "family": "other",
+      "fingerprint": "4cb02a7c4f64e072",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 1,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha014",
+      "family": "momentum_or_reversal",
+      "fingerprint": "28d609c02746d3d4",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha015",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "d92e1d106d03606d",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha016",
+      "family": "correlation",
+      "fingerprint": "e3ed7c568eed3aab",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha017",
+      "family": "momentum_or_reversal",
+      "fingerprint": "0da50e9c1ecdd252",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 15,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha018",
+      "family": "momentum_or_reversal",
+      "fingerprint": "3a7792d5c083da5b",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha019",
+      "family": "momentum_or_reversal",
+      "fingerprint": "5d15f14fcae5e713",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha020",
+      "family": "momentum_or_reversal",
+      "fingerprint": "ba68710d2e4747e0",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha021",
+      "family": "other",
+      "fingerprint": "6eb349d956794b24",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha022",
+      "family": "momentum_or_reversal",
+      "fingerprint": "857bd5f58dce14bb",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha023",
+      "family": "volatility",
+      "fingerprint": "514b87e542527e6a",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha024",
+      "family": "momentum_or_reversal",
+      "fingerprint": "1af3eae0fd390dd8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha025",
+      "family": "liquidity_or_volume",
+      "fingerprint": "f7bcbd1d4deea7e2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 250,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha026",
+      "family": "correlation",
+      "fingerprint": "d7ec8f6330023d67",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 230,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha027",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c1bf6e2f72b2a472",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha028",
+      "family": "other",
+      "fingerprint": "a119c8bb834d586c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha029",
+      "family": "liquidity_or_volume",
+      "fingerprint": "e46bf9e5d3983fe9",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 6,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha030",
+      "family": "momentum_or_reversal",
+      "fingerprint": "41bd49b2864b2da4",
+      "formula_status": "unavailable_dependency",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "mkt",
+        "smb",
+        "hml"
+      ],
+      "required_history": 60,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha031",
+      "family": "other",
+      "fingerprint": "1662b3d752cc81ad",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha032",
+      "family": "correlation",
+      "fingerprint": "aef2bffccda2e523",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 3,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha033",
+      "family": "liquidity_or_volume",
+      "fingerprint": "de5ac56c80b9591d",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume"
+      ],
+      "required_history": 240,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha034",
+      "family": "other",
+      "fingerprint": "15857fc3c178db2e",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha035",
+      "family": "correlation",
+      "fingerprint": "2bc5edf2f762bf9f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 17,
+      "source_page": 11
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha036",
+      "family": "correlation",
+      "fingerprint": "cf422f76f8016338",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 6,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha037",
+      "family": "momentum_or_reversal",
+      "fingerprint": "9588547ddd54bed8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open"
+      ],
+      "required_history": 10,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "worldquant101:alpha023"
+      ],
+      "factor_id": "alpha038",
+      "family": "momentum_or_reversal",
+      "fingerprint": "5a712a40793cc4f2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high"
+      ],
+      "required_history": 20,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha039",
+      "family": "correlation",
+      "fingerprint": "155c50e65e5427e3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 180,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha040",
+      "family": "liquidity_or_volume",
+      "fingerprint": "7964ee91ce712fba",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha041",
+      "family": "momentum_or_reversal",
+      "fingerprint": "d172fd2e42a61200",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha042",
+      "family": "correlation",
+      "fingerprint": "930b43db6c7bb191",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha043",
+      "family": "liquidity_or_volume",
+      "fingerprint": "3ab11ac09517a2e2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 6,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha044",
+      "family": "correlation",
+      "fingerprint": "769cfbdb00acbef0",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 15,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha045",
+      "family": "correlation",
+      "fingerprint": "b7a538ca6823ad83",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 150,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha046",
+      "family": "other",
+      "fingerprint": "1a9e092bb5804747",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 24,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha047",
+      "family": "other",
+      "fingerprint": "661319413aadcd0e",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha048",
+      "family": "liquidity_or_volume",
+      "fingerprint": "18d26f2a477f3c9c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha049",
+      "family": "momentum_or_reversal",
+      "fingerprint": "bdd8b2aa4a947bfb",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 12,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha050",
+      "family": "momentum_or_reversal",
+      "fingerprint": "e1fe852641bf39c3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 12,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha051",
+      "family": "momentum_or_reversal",
+      "fingerprint": "6e472feb3d42497e",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 12,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha052",
+      "family": "momentum_or_reversal",
+      "fingerprint": "261e57aad0962f2b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha053",
+      "family": "momentum_or_reversal",
+      "fingerprint": "1e7b97d96d15b6fd",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha054",
+      "family": "correlation",
+      "fingerprint": "430e5e70165f6e51",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 10,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha055",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "41d07deaa80c96e5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha056",
+      "family": "correlation",
+      "fingerprint": "43c181a3af65170c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "volume"
+      ],
+      "required_history": 40,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha057",
+      "family": "other",
+      "fingerprint": "a72b7c6b91b89ed2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha058",
+      "family": "momentum_or_reversal",
+      "fingerprint": "091816c208863d78",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 12
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha059",
+      "family": "momentum_or_reversal",
+      "fingerprint": "587325fa7425d5b9",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha060",
+      "family": "volatility",
+      "fingerprint": "7d077a169c4452dc",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha061",
+      "family": "correlation",
+      "fingerprint": "6a0ea8b70b1d7776",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 80,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha062",
+      "family": "correlation",
+      "fingerprint": "2af4c4fa1232e82b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha063",
+      "family": "momentum_or_reversal",
+      "fingerprint": "f2bdd94031ee67ee",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha064",
+      "family": "correlation",
+      "fingerprint": "1834199c06fa934d",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 60,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha065",
+      "family": "other",
+      "fingerprint": "2f676b2b1039285c",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha066",
+      "family": "other",
+      "fingerprint": "dc2e173ab772878d",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha067",
+      "family": "momentum_or_reversal",
+      "fingerprint": "3d57ea98c0080890",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha068",
+      "family": "volatility",
+      "fingerprint": "cd26f5a610eb4894",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "volume"
+      ],
+      "required_history": 15,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha069",
+      "family": "other",
+      "fingerprint": "597b676b5ffaaf76",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha070",
+      "family": "volatility",
+      "fingerprint": "cec1a749d1228e4f",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "amount"
+      ],
+      "required_history": 6,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha071",
+      "family": "other",
+      "fingerprint": "5bcd75b48c5bc0c5",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha072",
+      "family": "other",
+      "fingerprint": "e1081843ac6466a2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha073",
+      "family": "correlation",
+      "fingerprint": "189fb9ebb100f653",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 30,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha074",
+      "family": "correlation",
+      "fingerprint": "115735d900570ed8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 40,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha075",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "477fb5fee21970ca",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 50,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha076",
+      "family": "volatility",
+      "fingerprint": "35b77425f8036979",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha077",
+      "family": "correlation",
+      "fingerprint": "83dc3fac7eb52357",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 40,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha078",
+      "family": "other",
+      "fingerprint": "b8402d21df7b01a5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha079",
+      "family": "momentum_or_reversal",
+      "fingerprint": "888003523417142e",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha080",
+      "family": "liquidity_or_volume",
+      "fingerprint": "4553556f3db91d69",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha081",
+      "family": "liquidity_or_volume",
+      "fingerprint": "fbdc741f78ee24ad",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 21,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha082",
+      "family": "other",
+      "fingerprint": "55717c43a88675bf",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha083",
+      "family": "liquidity_or_volume",
+      "fingerprint": "74eb9747b93f80ca",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha084",
+      "family": "liquidity_or_volume",
+      "fingerprint": "8caa1033fbd92a05",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha085",
+      "family": "liquidity_or_volume",
+      "fingerprint": "85bc2690a83cce91",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "worldquant101:alpha046"
+      ],
+      "factor_id": "alpha086",
+      "family": "momentum_or_reversal",
+      "fingerprint": "411b8fd35ac0934d",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha087",
+      "family": "momentum_or_reversal",
+      "fingerprint": "011ccc559ff51c9f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "vwap"
+      ],
+      "required_history": 11,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha088",
+      "family": "momentum_or_reversal",
+      "fingerprint": "3215daedfe9a94ce",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha089",
+      "family": "other",
+      "fingerprint": "e09cfcc1066061c2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 27,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha090",
+      "family": "correlation",
+      "fingerprint": "6371cecff5574e9b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha091",
+      "family": "correlation",
+      "fingerprint": "9735c11ebd16dbf5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 40,
+      "source_page": 13
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha092",
+      "family": "correlation",
+      "fingerprint": "a592adab99e36460",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 180,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha093",
+      "family": "momentum_or_reversal",
+      "fingerprint": "28510ea29d5f8d43",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "low"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha094",
+      "family": "liquidity_or_volume",
+      "fingerprint": "a6e2f71b6eb1f8b5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 30,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha095",
+      "family": "volatility",
+      "fingerprint": "64a4ed1d49bae32c",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "amount"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha096",
+      "family": "other",
+      "fingerprint": "debbe12d1daa56be",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha097",
+      "family": "volatility",
+      "fingerprint": "30bfa9a00aa76bac",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha098",
+      "family": "momentum_or_reversal",
+      "fingerprint": "621432e31bf844d8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha099",
+      "family": "liquidity_or_volume",
+      "fingerprint": "bf0fad800059166f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 5,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha100",
+      "family": "volatility",
+      "fingerprint": "6436df2da8da2595",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha101",
+      "family": "correlation",
+      "fingerprint": "95691db180dee2b9",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 37,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha102",
+      "family": "liquidity_or_volume",
+      "fingerprint": "7623e21dd1712dcf",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha103",
+      "family": "other",
+      "fingerprint": "523d44edb223fb89",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha104",
+      "family": "correlation",
+      "fingerprint": "33806af6c54deceb",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha105",
+      "family": "correlation",
+      "fingerprint": "4d02016cf4f1a1d6",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha106",
+      "family": "momentum_or_reversal",
+      "fingerprint": "cb20467d9440c4ca",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha107",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "e2f2d04de99d6419",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha108",
+      "family": "correlation",
+      "fingerprint": "4b1a3fd80d7703e2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 120,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha109",
+      "family": "volatility",
+      "fingerprint": "a3e2f9cc9783caf3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 10,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha110",
+      "family": "momentum_or_reversal",
+      "fingerprint": "7e6008902942e4d6",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha111",
+      "family": "volatility",
+      "fingerprint": "1618054c68eb8f4c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 11,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha112",
+      "family": "momentum_or_reversal",
+      "fingerprint": "d7a770ffbcb338d7",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha113",
+      "family": "correlation",
+      "fingerprint": "743de55b40dca7cc",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [
+        "worldquant101:alpha083"
+      ],
+      "factor_id": "alpha114",
+      "family": "volatility",
+      "fingerprint": "75f5a64674e3a439",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha115",
+      "family": "correlation",
+      "fingerprint": "6d4e052446131928",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 30,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha116",
+      "family": "other",
+      "fingerprint": "067b383a8436c2ff",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha117",
+      "family": "liquidity_or_volume",
+      "fingerprint": "df38571167517d31",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 32,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha118",
+      "family": "other",
+      "fingerprint": "adf74820c5ebef8c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low"
+      ],
+      "required_history": 100,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha119",
+      "family": "correlation",
+      "fingerprint": "116ea53ca9ac44ce",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 26,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha120",
+      "family": "position",
+      "fingerprint": "c404abab04bf7ebe",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 1,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha121",
+      "family": "correlation",
+      "fingerprint": "7a82143033f75250",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 60,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha122",
+      "family": "momentum_or_reversal",
+      "fingerprint": "d065dc12b97cc723",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 13,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha123",
+      "family": "correlation",
+      "fingerprint": "3911169050157bca",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "volume"
+      ],
+      "required_history": 60,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha124",
+      "family": "position",
+      "fingerprint": "5757761c54099369",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "vwap"
+      ],
+      "required_history": 30,
+      "source_page": 14
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha125",
+      "family": "correlation",
+      "fingerprint": "d2b34703baac15cf",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 80,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha126",
+      "family": "other",
+      "fingerprint": "8f8fdae72f0349a0",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 3,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha127",
+      "family": "other",
+      "fingerprint": "20e8492aa8123109",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha128",
+      "family": "liquidity_or_volume",
+      "fingerprint": "e8fddd26f435e42d",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 100,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha129",
+      "family": "momentum_or_reversal",
+      "fingerprint": "41be5f8787dc1a1c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha130",
+      "family": "correlation",
+      "fingerprint": "77291063d054c037",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 40,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha131",
+      "family": "correlation",
+      "fingerprint": "6e50628af8a8d421",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 50,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha132",
+      "family": "liquidity_or_volume",
+      "fingerprint": "0b3368faf1234d25",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "amount"
+      ],
+      "required_history": 20,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha133",
+      "family": "other",
+      "fingerprint": "9ed79c95aa586b42",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 100,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha134",
+      "family": "liquidity_or_volume",
+      "fingerprint": "a3e1411626f49ab6",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 12,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha135",
+      "family": "momentum_or_reversal",
+      "fingerprint": "de5807b27e743589",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha136",
+      "family": "correlation",
+      "fingerprint": "54d556efcf3adac3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha137",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "4fb7d9b6e6c52fe1",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 16,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha138",
+      "family": "correlation",
+      "fingerprint": "437c7f0d2d8cca14",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 60,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha139",
+      "family": "correlation",
+      "fingerprint": "ed8394b1bbfe8a9b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 10,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha140",
+      "family": "correlation",
+      "fingerprint": "75f0b7afae0536ff",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 60,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha141",
+      "family": "correlation",
+      "fingerprint": "0fb984551a3b7af8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "volume"
+      ],
+      "required_history": 15,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha142",
+      "family": "liquidity_or_volume",
+      "fingerprint": "f4b0c2522923e6e1",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha143",
+      "family": "momentum_or_reversal",
+      "fingerprint": "2b367f84a49cf863",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 1,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha144",
+      "family": "liquidity_or_volume",
+      "fingerprint": "6273460e50797fd4",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "amount"
+      ],
+      "required_history": 20,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha145",
+      "family": "liquidity_or_volume",
+      "fingerprint": "5e4df0e1cf7376d6",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 100,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha146",
+      "family": "momentum_or_reversal",
+      "fingerprint": "f5b7c38d8df44506",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 61,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha147",
+      "family": "other",
+      "fingerprint": "39d1ba0810f807b4",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha148",
+      "family": "correlation",
+      "fingerprint": "e52827b8fffb849f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "volume"
+      ],
+      "required_history": 60,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha149",
+      "family": "momentum_or_reversal",
+      "fingerprint": "29d4ad4b93229906",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 252,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha150",
+      "family": "liquidity_or_volume",
+      "fingerprint": "225ba2a36fa2d59f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 3,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha151",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c9d74bf28398267b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 15
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha152",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c818e700e748585a",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 26,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha153",
+      "family": "other",
+      "fingerprint": "4fbad60533321da1",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 24,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha154",
+      "family": "correlation",
+      "fingerprint": "131be270719f4e7a",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume",
+        "vwap"
+      ],
+      "required_history": 180,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha155",
+      "family": "liquidity_or_volume",
+      "fingerprint": "c1d9de5994ccc077",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 27,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha156",
+      "family": "momentum_or_reversal",
+      "fingerprint": "80990872cd045755",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "low",
+        "vwap"
+      ],
+      "required_history": 5,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha157",
+      "family": "momentum_or_reversal",
+      "fingerprint": "2eeefb868ffe1208",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha158",
+      "family": "other",
+      "fingerprint": "91790b0cade21f83",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 15,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha159",
+      "family": "momentum_or_reversal",
+      "fingerprint": "3eaf60836ac24521",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha160",
+      "family": "volatility",
+      "fingerprint": "fa80cdb30a11be20",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha161",
+      "family": "volatility",
+      "fingerprint": "b18798fa8a87d0b3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha162",
+      "family": "momentum_or_reversal",
+      "fingerprint": "e3caab3c921c8b65",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha163",
+      "family": "liquidity_or_volume",
+      "fingerprint": "72cc485b3a297a8f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha164",
+      "family": "volatility",
+      "fingerprint": "24ad01ca759e29e2",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 100,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha165",
+      "family": "volatility",
+      "fingerprint": "a96b521517d467c5",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 48,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha166",
+      "family": "momentum_or_reversal",
+      "fingerprint": "bbcb91a4e13b832b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha167",
+      "family": "momentum_or_reversal",
+      "fingerprint": "c247d8f051131f5c",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 12,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha168",
+      "family": "liquidity_or_volume",
+      "fingerprint": "e959867bbde03296",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha169",
+      "family": "momentum_or_reversal",
+      "fingerprint": "8f4eb963daadb730",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 26,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha170",
+      "family": "liquidity_or_volume",
+      "fingerprint": "4e01bc24547f4567",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "close",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha171",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "8748e40738ee6182",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 5,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha172",
+      "family": "other",
+      "fingerprint": "b5189476253085db",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [],
+      "required_history": 100,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha173",
+      "family": "other",
+      "fingerprint": "f1e8ca3566ff2528",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 13,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha174",
+      "family": "volatility",
+      "fingerprint": "2b068ce6b10b06da",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha175",
+      "family": "volatility",
+      "fingerprint": "f0e39452e002b0c9",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha176",
+      "family": "correlation",
+      "fingerprint": "dccafba32a62a72d",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 12,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha177",
+      "family": "other",
+      "fingerprint": "1ed15cdcec0c9f24",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high"
+      ],
+      "required_history": 100,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha178",
+      "family": "liquidity_or_volume",
+      "fingerprint": "47a8b2f3aa0c023b",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 1,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha179",
+      "family": "correlation",
+      "fingerprint": "866fadbc1f2f6eee",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "low",
+        "volume",
+        "vwap"
+      ],
+      "required_history": 50,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha180",
+      "family": "liquidity_or_volume",
+      "fingerprint": "2d344567f2b8d1cd",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close",
+        "volume"
+      ],
+      "required_history": 60,
+      "source_page": 16
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha181",
+      "family": "momentum_or_reversal",
+      "fingerprint": "8c91dabb6a262b8f",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha182",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "5bef04747e7f5462",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha183",
+      "family": "volatility",
+      "fingerprint": "a5fd0b1ea3dc7be8",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 24,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha184",
+      "family": "correlation",
+      "fingerprint": "46d03f0f170f54ef",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 200,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha185",
+      "family": "open_gap_or_intraday",
+      "fingerprint": "4e925b76fd7d81f3",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "close"
+      ],
+      "required_history": 2,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha186",
+      "family": "momentum_or_reversal",
+      "fingerprint": "ab75de712d709d98",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [],
+      "required_history": 100,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha187",
+      "family": "momentum_or_reversal",
+      "fingerprint": "7660281c308d1fff",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "open",
+        "high"
+      ],
+      "required_history": 20,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha188",
+      "family": "volatility",
+      "fingerprint": "6b6511996ceaaf78",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low"
+      ],
+      "required_history": 100,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha189",
+      "family": "other",
+      "fingerprint": "6c75a74fa500b88e",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 6,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha190",
+      "family": "momentum_or_reversal",
+      "fingerprint": "770e4be95c6299e1",
+      "formula_status": "not_implemented",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "close"
+      ],
+      "required_history": 20,
+      "source_page": 17
+    },
+    {
+      "delay": 1,
+      "exact_fingerprint_matches": [],
+      "factor_id": "alpha191",
+      "family": "correlation",
+      "fingerprint": "222ecca6fbc5596a",
+      "formula_status": "normalized",
+      "paper_id": "gtja_short_cycle",
+      "required_fields": [
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "required_history": 20,
+      "source_page": 17
+    }
+  ],
+  "schema_version": "1.0.0",
+  "summary": {
+    "gtja_short_cycle": {
+      "status_counts": {
+        "assumption": 0,
+        "corrected_typo": 0,
+        "exact": 0,
+        "normalized": 28,
+        "not_implemented": 162,
+        "unavailable_dependency": 1
+      },
+      "total": 191
+    },
+    "worldquant101": {
+      "status_counts": {
+        "assumption": 0,
+        "corrected_typo": 0,
+        "exact": 0,
+        "normalized": 15,
+        "not_implemented": 68,
+        "unavailable_dependency": 18
+      },
+      "total": 101
+    }
+  }
+}

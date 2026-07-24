@@ -1,0 +1,25 @@
+# coding: gbk
+
+# Copy to config_local.py inside Big QMT and edit locally. Do not commit it.
+ENABLE_LIVE_TRADING = False
+ACCOUNT_ID = ""
+ACCOUNT_TYPE = "STOCK"
+STRATEGY_NAME = "dyad_paper_reproduction"
+TARGET_CSV = "sample_target_weights.csv"
+PLAN_CSV = "execution_plan.csv"
+REPORT_CSV = "execution_report.csv"
+EXECUTION_TIME = "09:35:00"
+ALGORITHM = "NORMAL"  # NORMAL, TWAP, or VWAP
+ALGO_START_TIME = "09:35:00"
+ALGO_END_TIME = "10:30:00"
+PARTICIPATION_RATE = 0.05
+QUICK_TRADE = 0
+LOT_SIZE = 100
+WEIGHT_SUM_TOLERANCE = 0.0001
+MAX_SINGLE_WEIGHT = 0.05
+MAX_HOLDINGS = 60
+MAX_DAILY_TURNOVER = 0.50
+MAX_ORDER_NOTIONAL = 500000.0
+MIN_ORDER_NOTIONAL = 1000.0
+WHITELIST = []
+

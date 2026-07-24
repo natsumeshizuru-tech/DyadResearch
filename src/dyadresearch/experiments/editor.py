@@ -64,7 +64,7 @@ def launch_vscode(path: Path) -> None:
             executable = candidate
     if executable.suffix.lower() in {".cmd", ".bat"}:
         raise RuntimeError("VS Code 命令仅提供批处理入口, 无法安全启动编辑器")
-    creation_flags = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
+    creation_flags = int(getattr(subprocess, "CREATE_NO_WINDOW", 0)) if os.name == "nt" else 0
     subprocess.Popen(
         [str(executable), "--reuse-window", "--goto", str(path)],
         close_fds=True,

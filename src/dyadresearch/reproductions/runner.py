@@ -106,7 +106,7 @@ def run_reproduction(
         "factor_result_hash": factor_result.result_hash,
         "limitations": _strings(spec.get("limitations"), key="limitations"),
         "reproduce": (
-            f"dyadresearch reproduce run {spec_path.as_posix()} --output {output_root.as_posix()}"
+            f"dyadresearch reproduce run {_portable_path(spec_path)} --output reports/reproductions"
         ),
     }
     result_hash = hashlib.sha256(_canonical(payload).encode()).hexdigest()
@@ -149,6 +149,14 @@ def _load_spec(path: Path) -> dict[str, Any]:
     _mapping(payload, "method")
     _mapping(payload, "dataset")
     return payload
+
+
+def _portable_path(path: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(Path.cwd().resolve()).as_posix()
+    except ValueError:
+        return path.name
 
 
 def _mapping(payload: dict[str, Any], key: str) -> dict[str, Any]:

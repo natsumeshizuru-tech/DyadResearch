@@ -1,0 +1,4 @@
+trade_date,stock_code,target_weight,reference_price,experiment_id,signal_hash
+20260105,000001.SZ,0.50,10.00,synthetic-example,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+20260105,600000.SH,0.50,10.00,synthetic-example,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+

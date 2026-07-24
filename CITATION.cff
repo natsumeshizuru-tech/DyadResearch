@@ -8,3 +8,18 @@ license: Apache-2.0
 authors:
   - alias: natsumeshizuru-tech
 repository-code: "https://github.com/natsumeshizuru-tech/DyadResearch"
+references:
+  - type: article
+    title: "101 Formulaic Alphas"
+    authors:
+      - family-names: Kakushadze
+        given-names: Zura
+    year: 2015
+    identifiers:
+      - type: url
+        value: "https://arxiv.org/abs/1601.00991"
+  - type: report
+    title: "基于短周期价量特征的多因子选股体系"
+    authors:
+      - name: "国泰君安证券研究"
+    year: 2017

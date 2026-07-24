@@ -1,0 +1,1953 @@
+schema_version: 1.0.0
+paper_id: worldquant101
+version: '2026-07-25'
+factors:
+- paper_id: worldquant101
+  factor_id: alpha001
+  title: Alpha 1
+  source_expression: '(rank(Ts_ArgMax(SignedPower(((returns < 0) ? stddev(returns, 20) : close), 2.), 5)) - 0.5)'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - returns
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 8
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha002
+  title: Alpha 2
+  source_expression: (-1 * correlation(rank(delta(log(volume), 2)), rank(((close - open) / open)), 6))
+  normalized_expression: -1 * correlation(rank(delta(log(volume), 2)), rank((close - open) / open), 6)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  - volume
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 8
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha003
+  title: Alpha 3
+  source_expression: (-1 * correlation(rank(open), rank(volume), 10))
+  normalized_expression: -1 * correlation(rank(open), rank(volume), 10)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 8
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha004
+  title: Alpha 4
+  source_expression: (-1 * Ts_Rank(rank(low), 9))
+  normalized_expression: -1 * ts_rank(rank(low), 9)
+  implementation: restricted_expression_ast
+  required_fields:
+  - low
+  required_history: 9
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 8
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha005
+  title: Alpha 5
+  source_expression: (rank((open - (sum(vwap, 10) / 10))) * (-1 * abs(rank((close - vwap)))))
+  normalized_expression: rank(open - mean(vwap, 10)) * -1 * abs(rank(close - vwap))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  - vwap
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 8
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha006
+  title: Alpha 6
+  source_expression: (-1 * correlation(open, volume, 10))
+  normalized_expression: -1 * correlation(open, volume, 10)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 8
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha007
+  title: Alpha 7
+  source_expression: '((adv20 < volume) ? ((-1 * ts_rank(abs(delta(close, 7)), 60)) * sign(delta(close, 7))) : (-1 * 1))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 60
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 8
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha008
+  title: Alpha 8
+  source_expression: (-1 * rank(((sum(open, 5) * sum(returns, 5)) - delay((sum(open, 5) * sum(returns, 5)), 10))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - returns
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha009
+  title: Alpha 9
+  source_expression: '((0 < ts_min(delta(close, 1), 5)) ? delta(close, 1) : ((ts_max(delta(close, 1), 5) < 0) ? delta(close,
+    1) : (-1 * delta(close, 1))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha010
+  title: Alpha 10
+  source_expression: 'rank(((0 < ts_min(delta(close, 1), 4)) ? delta(close, 1) : ((ts_max(delta(close, 1), 4) < 0) ? delta(close,
+    1) : (-1 * delta(close, 1)))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 4
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha011
+  title: Alpha 11
+  source_expression: ((rank(ts_max((vwap - close), 3)) + rank(ts_min((vwap - close), 3))) * rank(delta(volume, 3)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 3
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha012
+  title: Alpha 12
+  source_expression: (sign(delta(volume, 1)) * (-1 * delta(close, 1)))
+  normalized_expression: sign(delta(volume, 1)) * -1 * delta(close, 1)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  - volume
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 9
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha013
+  title: Alpha 13
+  source_expression: (-1 * rank(covariance(rank(close), rank(volume), 5)))
+  normalized_expression: -1 * rank(covariance(rank(close), rank(volume), 5))
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 9
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha014
+  title: Alpha 14
+  source_expression: ((-1 * rank(delta(returns, 3))) * correlation(open, volume, 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  - returns
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha015
+  title: Alpha 15
+  source_expression: (-1 * sum(rank(correlation(rank(high), rank(volume), 3)), 3))
+  normalized_expression: -1 * sum(rank(correlation(rank(high), rank(volume), 3)), 3)
+  implementation: restricted_expression_ast
+  required_fields:
+  - high
+  - volume
+  required_history: 3
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 9
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha016
+  title: Alpha 16
+  source_expression: (-1 * rank(covariance(rank(high), rank(volume), 5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha017
+  title: Alpha 17
+  source_expression: (((-1 * rank(ts_rank(close, 10))) * rank(delta(delta(close, 1), 1))) * rank(ts_rank((volume / adv20),
+    5)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha018
+  title: Alpha 18
+  source_expression: (-1 * rank(((stddev(abs((close - open)), 5) + (close - open)) + correlation(close, open, 10))))
+  normalized_expression: -1 * rank(stddev(abs(close - open), 5) + (close - open) + correlation(close, open, 10))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 9
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha019
+  title: Alpha 19
+  source_expression: ((-1 * sign(((close - delay(close, 7)) + delta(close, 7)))) * (1 + rank((1 + sum(returns, 250)))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - returns
+  required_history: 250
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha020
+  title: Alpha 20
+  source_expression: (((-1 * rank((open - delay(high, 1)))) * rank((open - delay(close, 1)))) * rank((open - delay(low, 1))))
+  normalized_expression: -1 * rank(open - delay(high, 1)) * rank(open - delay(close, 1)) * rank(open - delay(low, 1))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 9
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha021
+  title: Alpha 21
+  source_expression: '((((sum(close, 8) / 8) + stddev(close, 8)) < (sum(close, 2) / 2)) ? (-1 * 1) : (((sum(close, 2) / 2)
+    < ((sum(close, 8) / 8) - stddev(close, 8))) ? 1 : (((1 < (volume / adv20)) || ((volume / adv20) == 1)) ? 1 : (-1 * 1))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 8
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha022
+  title: Alpha 22
+  source_expression: (-1 * (delta(correlation(high, volume, 5), 5) * rank(stddev(close, 20))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha023
+  title: Alpha 23
+  source_expression: '(((sum(high, 20) / 20) < high) ? (-1 * delta(high, 2)) : 0)'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha024
+  title: Alpha 24
+  source_expression: '((((delta((sum(close, 100) / 100), 100) / delay(close, 100)) < 0.05) || ((delta((sum(close, 100) / 100),
+    100) / delay(close, 100)) == 0.05)) ? (-1 * (close - ts_min(close, 100))) : (-1 * delta(close, 3)))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 100
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 9
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha025
+  title: Alpha 25
+  source_expression: rank(((((-1 * returns) * adv20) * vwap) * (high - close)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - vwap
+  - returns
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha026
+  title: Alpha 26
+  source_expression: (-1 * ts_max(correlation(ts_rank(volume, 5), ts_rank(high, 5), 5), 3))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha027
+  title: Alpha 27
+  source_expression: '((0.5 < rank((sum(correlation(rank(volume), rank(vwap), 6), 2) / 2.0))) ? (-1 * 1) : 1)'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha028
+  title: Alpha 28
+  source_expression: scale(((correlation(adv20, low, 5) + ((high + low) / 2)) - close))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha029
+  title: Alpha 29
+  source_expression: (min(product(rank(rank(scale(log(sum(ts_min(rank(rank((-1 * rank(delta((close - 1), 5))))), 2), 1))))),
+    1), 5) + ts_rank(delay((-1 * returns), 6), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - returns
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha030
+  title: Alpha 30
+  source_expression: (((1.0 - rank(((sign((close - delay(close, 1))) + sign((delay(close, 1) - delay(close, 2)))) + sign((delay(close,
+    2) - delay(close, 3)))))) * sum(volume, 5)) / sum(volume, 20))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha031
+  title: Alpha 31
+  source_expression: ((rank(rank(rank(decay_linear((-1 * rank(rank(delta(close, 10)))), 10)))) + rank((-1 * delta(close, 3))))
+    + sign(scale(correlation(adv20, low, 12))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - close
+  required_history: 12
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha032
+  title: Alpha 32
+  source_expression: (scale(((sum(close, 7) / 7) - close)) + (20 * scale(correlation(vwap, delay(close, 5), 230))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 230
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha033
+  title: Alpha 33
+  source_expression: rank((-1 * ((1 - (open / close))^1)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha034
+  title: Alpha 34
+  source_expression: rank(((1 - rank((stddev(returns, 2) / stddev(returns, 5)))) + (1 - rank(delta(close, 1)))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - returns
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha035
+  title: Alpha 35
+  source_expression: ((Ts_Rank(volume, 32) * (1 - Ts_Rank(((close + high) - low), 16))) * (1 - Ts_Rank(returns, 32)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  - returns
+  required_history: 32
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha036
+  title: Alpha 36
+  source_expression: (((((2.21 * rank(correlation((close - open), delay(volume, 1), 15))) + (0.7 * rank((open - close))))
+    + (0.73 * rank(Ts_Rank(delay((-1 * returns), 6), 5)))) + rank(abs(correlation(vwap, adv20, 6)))) + (0.6 * rank((((sum(close,
+    200) / 200) - open) * (close - open)))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - volume
+  - vwap
+  - returns
+  required_history: 200
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha037
+  title: Alpha 37
+  source_expression: (rank(correlation(delay((open - close), 1), close, 200)) + rank((open - close)))
+  normalized_expression: rank(correlation(delay(open - close, 1), close, 200)) + rank(open - close)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - close
+  required_history: 200
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 10
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha038
+  title: Alpha 38
+  source_expression: ((-1 * rank(Ts_Rank(close, 10))) * rank((close / open)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha039
+  title: Alpha 39
+  source_expression: ((-1 * rank((delta(close, 7) * (1 - rank(decay_linear((volume / adv20), 9)))))) * (1 + rank(sum(returns,
+    250))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - returns
+  required_history: 250
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha040
+  title: Alpha 40
+  source_expression: ((-1 * rank(stddev(high, 10))) * correlation(high, volume, 10))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha041
+  title: Alpha 41
+  source_expression: (((high * low)^0.5) - vwap)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - vwap
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha042
+  title: Alpha 42
+  source_expression: (rank((vwap - close)) / rank((vwap + close)))
+  normalized_expression: rank(vwap - close) / rank(vwap + close)
+  implementation: restricted_expression_ast
+  required_fields:
+  - close
+  - vwap
+  required_history: 1
+  cross_sectional_or_time_series: mixed
+  delay: 0
+  execution_timing: same_day_close_approximation
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 10
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha043
+  title: Alpha 43
+  source_expression: (ts_rank((volume / adv20), 20) * ts_rank((-1 * delta(close, 7)), 8))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 10
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha044
+  title: Alpha 44
+  source_expression: (-1 * correlation(high, rank(volume), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - volume
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha045
+  title: Alpha 45
+  source_expression: (-1 * ((rank((sum(delay(close, 5), 20) / 20)) * correlation(close, volume, 2)) * rank(correlation(sum(close,
+    5), sum(close, 20), 2))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha046
+  title: Alpha 46
+  source_expression: '((0.25 < (((delay(close, 20) - delay(close, 10)) / 10) - ((delay(close, 10) - close) / 10))) ? (-1 *
+    1) : (((((delay(close, 20) - delay(close, 10)) / 10) - ((delay(close, 10) - close) / 10)) < 0) ? 1 : ((-1 * 1) * (close
+    - delay(close, 1)))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha047
+  title: Alpha 47
+  source_expression: ((((rank((1 / close)) * volume) / adv20) * ((high * rank((high - close))) / (sum(high, 5) / 5))) - rank((vwap
+    - delay(vwap, 5))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha048
+  title: Alpha 48
+  source_expression: (indneutralize(((correlation(delta(close, 1), delta(delay(close, 1), 1), 250) * delta(close, 1)) / close),
+    IndClass.subindustry) / sum(((delta(close, 1) / delay(close, 1))^2), 250))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 250
+  cross_sectional_or_time_series: mixed
+  delay: 0
+  execution_timing: same_day_close_approximation
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha049
+  title: Alpha 49
+  source_expression: '(((((delay(close, 20) - delay(close, 10)) / 10) - ((delay(close, 10) - close) / 10)) < (-1 * 0.1)) ?
+    1 : ((-1 * 1) * (close - delay(close, 1))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha050
+  title: Alpha 50
+  source_expression: (-1 * ts_max(rank(correlation(rank(volume), rank(vwap), 5)), 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha051
+  title: Alpha 51
+  source_expression: '(((((delay(close, 20) - delay(close, 10)) / 10) - ((delay(close, 10) - close) / 10)) < (-1 * 0.05))
+    ? 1 : ((-1 * 1) * (close - delay(close, 1))))'
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha052
+  title: Alpha 52
+  source_expression: ((((-1 * ts_min(low, 5)) + delay(ts_min(low, 5), 5)) * rank(((sum(returns, 240) - sum(returns, 20)) /
+    220))) * ts_rank(volume, 5))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - returns
+  required_history: 240
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha053
+  title: Alpha 53
+  source_expression: (-1 * delta((((close - low) - (high - close)) / (close - low)), 9))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 9
+  cross_sectional_or_time_series: time_series
+  delay: 0
+  execution_timing: same_day_close_approximation
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha054
+  title: Alpha 54
+  source_expression: ((-1 * ((low - close) * (open^5))) / ((low - high) * (close^5)))
+  normalized_expression: -1 * ((low - close) * (open ** 5)) / ((low - high) * (close ** 5))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: time_series
+  delay: 0
+  execution_timing: same_day_close_approximation
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 11
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha055
+  title: Alpha 55
+  source_expression: (-1 * correlation(rank(((close - ts_min(low, 12)) / (ts_max(high, 12) - ts_min(low, 12)))), rank(volume),
+    6))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 12
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha056
+  title: Alpha 56
+  source_expression: (0 - (1 * (rank((sum(returns, 10) / sum(sum(returns, 2), 3))) * rank((returns * cap)))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - returns
+  - cap
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha057
+  title: Alpha 57
+  source_expression: (0 - (1 * ((close - vwap) / decay_linear(rank(ts_argmax(close, 30)), 2))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 30
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha058
+  title: Alpha 58
+  source_expression: (-1 * Ts_Rank(decay_linear(correlation(IndNeutralize(vwap, IndClass.sector), volume, 3.92795), 7.89291),
+    5.50322))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 7
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha059
+  title: Alpha 59
+  source_expression: (-1 * Ts_Rank(decay_linear(correlation(IndNeutralize(((vwap * 0.728317) + (vwap * (1 - 0.728317))), IndClass.industry),
+    volume, 4.25197), 16.2289), 8.19648))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 16
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha060
+  title: Alpha 60
+  source_expression: (0 - (1 * ((2 * scale(rank(((((close - low) - (high - close)) / (high - low)) * volume)))) - scale(rank(ts_argmax(close,
+    10))))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 11
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha061
+  title: Alpha 61
+  source_expression: (rank((vwap - ts_min(vwap, 16.1219))) < rank(correlation(vwap, adv180, 17.9282)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - vwap
+  required_history: 80
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha062
+  title: Alpha 62
+  source_expression: ((rank(correlation(vwap, sum(adv20, 22.4101), 9.91009)) < rank(((rank(open) + rank(open)) < (rank(((high
+    + low) / 2)) + rank(high))))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - vwap
+  required_history: 22
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha063
+  title: Alpha 63
+  source_expression: ((rank(decay_linear(delta(IndNeutralize(close, IndClass.industry), 2.25164), 8.22237)) - rank(decay_linear(correlation(((vwap
+    * 0.318108) + (open * (1 - 0.318108))), sum(adv180, 37.2467), 13.557), 12.2883))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - vwap
+  required_history: 80
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha064
+  title: Alpha 64
+  source_expression: ((rank(correlation(sum(((open * 0.178404) + (low * (1 - 0.178404))), 12.7054), sum(adv120, 12.7054),
+    16.6208)) < rank(delta(((((high + low) / 2) * 0.178404) + (vwap * (1 - 0.178404))), 3.69741))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha065
+  title: Alpha 65
+  source_expression: ((rank(correlation(((open * 0.00817205) + (vwap * (1 - 0.00817205))), sum(adv60, 8.6911), 6.40374)) <
+    rank((open - ts_min(open, 13.635)))) * -1)
+  normalized_expression: -1 * rank(correlation(open, mean(volume, 60), 6)) * rank(open - ts_min(open, 14))
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - vwap
+  required_history: 13
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 12
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
+- paper_id: worldquant101
+  factor_id: alpha066
+  title: Alpha 66
+  source_expression: ((rank(decay_linear(delta(vwap, 3.51013), 7.23052)) + Ts_Rank(decay_linear(((((low * 0.96633) + (low
+    * (1 - 0.96633))) - vwap) / (open - ((high + low) / 2))), 11.4157), 6.72611)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - vwap
+  required_history: 11
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha067
+  title: Alpha 67
+  source_expression: ((rank((high - ts_min(high, 2.14593)))^rank(correlation(IndNeutralize(vwap, IndClass.sector), IndNeutralize(adv20,
+    IndClass.subindustry), 6.02936))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - vwap
+  required_history: 6
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha068
+  title: Alpha 68
+  source_expression: ((Ts_Rank(correlation(rank(high), rank(adv15), 8.91644), 13.9333) < rank(delta(((close * 0.518371) +
+    (low * (1 - 0.518371))), 1.06157))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  required_history: 13
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha069
+  title: Alpha 69
+  source_expression: ((rank(ts_max(delta(IndNeutralize(vwap, IndClass.industry), 2.72412), 4.79344))^Ts_Rank(correlation(((close
+    * 0.490655) + (vwap * (1 - 0.490655))), adv20, 4.92416), 9.0615)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 9
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha070
+  title: Alpha 70
+  source_expression: ((rank(delta(vwap, 1.29456))^Ts_Rank(correlation(IndNeutralize(close, IndClass.industry), adv50, 17.8256),
+    17.9171)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 17
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha071
+  title: Alpha 71
+  source_expression: max(Ts_Rank(decay_linear(correlation(Ts_Rank(close, 3.43976), Ts_Rank(adv180, 12.0647), 18.0175), 4.20501),
+    15.6948), Ts_Rank(decay_linear((rank(((low + open) - (vwap + vwap)))^2), 16.4662), 4.4388))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - low
+  - close
+  - vwap
+  required_history: 80
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha072
+  title: Alpha 72
+  source_expression: (rank(decay_linear(correlation(((high + low) / 2), adv40, 8.93345), 10.1519)) / rank(decay_linear(correlation(Ts_Rank(vwap,
+    3.72469), Ts_Rank(volume, 18.5188), 6.86671), 2.95011)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  - vwap
+  required_history: 18
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha073
+  title: Alpha 73
+  source_expression: (max(rank(decay_linear(delta(vwap, 4.72775), 2.91864)), Ts_Rank(decay_linear(((delta(((open * 0.147155)
+    + (low * (1 - 0.147155))), 2.03608) / ((open * 0.147155) + (low * (1 - 0.147155)))) * -1), 3.33829), 16.7411)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - low
+  - vwap
+  required_history: 16
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 12
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha074
+  title: Alpha 74
+  source_expression: ((rank(correlation(close, sum(adv30, 37.4843), 15.1365)) < rank(correlation(rank(((high * 0.0261661)
+    + (vwap * (1 - 0.0261661)))), rank(volume), 11.4791))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - close
+  - volume
+  - vwap
+  required_history: 37
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha075
+  title: Alpha 75
+  source_expression: (rank(correlation(vwap, volume, 4.24304)) < rank(correlation(rank(low), rank(adv50), 12.4413)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 12
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha076
+  title: Alpha 76
+  source_expression: (max(rank(decay_linear(delta(vwap, 1.24383), 11.8259)), Ts_Rank(decay_linear(Ts_Rank(correlation(IndNeutralize(low,
+    IndClass.sector), adv81, 8.14941), 19.569), 17.1543), 19.383)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - vwap
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha077
+  title: Alpha 77
+  source_expression: min(rank(decay_linear(((((high + low) / 2) + high) - (vwap + high)), 20.0451)), rank(decay_linear(correlation(((high
+    + low) / 2), adv40, 3.1614), 5.64125)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha078
+  title: Alpha 78
+  source_expression: (rank(correlation(sum(((low * 0.352233) + (vwap * (1 - 0.352233))), 19.7428), sum(adv40, 19.7428), 6.83313))^rank(correlation(rank(vwap),
+    rank(volume), 5.77492)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - volume
+  - vwap
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha079
+  title: Alpha 79
+  source_expression: (rank(delta(IndNeutralize(((close * 0.60733) + (open * (1 - 0.60733))), IndClass.sector), 1.23438)) <
+    rank(correlation(Ts_Rank(vwap, 3.60973), Ts_Rank(adv150, 9.18637), 14.6644)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - vwap
+  required_history: 50
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha080
+  title: Alpha 80
+  source_expression: ((rank(Sign(delta(IndNeutralize(((open * 0.868128) + (high * (1 - 0.868128))), IndClass.industry), 4.04545)))^Ts_Rank(correlation(high,
+    adv10, 5.11456), 5.53756)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha081
+  title: Alpha 81
+  source_expression: ((rank(Log(product(rank((rank(correlation(vwap, sum(adv10, 49.6054), 8.47743))^4)), 14.9655))) < rank(correlation(rank(vwap),
+    rank(volume), 5.07914))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - volume
+  - vwap
+  required_history: 49
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha082
+  title: Alpha 82
+  source_expression: (min(rank(decay_linear(delta(open, 1.46063), 14.8717)), Ts_Rank(decay_linear(correlation(IndNeutralize(volume,
+    IndClass.sector), ((open * 0.634196) + (open * (1 - 0.634196))), 17.4842), 6.92131), 13.4283)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - volume
+  required_history: 17
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha083
+  title: Alpha 83
+  source_expression: ((rank(delay(((high - low) / (sum(close, 5) / 5)), 2)) * rank(rank(volume))) / (((high - low) / (sum(close,
+    5) / 5)) / (vwap - close)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  - vwap
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha084
+  title: Alpha 84
+  source_expression: SignedPower(Ts_Rank((vwap - ts_max(vwap, 15.3217)), 20.7127), delta(close, 4.96796))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha085
+  title: Alpha 85
+  source_expression: (rank(correlation(((high * 0.876703) + (close * (1 - 0.876703))), adv30, 9.61331))^rank(correlation(Ts_Rank(((high
+    + low) / 2), 3.70596), Ts_Rank(volume, 10.1595), 7.11408)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 10
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha086
+  title: Alpha 86
+  source_expression: ((Ts_Rank(correlation(close, sum(adv20, 14.7444), 6.00049), 20.4195) < rank(((open + close) - (vwap +
+    open)))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - close
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 13
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha087
+  title: Alpha 87
+  source_expression: (max(rank(decay_linear(delta(((close * 0.369701) + (vwap * (1 - 0.369701))), 1.91233), 2.65461)), Ts_Rank(decay_linear(abs(correlation(IndNeutralize(adv81,
+    IndClass.industry), close, 13.4132)), 4.89768), 14.4535)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 14
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha088
+  title: Alpha 88
+  source_expression: min(rank(decay_linear(((rank(open) + rank(low)) - (rank(high) + rank(close))), 8.06882)), Ts_Rank(decay_linear(correlation(Ts_Rank(close,
+    8.44728), Ts_Rank(adv60, 20.6966), 8.01266), 6.65053), 2.61957))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha089
+  title: Alpha 89
+  source_expression: (Ts_Rank(decay_linear(correlation(((low * 0.967285) + (low * (1 - 0.967285))), adv10, 6.94279), 5.51607),
+    3.79744) - Ts_Rank(decay_linear(delta(IndNeutralize(vwap, IndClass.industry), 3.48158), 10.1466), 15.3012))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - vwap
+  required_history: 15
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha090
+  title: Alpha 90
+  source_expression: ((rank((close - ts_max(close, 4.66719)))^Ts_Rank(correlation(IndNeutralize(adv40, IndClass.subindustry),
+    low, 5.38375), 3.21856)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - close
+  required_history: 5
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha091
+  title: Alpha 91
+  source_expression: ((Ts_Rank(decay_linear(decay_linear(correlation(IndNeutralize(close, IndClass.industry), volume, 9.74928),
+    16.398), 3.83219), 4.8667) - rank(decay_linear(correlation(vwap, adv30, 4.01303), 2.6809))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 16
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha092
+  title: Alpha 92
+  source_expression: min(Ts_Rank(decay_linear(((((high + low) / 2) + close) < (low + open)), 14.7221), 18.8683), Ts_Rank(decay_linear(correlation(rank(low),
+    rank(adv30), 7.58555), 6.94024), 6.80584))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 18
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha093
+  title: Alpha 93
+  source_expression: (Ts_Rank(decay_linear(correlation(IndNeutralize(vwap, IndClass.industry), adv81, 17.4193), 19.848), 7.54455)
+    / rank(decay_linear(delta(((close * 0.524434) + (vwap * (1 - 0.524434))), 2.77377), 16.2664)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - vwap
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha094
+  title: Alpha 94
+  source_expression: ((rank((vwap - ts_min(vwap, 11.5783)))^Ts_Rank(correlation(Ts_Rank(vwap, 19.6462), Ts_Rank(adv60, 4.02992),
+    18.0926), 2.70756)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - vwap
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha095
+  title: Alpha 95
+  source_expression: (rank((open - ts_min(open, 12.4105))) < Ts_Rank((rank(correlation(sum(((high + low) / 2), 19.1351), sum(adv40,
+    19.1351), 12.8742))^5), 11.7584))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - high
+  - low
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha096
+  title: Alpha 96
+  source_expression: (max(Ts_Rank(decay_linear(correlation(rank(vwap), rank(volume), 3.83878), 4.16783), 8.38151), Ts_Rank(decay_linear(Ts_ArgMax(correlation(Ts_Rank(close,
+    7.45404), Ts_Rank(adv60, 4.13242), 3.65459), 12.6556), 14.0365), 13.4143)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - close
+  - volume
+  - vwap
+  required_history: 14
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha097
+  title: Alpha 97
+  source_expression: ((rank(decay_linear(delta(IndNeutralize(((low * 0.721001) + (vwap * (1 - 0.721001))), IndClass.industry),
+    3.3705), 20.4523)) - Ts_Rank(decay_linear(Ts_Rank(correlation(Ts_Rank(low, 7.87871), Ts_Rank(adv60, 17.255), 4.97547),
+    18.5925), 15.7152), 6.71659)) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - low
+  - vwap
+  required_history: 20
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 14
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha098
+  title: Alpha 98
+  source_expression: (rank(decay_linear(correlation(vwap, sum(adv5, 26.4719), 4.58418), 7.18088)) - rank(decay_linear(Ts_Rank(Ts_ArgMin(correlation(rank(open),
+    rank(adv15), 20.8187), 8.62571), 6.95668), 8.07206)))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - open
+  - vwap
+  required_history: 26
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha099
+  title: Alpha 99
+  source_expression: ((rank(correlation(sum(((high + low) / 2), 19.8975), sum(adv60, 19.8975), 8.8136)) < rank(correlation(low,
+    volume, 6.28259))) * -1)
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - volume
+  required_history: 19
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: not_implemented
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha100
+  title: Alpha 100
+  source_expression: (0 - (1 * (((1.5 * scale(indneutralize(indneutralize(rank(((((close - low) - (high - close)) / (high
+    - low)) * volume)), IndClass.subindustry), IndClass.subindustry))) - scale(indneutralize((correlation(close, rank(adv20),
+    5) - rank(ts_argmin(close, 30))), IndClass.subindustry))) * (volume / adv20))))
+  normalized_expression: ''
+  implementation: ''
+  required_fields:
+  - high
+  - low
+  - close
+  - volume
+  required_history: 30
+  cross_sectional_or_time_series: mixed
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: formula_required
+  formula_status: unavailable_dependency
+  ambiguity_notes: []
+  source_page: 15
+  tests: []
+- paper_id: worldquant101
+  factor_id: alpha101
+  title: Alpha 101
+  source_expression: ((close - open) / ((high - low) + .001))
+  normalized_expression: (close - open) / (high - low + 0.001)
+  implementation: restricted_expression_ast
+  required_fields:
+  - open
+  - high
+  - low
+  - close
+  required_history: 1
+  cross_sectional_or_time_series: time_series
+  delay: 1
+  execution_timing: next_session_open
+  industry_neutralization: none
+  formula_status: normalized
+  ambiguity_notes: []
+  source_page: 15
+  tests:
+  - tests/unit/test_paper_formulas.py::test_executable_manifest_formulas_on_synthetic_panel
