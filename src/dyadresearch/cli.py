@@ -26,6 +26,18 @@ from dyadresearch.factors.examples import register_examples
 from dyadresearch.factors.registry import factor_registry
 from dyadresearch.reporting.builder import ReportBuilder
 from dyadresearch.reproductions import run_reproduction
+from dyadresearch.reproductions.gtja_short_cycle import (
+    register_factor_specs as register_gtja_factors,
+)
+from dyadresearch.reproductions.paper_runner import (
+    audit_paper,
+    compare_paper_experiments,
+    run_paper_protocol,
+)
+from dyadresearch.reproductions.site import export_site
+from dyadresearch.reproductions.worldquant101 import (
+    register_factor_specs as register_worldquant_factors,
+)
 from dyadresearch.strategy.examples import (
     BuyAndHoldStrategy,
     MovingAverageCrossStrategy,
@@ -108,9 +120,17 @@ def _reproduction_parser(commands: Any) -> None:
     children = reproduce.add_subparsers(dest="reproduce_command", required=True)
     list_command = children.add_parser("list")
     list_command.add_argument("--spec-root", type=Path, default=Path("reproductions/specs"))
+    audit = children.add_parser("audit")
+    audit.add_argument("paper")
     run = children.add_parser("run")
-    run.add_argument("spec", type=Path)
+    run.add_argument("target")
+    run.add_argument("--protocol")
     run.add_argument("--output", type=Path, default=Path("reproductions/generated"))
+    compare = children.add_parser("compare")
+    compare.add_argument("left_id", type=int)
+    compare.add_argument("right_id", type=int)
+    export = children.add_parser("export-site")
+    export.add_argument("--output", type=Path, default=Path("site"))
 
 
 def _query_arguments(parser: argparse.ArgumentParser) -> None:
@@ -174,8 +194,38 @@ def _dispatch(args: argparse.Namespace, config: ResearchConfig) -> dict[str, Any
 
 def _reproduction_command(args: argparse.Namespace, config: ResearchConfig) -> dict[str, Any]:
     if args.reproduce_command == "list":
-        return {"specs": [str(path) for path in sorted(args.spec_root.glob("*.yaml"))]}
-    return run_reproduction(config, args.spec, output_root=args.output)
+        return {
+            "specs": [str(path) for path in sorted(args.spec_root.glob("*.yaml"))],
+            "papers": {
+                "worldquant101": [
+                    "formula-validation",
+                    "original-market",
+                    "ashare-transfer",
+                ],
+                "gtja-short-cycle": [
+                    "paper-strict",
+                    "transparent-reconstruction",
+                    "ashare-executable",
+                ],
+            },
+        }
+    if args.reproduce_command == "audit":
+        return {"ok": True, **audit_paper(args.paper)}
+    if args.reproduce_command == "compare":
+        return compare_paper_experiments(config, args.left_id, args.right_id)
+    if args.reproduce_command == "export-site":
+        return export_site(args.output)
+    if args.protocol:
+        return run_paper_protocol(
+            config,
+            args.target,
+            args.protocol,
+            output_root=args.output,
+        )
+    spec = Path(args.target)
+    if not spec.is_file():
+        raise ValueError("paper runs require --protocol; legacy runs require an existing spec path")
+    return run_reproduction(config, spec, output_root=args.output)
 
 
 def _data_command(args: argparse.Namespace, config: ResearchConfig) -> dict[str, Any]:
@@ -204,6 +254,10 @@ def _data_command(args: argparse.Namespace, config: ResearchConfig) -> dict[str,
 
 def _factor_command(args: argparse.Namespace, config: ResearchConfig) -> dict[str, Any]:
     register_examples()
+    if args.factor_command == "run" and args.name.startswith("wq101_"):
+        register_worldquant_factors()
+    if args.factor_command == "run" and args.name.startswith("gtja_"):
+        register_gtja_factors()
     if args.factor_command == "list":
         return {
             "factors": [

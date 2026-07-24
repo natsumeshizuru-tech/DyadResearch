@@ -1,0 +1,25 @@
+name: Reproduction data dependency
+description: Track a missing PIT field, snapshot, benchmark, or licensed dataset
+title: "[data] "
+labels: ["data", "paper-reproduction"]
+body:
+  - type: textarea
+    id: dependency
+    attributes:
+      label: Missing dependency
+      description: Describe fields, dates, availability time and legal source.
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Affected protocol
+      options:
+        - wq101_original_market
+        - wq101_ashare_transfer
+        - paper_strict
+        - transparent_reconstruction
+        - ashare_executable
+    validations:
+      required: true
+

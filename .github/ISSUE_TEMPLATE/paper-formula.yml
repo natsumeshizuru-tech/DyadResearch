@@ -1,0 +1,29 @@
+name: Paper formula issue
+description: Report an ambiguity, implementation gap, or semantic mismatch
+title: "[formula] "
+labels: ["paper-reproduction"]
+body:
+  - type: dropdown
+    id: paper
+    attributes:
+      label: Paper
+      options:
+        - WorldQuant 101
+        - GTJA short-cycle 191
+    validations:
+      required: true
+  - type: input
+    id: factor
+    attributes:
+      label: Factor ID
+      placeholder: alpha042
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and proposed treatment
+      description: Include the source page, ambiguity, candidate expression and test.
+    validations:
+      required: true
+

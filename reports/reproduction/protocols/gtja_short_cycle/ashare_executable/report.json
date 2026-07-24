@@ -1,0 +1,71 @@
+{
+  "blockers": [
+    "formula implementation coverage is 28/191",
+    "no full 191-factor target portfolio has been produced"
+  ],
+  "claims": [
+    "Formula records retain source expressions and explicit implementation status.",
+    "Transparent reconstruction is not an exact CNE5 or optimizer reproduction."
+  ],
+  "comparability_level": "D",
+  "data_capability_hash": "364c44b2f8682a49923e2249f3f6b6b2e5b72831e2472d3b0cb6abd3b6dabab9",
+  "experiment_id": 261,
+  "formula_validation": {
+    "implemented": 28,
+    "manifest_hash": "dcd001ae81b2f70782018ab7fb2dad17bd2ce53745f9e7f4c68ee678a4ecebb5",
+    "paper_id": "gtja_short_cycle",
+    "result_hash": "30ccd51ea5c6afd7a4d1eeb597203021a71c2d86c7f201022b1633842e8e42a2",
+    "status_counts": {
+      "assumption": 0,
+      "corrected_typo": 0,
+      "exact": 0,
+      "normalized": 28,
+      "not_implemented": 162,
+      "unavailable_dependency": 1
+    },
+    "total": 191
+  },
+  "git_commit": "137409e177e94e093c31965a7ca0e0579b0b5dfc",
+  "paper_id": "gtja_short_cycle",
+  "protocol": "ashare_executable",
+  "result_hash": "ec6300d01d4e59c6a5aefd2c22e70f8a308c9412f863916d21243828f9a9500e",
+  "schema_version": "1.0.0",
+  "status": "partial",
+  "synthetic_smoke": {
+    "attempted": 28,
+    "failed": 0,
+    "failures": {},
+    "output_hash": "ee63816b3795e379d6610599571a67d472e06871938e57eecf908dd825f52776",
+    "passed": 28,
+    "passed_factor_ids": [
+      "alpha001",
+      "alpha002",
+      "alpha006",
+      "alpha008",
+      "alpha009",
+      "alpha013",
+      "alpha014",
+      "alpha015",
+      "alpha018",
+      "alpha020",
+      "alpha031",
+      "alpha034",
+      "alpha053",
+      "alpha058",
+      "alpha065",
+      "alpha066",
+      "alpha070",
+      "alpha071",
+      "alpha080",
+      "alpha081",
+      "alpha088",
+      "alpha095",
+      "alpha097",
+      "alpha100",
+      "alpha102",
+      "alpha106",
+      "alpha143",
+      "alpha191"
+    ]
+  }
+}

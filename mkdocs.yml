@@ -1,0 +1,36 @@
+site_name: DyadResearch Paper Reproductions
+site_description: Auditable reproductions of two quantitative research papers
+repo_url: https://github.com/natsumeshizuru-tech/DyadResearch
+repo_name: natsumeshizuru-tech/DyadResearch
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+nav:
+  - 首页: index.md
+  - 复现契约: reproduction/REPRODUCIBILITY_CONTRACT.md
+  - 101 Formulaic Alphas: reproduction/WORLDQUANT_101.md
+  - 国泰君安 191 因子: reproduction/GTJA_SHORT_CYCLE.md
+  - Factor Atlas: reproduction/FACTOR_ATLAS.md
+  - 数据契约: reproduction/DATA_CONTRACT.md
+  - 验收报告: reproduction/ACCEPTANCE_REPORT.md
+  - 实验与原文对比: reproduction/RESULTS_AND_COMPARABILITY.md
+  - 样本外检验: reproduction/OUT_OF_SAMPLE.md
+  - 大 QMT: reproduction/QMT_BIG_GUIDE.md
+  - 假设与歧义: reproduction/ASSUMPTION_REGISTER.md
+  - 基线审计: reproduction/BASELINE_AUDIT.md
+  - 博客:
+      - 从公式到实验: blog/posts/01-worldquant-engineering.md
+      - 191 因子到组合: blog/posts/02-gtja-multifactor.md
+      - 研究到大 QMT: blog/posts/03-research-to-qmt.md
+  - 引用与法律: reproduction/LEGAL_AND_ATTRIBUTION.md
+  - 路线图: reproduction/ROADMAP.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+strict: true

@@ -58,6 +58,29 @@ DyadResearch 负责共享库的只读历史查询、PIT 财务、复权、因子
 - 当前历史板块与指数权重快照能力有限，缺少精确时点时会显式失败，不用当前成分冒充历史成分。
 - 研究结果必须标记 `EXACT_REPRODUCTION`、`METHOD_REPRODUCTION`、`INDEPENDENT_EXTENSION` 或 `EXPLORATORY_ONLY`。
 
+## 论文复现
+
+仓库只把两篇论文作为本项目的复现对象：
+
+- Kakushadze (2015)《101 Formulaic Alphas》：完整收录 101 条公式账本，
+  将公式/算子复现与专有 WorldQuant 收益数据严格区分。
+- 国泰君安 (2017)《基于短周期价量特征的多因子选股体系》：完整收录
+  191 条公式账本，保留排版/OCR 歧义，并区分 `paper_strict`、透明重建与
+  A 股可执行迁移。
+
+公式账本完整不等于公式全部可执行；CLI 审计会如实报告
+`exact/normalized/assumption/unavailable_dependency/not_implemented` 数量。
+
+```powershell
+dyadresearch reproduce audit worldquant101
+dyadresearch reproduce audit gtja-short-cycle
+dyadresearch reproduce run worldquant101 --protocol formula-validation --output reports/reproduction/protocols
+dyadresearch reproduce run gtja-short-cycle --protocol paper-strict --output reports/reproduction/protocols
+```
+
+大 QMT 交付在 [`qmt_big/`](qmt_big/README.md)。它读取盘后导出的次日目标
+权重，默认只做 dry-run；仓库没有实盘账号，也不会在测试中发送委托。
+
 ## 工程门禁
 
 ```powershell
@@ -67,4 +90,4 @@ DyadResearch 负责共享库的只读历史查询、PIT 财务、复权、因子
 .venv\Scripts\python -m pytest
 ```
 
-架构、数据契约、PIT 政策和成交语义分别见 [ARCHITECTURE.md](docs/ARCHITECTURE.md)、[DATA_CONTRACT.md](docs/DATA_CONTRACT.md)、[POINT_IN_TIME_POLICY.md](docs/POINT_IN_TIME_POLICY.md) 和 [BACKTEST_SEMANTICS.md](docs/BACKTEST_SEMANTICS.md)。许可证与安全边界见 [DEPENDENCY_LICENSES.md](DEPENDENCY_LICENSES.md)、[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 和 [SECURITY.md](SECURITY.md)。
+架构、数据契约、PIT 政策和成交语义分别见 [ARCHITECTURE.md](docs/ARCHITECTURE.md)、[DATA_CONTRACT.md](docs/DATA_CONTRACT.md)、[POINT_IN_TIME_POLICY.md](docs/POINT_IN_TIME_POLICY.md) 和 [BACKTEST_SEMANTICS.md](docs/BACKTEST_SEMANTICS.md)。论文复现契约见 [REPRODUCIBILITY_CONTRACT.md](docs/reproduction/REPRODUCIBILITY_CONTRACT.md)。许可证与安全边界见 [DEPENDENCY_LICENSES.md](DEPENDENCY_LICENSES.md)、[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 和 [SECURITY.md](SECURITY.md)。
