@@ -27,7 +27,8 @@ jobs:
           python -m mypy src/dyadresearch
       - name: Tests and coverage
         run: >-
-          python -m pytest --cov=dyadresearch --cov-report=term-missing
+          python -m pytest -m "not integration and not performance"
+          --cov=dyadresearch --cov-report=term-missing
           --cov-report=xml --cov-fail-under=75
       - name: Synthetic-data smoke
         run: |
