@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Momentum signal mechanics on deterministic A-share-shaped data</title>
+<style>body{font-family:system-ui;margin:2rem auto;max-width:960px;padding:0 1rem}
+.badge{display:inline-block;padding:.3rem .6rem;background:#ffe8a3;color:#4b3900;font-weight:700}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:.5rem;text-align:left}
+code{word-break:break-all}</style></head><body>
+<p class="badge">EXPLORATORY_ONLY</p><h1>Momentum signal mechanics on deterministic A-share-shaped data</h1>
+<p><strong>Research question:</strong> Can the research pipeline calculate and rank a 20-bar momentum signal without hidden data dependencies?</p>
+<h2>Citation</h2><p>Narasimhan Jegadeesh, Sheridan Titman (1993).
+Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency. <a href="https://doi.org/10.1111/j.1540-6261.1993.tb04702.x">DOI:10.1111/j.1540-6261.1993.tb04702.x</a>.</p>
+<h2>Method and data</h2><p>Compute 20-bar close-to-close momentum and rank the latest synthetic cross-section from high to low.</p>
+<p>Data classification: <strong>SYNTHETIC DATA</strong>;
+range 20240102–20240325; rows 300.</p>
+<p>Data fingerprint: <code>5d2378c0c23fe984a456e7e1a1ded9eacf9f7e49f176aa0dac0d24c8775caf9a</code><br>
+Result hash: <code>193e3658f5f48b8d5a5b78501efeddfa5d5c2377bc3227d5bb58c85ccf12b5f7</code></p>
+<h2>Metrics</h2><table><tr><th>count</th><td>205.0</td></tr><tr><th>coverage_ratio</th><td>1.0</td></tr><tr><th>latest_cross_section_count</th><td>5</td></tr><tr><th>maximum</th><td>0.11183961669398562</td></tr><tr><th>mean</th><td>0.009159143700227912</td></tr><tr><th>minimum</th><td>-0.012179550142422158</td></tr></table>
+<h2>Latest synthetic cross-section</h2><table><tr><th>Rank</th><th>Symbol</th>
+<th>Date</th><th>Value</th></tr><tr><td>1</td><td>600001.SH</td><td>20240325</td><td>0.007756563245823389021479714</td></tr><tr><td>2</td><td>159915.SZ</td><td>20240325</td><td>0.007738979692917285785042100</td></tr><tr><td>3</td><td>510500.SH</td><td>20240325</td><td>0.001822423093745443942265636</td></tr><tr><td>4</td><td>000001.SZ</td><td>20240325</td><td>0.001735508503991669559180840</td></tr><tr><td>5</td><td>510300.SH</td><td>20240325</td><td>-0.0043196544276457883369330454</td></tr></table>
+<h2>Limitations</h2><ul><li>The five symbols and prices are deterministic synthetic examples, not investable securities history.</li><li>This validates method plumbing and reproducibility, not the paper&#x27;s empirical return claim.</li><li>The 60-day window is too short for statistical inference or transaction-cost conclusions.</li></ul>
+<h2>Reproduce</h2><pre><code>dyadresearch reproduce run reproductions/specs/momentum.yaml --output reproductions/generated</code></pre>
+</body></html>

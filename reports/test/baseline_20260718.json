@@ -1,0 +1,9 @@
+{
+  "source_repository": "../DyadTetrade",
+  "commit": "2fbb5b9d7d0555f2af4d0f62ff960334039fb2cd",
+  "python": "3.12.10",
+  "pytest": {"passed": 281, "failed": 0},
+  "ruff": "passed",
+  "mypy_strict_source_files": 153,
+  "coverage": {"statements": 13649, "missing": 3050, "percent_display": 78, "source_json": "private-local-report:baseline_coverage_dyadresearch_20260718.json"}
+}

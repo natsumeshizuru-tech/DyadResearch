@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dyadquant.dev/schemas/strategy-release-bundle.schema.json",
+  "title": "DyadQuant StrategyReleaseBundle Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "strategy_id",
+    "strategy_version",
+    "source_commit",
+    "source_hash",
+    "created_at",
+    "research_engine_version",
+    "runtime_api_version",
+    "strategy_mode",
+    "parameters",
+    "required_data_capabilities",
+    "allowed_markets",
+    "allowed_periods",
+    "universe_policy",
+    "default_risk_budget",
+    "backtest_evidence",
+    "limitations",
+    "approval_status"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "strategy_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$"},
+    "strategy_version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?$"},
+    "source_commit": {"type": "string", "anyOf": [{"pattern": "^[0-9a-f]{7,64}$"}, {"const": "UNCOMMITTED"}]},
+    "source_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "research_engine_version": {"type": "string", "minLength": 1, "maxLength": 64},
+    "runtime_api_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+$"},
+    "strategy_mode": {"enum": ["declarative", "preinstalled_plugin"]},
+    "parameters": {"type": "object"},
+    "required_data_capabilities": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^[a-z][a-z0-9_.:-]{2,127}$"},
+      "uniqueItems": true
+    },
+    "allowed_markets": {
+      "type": "array",
+      "items": {"enum": ["SH", "SZ", "BJ"]},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "allowed_periods": {
+      "type": "array",
+      "items": {"enum": ["tick", "1m", "5m", "15m", "30m", "1h", "1d", "1w", "1q", "1y"]},
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "universe_policy": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["point_in_time"],
+      "properties": {"point_in_time": {"const": true}}
+    },
+    "default_risk_budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["max_position_weight", "max_gross_exposure", "max_daily_turnover", "max_order_notional"],
+      "properties": {
+        "max_position_weight": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "max_gross_exposure": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+        "max_daily_turnover": {"type": "number", "minimum": 0, "maximum": 10},
+        "max_order_notional": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "backtest_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result_id", "result_hash", "data_fingerprint", "engine_policy", "start", "end"],
+      "properties": {
+        "result_id": {"type": "string", "minLength": 1},
+        "result_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "data_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "engine_policy": {"type": "string", "minLength": 1},
+        "start": {"type": "string", "format": "date"},
+        "end": {"type": "string", "format": "date"}
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "approval_status": {
+      "enum": ["draft", "candidate", "reviewed", "paper_approved", "qmt_sim_approved", "live_candidate", "live_approved", "revoked"]
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"approval_status": {"not": {"const": "draft"}}}},
+      "then": {"properties": {"source_commit": {"pattern": "^[0-9a-f]{7,64}$"}}}
+    }
+  ]
+}

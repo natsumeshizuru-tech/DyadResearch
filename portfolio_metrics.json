@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-20T02:06:00+08:00",
+  "source": "local validation evidence; see README disclosure",
+  "repositories": {
+    "DyadResearch": {
+      "python_tests_passed": 96,
+      "python_coverage_percent": 82.47,
+      "strict_mypy_source_files": 52,
+      "frontend_build": "passed"
+    },
+    "DyadTetrade": {
+      "python_tests_passed": 302,
+      "python_tests_skipped": 1,
+      "python_coverage_percent": 77.47,
+      "strict_mypy_source_files": 163,
+      "frontend_tests_passed": 7,
+      "frontend_build": "passed"
+    }
+  },
+  "private_data_evidence": {
+    "audit_accepted": true,
+    "daily_rows": 17617130,
+    "daily_symbols": 8010,
+    "daily_first_trade_date": 20100104,
+    "daily_last_trade_date": 20260717,
+    "financial_rows": 6981918,
+    "financial_year_shards": 17,
+    "minute_shards": 39,
+    "adjustment_golden_cases": 100
+  },
+  "disclosure": "Metrics describe private validation evidence; no private dataset is distributed.",
+  "repository": "DyadResearch"
+}

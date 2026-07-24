@@ -1,0 +1,5161 @@
+{
+  "dry_run": false,
+  "existing_catalog_count": 0,
+  "generated_at": "2026-07-19T23:37:34.470850+08:00",
+  "new_to_catalog_count": 285,
+  "official_delisted_all_dates": {
+    "SSE": 152,
+    "SZSE": 208
+  },
+  "records": [
+    {
+      "delist_date": 20260714,
+      "exchange": "SZSE",
+      "list_date": 19901201,
+      "name": "国华退",
+      "raw": {
+        "ssrq": "1990-12-01",
+        "zqdm": "000004",
+        "zqjc": "国华退",
+        "zzrq": "2026-07-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000004.SZ"
+    },
+    {
+      "delist_date": 20240426,
+      "exchange": "SZSE",
+      "list_date": 19901210,
+      "name": "ST星源",
+      "raw": {
+        "ssrq": "1990-12-10",
+        "zqdm": "000005",
+        "zqjc": "ST星源",
+        "zzrq": "2024-04-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000005.SZ"
+    },
+    {
+      "delist_date": 20200107,
+      "exchange": "SZSE",
+      "list_date": 19920616,
+      "name": "神城A退",
+      "raw": {
+        "ssrq": "1992-06-16",
+        "zqdm": "000018",
+        "zqjc": "神城A退",
+        "zzrq": "2020-01-07"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000018.SZ"
+    },
+    {
+      "delist_date": 20240902,
+      "exchange": "SZSE",
+      "list_date": 19930429,
+      "name": "*ST深天",
+      "raw": {
+        "ssrq": "1993-04-29",
+        "zqdm": "000023",
+        "zqjc": "*ST深天",
+        "zzrq": "2024-09-02"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000023.SZ"
+    },
+    {
+      "delist_date": 20151230,
+      "exchange": "SZSE",
+      "list_date": 19930607,
+      "name": "招商地产",
+      "raw": {
+        "ssrq": "1993-06-07",
+        "zqdm": "000024",
+        "zqjc": "招商地产",
+        "zzrq": "2015-12-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000024.SZ"
+    },
+    {
+      "delist_date": 20170707,
+      "exchange": "SZSE",
+      "list_date": 19940103,
+      "name": "新都退",
+      "raw": {
+        "ssrq": "1994-01-03",
+        "zqdm": "000033",
+        "zqjc": "新都退",
+        "zzrq": "2017-07-07"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000033.SZ"
+    },
+    {
+      "delist_date": 20230712,
+      "exchange": "SZSE",
+      "list_date": 19940808,
+      "name": "大通退",
+      "raw": {
+        "ssrq": "1994-08-08",
+        "zqdm": "000038",
+        "zqjc": "大通退",
+        "zzrq": "2023-07-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000038.SZ"
+    },
+    {
+      "delist_date": 20250430,
+      "exchange": "SZSE",
+      "list_date": 19940808,
+      "name": "*ST旭蓝",
+      "raw": {
+        "ssrq": "1994-08-08",
+        "zqdm": "000040",
+        "zqjc": "*ST旭蓝",
+        "zzrq": "2025-04-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000040.SZ"
+    },
+    {
+      "delist_date": 20240207,
+      "exchange": "SZSE",
+      "list_date": 19940912,
+      "name": "*ST泛海",
+      "raw": {
+        "ssrq": "1994-09-12",
+        "zqdm": "000046",
+        "zqjc": "*ST泛海",
+        "zzrq": "2024-02-07"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000046.SZ"
+    },
+    {
+      "delist_date": 20230609,
+      "exchange": "SZSE",
+      "list_date": 20000807,
+      "name": "*ST宜康",
+      "raw": {
+        "ssrq": "2000-08-07",
+        "zqdm": "000150",
+        "zqjc": "*ST宜康",
+        "zzrq": "2023-06-09"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000150.SZ"
+    },
+    {
+      "delist_date": 20241011,
+      "exchange": "SZSE",
+      "list_date": 19960925,
+      "name": "ST旭电",
+      "raw": {
+        "ssrq": "1996-09-25",
+        "zqdm": "000413",
+        "zqjc": "ST旭电",
+        "zzrq": "2024-10-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000413.SZ"
+    },
+    {
+      "delist_date": 20240605,
+      "exchange": "SZSE",
+      "list_date": 19960719,
+      "name": "*ST民控",
+      "raw": {
+        "ssrq": "1996-07-19",
+        "zqdm": "000416",
+        "zqjc": "*ST民控",
+        "zzrq": "2024-06-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000416.SZ"
+    },
+    {
+      "delist_date": 20190621,
+      "exchange": "SZSE",
+      "list_date": 19970328,
+      "name": "小天鹅Ａ",
+      "raw": {
+        "ssrq": "1997-03-28",
+        "zqdm": "000418",
+        "zqjc": "小天鹅Ａ",
+        "zzrq": "2019-06-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000418.SZ"
+    },
+    {
+      "delist_date": 20220627,
+      "exchange": "SZSE",
+      "list_date": 19921123,
+      "name": "绿景退",
+      "raw": {
+        "ssrq": "1992-11-23",
+        "zqdm": "000502",
+        "zqjc": "绿景退",
+        "zzrq": "2022-06-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000502.SZ"
+    },
+    {
+      "delist_date": 20180718,
+      "exchange": "SZSE",
+      "list_date": 19930518,
+      "name": "烯碳退",
+      "raw": {
+        "ssrq": "1993-05-18",
+        "zqdm": "000511",
+        "zqjc": "烯碳退",
+        "zzrq": "2018-07-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000511.SZ"
+    },
+    {
+      "delist_date": 20130426,
+      "exchange": "SZSE",
+      "list_date": 19931108,
+      "name": "白云山Ａ",
+      "raw": {
+        "ssrq": "1993-11-08",
+        "zqdm": "000522",
+        "zqjc": "白云山Ａ",
+        "zzrq": "2013-04-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000522.SZ"
+    },
+    {
+      "delist_date": 20130918,
+      "exchange": "SZSE",
+      "list_date": 19931112,
+      "name": "美的电器",
+      "raw": {
+        "ssrq": "1993-11-12",
+        "zqdm": "000527",
+        "zqjc": "美的电器",
+        "zzrq": "2013-09-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000527.SZ"
+    },
+    {
+      "delist_date": 20230630,
+      "exchange": "SZSE",
+      "list_date": 19940202,
+      "name": "*ST中天",
+      "raw": {
+        "ssrq": "1994-02-02",
+        "zqdm": "000540",
+        "zqjc": "*ST中天",
+        "zzrq": "2023-06-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000540.SZ"
+    },
+    {
+      "delist_date": 20150126,
+      "exchange": "SZSE",
+      "list_date": 19940202,
+      "name": "宏源证券",
+      "raw": {
+        "ssrq": "1994-02-02",
+        "zqdm": "000562",
+        "zqjc": "宏源证券",
+        "zzrq": "2015-01-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000562.SZ"
+    },
+    {
+      "delist_date": 20110322,
+      "exchange": "SZSE",
+      "list_date": 19950303,
+      "name": "盐湖集团",
+      "raw": {
+        "ssrq": "1995-03-03",
+        "zqdm": "000578",
+        "zqjc": "盐湖集团",
+        "zzrq": "2011-03-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000578.SZ"
+    },
+    {
+      "delist_date": 20250711,
+      "exchange": "SZSE",
+      "list_date": 19951128,
+      "name": "工智退",
+      "raw": {
+        "ssrq": "1995-11-28",
+        "zqdm": "000584",
+        "zqjc": "工智退",
+        "zzrq": "2025-07-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000584.SZ"
+    },
+    {
+      "delist_date": 20220524,
+      "exchange": "SZSE",
+      "list_date": 19951213,
+      "name": "东电退",
+      "raw": {
+        "ssrq": "1995-12-13",
+        "zqdm": "000585",
+        "zqjc": "东电退",
+        "zzrq": "2022-05-24"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000585.SZ"
+    },
+    {
+      "delist_date": 20230403,
+      "exchange": "SZSE",
+      "list_date": 19960425,
+      "name": "*ST金洲",
+      "raw": {
+        "ssrq": "1996-04-25",
+        "zqdm": "000587",
+        "zqjc": "*ST金洲",
+        "zzrq": "2023-04-03"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000587.SZ"
+    },
+    {
+      "delist_date": 20150713,
+      "exchange": "SZSE",
+      "list_date": 19960320,
+      "name": "国恒退",
+      "raw": {
+        "ssrq": "1996-03-20",
+        "zqdm": "000594",
+        "zqjc": "国恒退",
+        "zzrq": "2015-07-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000594.SZ"
+    },
+    {
+      "delist_date": 20130814,
+      "exchange": "SZSE",
+      "list_date": 19960819,
+      "name": "金马退市",
+      "raw": {
+        "ssrq": "1996-08-19",
+        "zqdm": "000602",
+        "zqjc": "金马退市",
+        "zzrq": "2013-08-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000602.SZ"
+    },
+    {
+      "delist_date": 20230706,
+      "exchange": "SZSE",
+      "list_date": 19961004,
+      "name": "顺利退",
+      "raw": {
+        "ssrq": "1996-10-04",
+        "zqdm": "000606",
+        "zqjc": "顺利退",
+        "zzrq": "2023-07-06"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000606.SZ"
+    },
+    {
+      "delist_date": 20220628,
+      "exchange": "SZSE",
+      "list_date": 19961008,
+      "name": "天首退",
+      "raw": {
+        "ssrq": "1996-10-08",
+        "zqdm": "000611",
+        "zqjc": "天首退",
+        "zzrq": "2022-06-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000611.SZ"
+    },
+    {
+      "delist_date": 20220629,
+      "exchange": "SZSE",
+      "list_date": 19970128,
+      "name": "东海A退",
+      "raw": {
+        "ssrq": "1997-01-28",
+        "zqdm": "000613",
+        "zqjc": "东海A退",
+        "zzrq": "2022-06-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000613.SZ"
+    },
+    {
+      "delist_date": 20230823,
+      "exchange": "SZSE",
+      "list_date": 19961108,
+      "name": "*ST海投",
+      "raw": {
+        "ssrq": "1996-11-08",
+        "zqdm": "000616",
+        "zqjc": "*ST海投",
+        "zzrq": "2023-08-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000616.SZ"
+    },
+    {
+      "delist_date": 20250716,
+      "exchange": "SZSE",
+      "list_date": 19961107,
+      "name": "恒立退",
+      "raw": {
+        "ssrq": "1996-11-07",
+        "zqdm": "000622",
+        "zqjc": "恒立退",
+        "zzrq": "2025-07-16"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000622.SZ"
+    },
+    {
+      "delist_date": 20250930,
+      "exchange": "SZSE",
+      "list_date": 19961112,
+      "name": "*ST天茂",
+      "raw": {
+        "ssrq": "1996-11-12",
+        "zqdm": "000627",
+        "zqjc": "*ST天茂",
+        "zzrq": "2025-09-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000627.SZ"
+    },
+    {
+      "delist_date": 20260603,
+      "exchange": "SZSE",
+      "list_date": 19961126,
+      "name": "*ST万方",
+      "raw": {
+        "ssrq": "1996-11-26",
+        "zqdm": "000638",
+        "zqjc": "*ST万方",
+        "zzrq": "2026-06-03"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000638.SZ"
+    },
+    {
+      "delist_date": 20210412,
+      "exchange": "SZSE",
+      "list_date": 19961216,
+      "name": "天夏退",
+      "raw": {
+        "ssrq": "1996-12-16",
+        "zqdm": "000662",
+        "zqjc": "天夏退",
+        "zzrq": "2021-04-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000662.SZ"
+    },
+    {
+      "delist_date": 20231026,
+      "exchange": "SZSE",
+      "list_date": 19961210,
+      "name": "经纬纺机",
+      "raw": {
+        "ssrq": "1996-12-10",
+        "zqdm": "000666",
+        "zqjc": "经纬纺机",
+        "zzrq": "2023-10-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000666.SZ"
+    },
+    {
+      "delist_date": 20230714,
+      "exchange": "SZSE",
+      "list_date": 19961205,
+      "name": "ST美置",
+      "raw": {
+        "ssrq": "1996-12-05",
+        "zqdm": "000667",
+        "zqjc": "ST美置",
+        "zzrq": "2023-07-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000667.SZ"
+    },
+    {
+      "delist_date": 20230816,
+      "exchange": "SZSE",
+      "list_date": 19961218,
+      "name": "ST阳光城",
+      "raw": {
+        "ssrq": "1996-12-18",
+        "zqdm": "000671",
+        "zqjc": "ST阳光城",
+        "zzrq": "2023-08-16"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000671.SZ"
+    },
+    {
+      "delist_date": 20220704,
+      "exchange": "SZSE",
+      "list_date": 19970124,
+      "name": "当代退",
+      "raw": {
+        "ssrq": "1997-01-24",
+        "zqdm": "000673",
+        "zqjc": "当代退",
+        "zzrq": "2022-07-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000673.SZ"
+    },
+    {
+      "delist_date": 20220617,
+      "exchange": "SZSE",
+      "list_date": 19970221,
+      "name": "华讯退",
+      "raw": {
+        "ssrq": "1997-02-21",
+        "zqdm": "000687",
+        "zqjc": "华讯退",
+        "zzrq": "2022-06-17"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000687.SZ"
+    },
+    {
+      "delist_date": 20190709,
+      "exchange": "SZSE",
+      "list_date": 19970226,
+      "name": "华泽退",
+      "raw": {
+        "ssrq": "1997-02-26",
+        "zqdm": "000693",
+        "zqjc": "华泽退",
+        "zzrq": "2019-07-09"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000693.SZ"
+    },
+    {
+      "delist_date": 20230804,
+      "exchange": "SZSE",
+      "list_date": 19970704,
+      "name": "ST泰禾",
+      "raw": {
+        "ssrq": "1997-07-04",
+        "zqdm": "000732",
+        "zqjc": "ST泰禾",
+        "zzrq": "2023-08-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000732.SZ"
+    },
+    {
+      "delist_date": 20170118,
+      "exchange": "SZSE",
+      "list_date": 19970704,
+      "name": "长城信息",
+      "raw": {
+        "ssrq": "1997-07-04",
+        "zqdm": "000748",
+        "zqjc": "长城信息",
+        "zzrq": "2017-01-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000748.SZ"
+    },
+    {
+      "delist_date": 20210723,
+      "exchange": "SZSE",
+      "list_date": 19970627,
+      "name": "斯太退",
+      "raw": {
+        "ssrq": "1997-06-27",
+        "zqdm": "000760",
+        "zqjc": "斯太退",
+        "zzrq": "2021-07-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000760.SZ"
+    },
+    {
+      "delist_date": 20220124,
+      "exchange": "SZSE",
+      "list_date": 19970606,
+      "name": "ST平能",
+      "raw": {
+        "ssrq": "1997-06-06",
+        "zqdm": "000780",
+        "zqjc": "ST平能",
+        "zzrq": "2022-01-24"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000780.SZ"
+    },
+    {
+      "delist_date": 20130208,
+      "exchange": "SZSE",
+      "list_date": 19970626,
+      "name": "*ST&nbsp;创智",
+      "raw": {
+        "ssrq": "1997-06-26",
+        "zqdm": "000787",
+        "zqjc": "*ST&nbsp;创智",
+        "zzrq": "2013-02-08"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000787.SZ"
+    },
+    {
+      "delist_date": 20130327,
+      "exchange": "SZSE",
+      "list_date": 19980529,
+      "name": "*ST炎黄",
+      "raw": {
+        "ssrq": "1998-05-29",
+        "zqdm": "000805",
+        "zqjc": "*ST炎黄",
+        "zzrq": "2013-03-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000805.SZ"
+    },
+    {
+      "delist_date": 20230706,
+      "exchange": "SZSE",
+      "list_date": 19980416,
+      "name": "银河退",
+      "raw": {
+        "ssrq": "1998-04-16",
+        "zqdm": "000806",
+        "zqjc": "银河退",
+        "zzrq": "2023-07-06"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000806.SZ"
+    },
+    {
+      "delist_date": 20220523,
+      "exchange": "SZSE",
+      "list_date": 19990625,
+      "name": "长动退",
+      "raw": {
+        "ssrq": "1999-06-25",
+        "zqdm": "000835",
+        "zqjc": "长动退",
+        "zzrq": "2022-05-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000835.SZ"
+    },
+    {
+      "delist_date": 20240812,
+      "exchange": "SZSE",
+      "list_date": 19970929,
+      "name": "ST富通",
+      "raw": {
+        "ssrq": "1997-09-29",
+        "zqdm": "000836",
+        "zqjc": "ST富通",
+        "zzrq": "2024-08-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000836.SZ"
+    },
+    {
+      "delist_date": 20251111,
+      "exchange": "SZSE",
+      "list_date": 19980609,
+      "name": "*ST高鸿",
+      "raw": {
+        "ssrq": "1998-06-09",
+        "zqdm": "000851",
+        "zqjc": "*ST高鸿",
+        "zzrq": "2025-11-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000851.SZ"
+    },
+    {
+      "delist_date": 20240918,
+      "exchange": "SZSE",
+      "list_date": 19981028,
+      "name": "海印股份",
+      "raw": {
+        "ssrq": "1998-10-28",
+        "zqdm": "000861",
+        "zqjc": "海印股份",
+        "zzrq": "2024-09-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000861.SZ"
+    },
+    {
+      "delist_date": 20171225,
+      "exchange": "SZSE",
+      "list_date": 19990927,
+      "name": "华北高速",
+      "raw": {
+        "ssrq": "1999-09-27",
+        "zqdm": "000916",
+        "zqjc": "华北高速",
+        "zzrq": "2017-12-25"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000916.SZ"
+    },
+    {
+      "delist_date": 20230728,
+      "exchange": "SZSE",
+      "list_date": 19990720,
+      "name": "*ST嘉凯",
+      "raw": {
+        "ssrq": "1999-07-20",
+        "zqdm": "000918",
+        "zqjc": "*ST嘉凯",
+        "zzrq": "2023-07-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000918.SZ"
+    },
+    {
+      "delist_date": 20201217,
+      "exchange": "SZSE",
+      "list_date": 19990923,
+      "name": "凯迪退",
+      "raw": {
+        "ssrq": "1999-09-23",
+        "zqdm": "000939",
+        "zqjc": "凯迪退",
+        "zzrq": "2020-12-17"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000939.SZ"
+    },
+    {
+      "delist_date": 20240711,
+      "exchange": "SZSE",
+      "list_date": 20000301,
+      "name": "ST中南",
+      "raw": {
+        "ssrq": "2000-03-01",
+        "zqdm": "000961",
+        "zqjc": "ST中南",
+        "zzrq": "2024-07-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000961.SZ"
+    },
+    {
+      "delist_date": 20240724,
+      "exchange": "SZSE",
+      "list_date": 20000427,
+      "name": "*ST高升",
+      "raw": {
+        "ssrq": "2000-04-27",
+        "zqdm": "000971",
+        "zqjc": "*ST高升",
+        "zzrq": "2024-07-24"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000971.SZ"
+    },
+    {
+      "delist_date": 20240827,
+      "exchange": "SZSE",
+      "list_date": 20000601,
+      "name": "*ST华铁",
+      "raw": {
+        "ssrq": "2000-06-01",
+        "zqdm": "000976",
+        "zqjc": "*ST华铁",
+        "zzrq": "2024-08-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000976.SZ"
+    },
+    {
+      "delist_date": 20181228,
+      "exchange": "SZSE",
+      "list_date": 20000616,
+      "name": "中弘退",
+      "raw": {
+        "ssrq": "2000-06-16",
+        "zqdm": "000979",
+        "zqjc": "中弘退",
+        "zzrq": "2018-12-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000979.SZ"
+    },
+    {
+      "delist_date": 20240812,
+      "exchange": "SZSE",
+      "list_date": 20000706,
+      "name": "中银绒业",
+      "raw": {
+        "ssrq": "2000-07-06",
+        "zqdm": "000982",
+        "zqjc": "中银绒业",
+        "zzrq": "2024-08-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000982.SZ"
+    },
+    {
+      "delist_date": 20240628,
+      "exchange": "SZSE",
+      "list_date": 20000718,
+      "name": "中期退",
+      "raw": {
+        "ssrq": "2000-07-18",
+        "zqdm": "000996",
+        "zqjc": "中期退",
+        "zzrq": "2024-06-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "000996.SZ"
+    },
+    {
+      "delist_date": 20240318,
+      "exchange": "SZSE",
+      "list_date": 20040625,
+      "name": "ST鸿达",
+      "raw": {
+        "ssrq": "2004-06-25",
+        "zqdm": "002002",
+        "zqjc": "ST鸿达",
+        "zzrq": "2024-03-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002002.SZ"
+    },
+    {
+      "delist_date": 20230317,
+      "exchange": "SZSE",
+      "list_date": 20040705,
+      "name": "中航机电",
+      "raw": {
+        "ssrq": "2004-07-05",
+        "zqdm": "002013",
+        "zqjc": "中航机电",
+        "zzrq": "2023-03-17"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002013.SZ"
+    },
+    {
+      "delist_date": 20191101,
+      "exchange": "SZSE",
+      "list_date": 20040713,
+      "name": "华信退",
+      "raw": {
+        "ssrq": "2004-07-13",
+        "zqdm": "002018",
+        "zqjc": "华信退",
+        "zzrq": "2019-11-01"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002018.SZ"
+    },
+    {
+      "delist_date": 20190709,
+      "exchange": "SZSE",
+      "list_date": 20061012,
+      "name": "众和退",
+      "raw": {
+        "ssrq": "2006-10-12",
+        "zqdm": "002070",
+        "zqjc": "众和退",
+        "zzrq": "2019-07-09"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002070.SZ"
+    },
+    {
+      "delist_date": 20210507,
+      "exchange": "SZSE",
+      "list_date": 20061012,
+      "name": "长城退",
+      "raw": {
+        "ssrq": "2006-10-12",
+        "zqdm": "002071",
+        "zqjc": "长城退",
+        "zzrq": "2021-05-07"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002071.SZ"
+    },
+    {
+      "delist_date": 20240628,
+      "exchange": "SZSE",
+      "list_date": 20061130,
+      "name": "新纺退",
+      "raw": {
+        "ssrq": "2006-11-30",
+        "zqdm": "002087",
+        "zqjc": "新纺退",
+        "zzrq": "2024-06-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002087.SZ"
+    },
+    {
+      "delist_date": 20240418,
+      "exchange": "SZSE",
+      "list_date": 20061130,
+      "name": "新海退",
+      "raw": {
+        "ssrq": "2006-11-30",
+        "zqdm": "002089",
+        "zqjc": "新海退",
+        "zzrq": "2024-04-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002089.SZ"
+    },
+    {
+      "delist_date": 20230811,
+      "exchange": "SZSE",
+      "list_date": 20070208,
+      "name": "*ST天润",
+      "raw": {
+        "ssrq": "2007-02-08",
+        "zqdm": "002113",
+        "zqjc": "*ST天润",
+        "zzrq": "2023-08-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002113.SZ"
+    },
+    {
+      "delist_date": 20230804,
+      "exchange": "SZSE",
+      "list_date": 20070302,
+      "name": "*ST紫鑫",
+      "raw": {
+        "ssrq": "2007-03-02",
+        "zqdm": "002118",
+        "zqjc": "*ST紫鑫",
+        "zzrq": "2023-08-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002118.SZ"
+    },
+    {
+      "delist_date": 20191129,
+      "exchange": "SZSE",
+      "list_date": 20070720,
+      "name": "印纪退",
+      "raw": {
+        "ssrq": "2007-07-20",
+        "zqdm": "002143",
+        "zqjc": "印纪退",
+        "zzrq": "2019-11-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002143.SZ"
+    },
+    {
+      "delist_date": 20220623,
+      "exchange": "SZSE",
+      "list_date": 20070808,
+      "name": "新光退",
+      "raw": {
+        "ssrq": "2007-08-08",
+        "zqdm": "002147",
+        "zqjc": "新光退",
+        "zzrq": "2022-06-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002147.SZ"
+    },
+    {
+      "delist_date": 20200811,
+      "exchange": "SZSE",
+      "list_date": 20080228,
+      "name": "天宝退",
+      "raw": {
+        "ssrq": "2008-02-28",
+        "zqdm": "002220",
+        "zqjc": "天宝退",
+        "zzrq": "2020-08-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002220.SZ"
+    },
+    {
+      "delist_date": 20260327,
+      "exchange": "SZSE",
+      "list_date": 20080512,
+      "name": "*ST奥维",
+      "raw": {
+        "ssrq": "2008-05-12",
+        "zqdm": "002231",
+        "zqjc": "*ST奥维",
+        "zzrq": "2026-03-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002231.SZ"
+    },
+    {
+      "delist_date": 20220617,
+      "exchange": "SZSE",
+      "list_date": 20080716,
+      "name": "德奥退",
+      "raw": {
+        "ssrq": "2008-07-16",
+        "zqdm": "002260",
+        "zqjc": "德奥退",
+        "zzrq": "2022-06-17"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002260.SZ"
+    },
+    {
+      "delist_date": 20240816,
+      "exchange": "SZSE",
+      "list_date": 20090821,
+      "name": "ST联络",
+      "raw": {
+        "ssrq": "2009-08-21",
+        "zqdm": "002280",
+        "zqjc": "ST联络",
+        "zzrq": "2024-08-16"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002280.SZ"
+    },
+    {
+      "delist_date": 20240819,
+      "exchange": "SZSE",
+      "list_date": 20090903,
+      "name": "*ST超华",
+      "raw": {
+        "ssrq": "2009-09-03",
+        "zqdm": "002288",
+        "zqjc": "*ST超华",
+        "zzrq": "2024-08-19"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002288.SZ"
+    },
+    {
+      "delist_date": 20240927,
+      "exchange": "SZSE",
+      "list_date": 20091127,
+      "name": "*ST威创",
+      "raw": {
+        "ssrq": "2009-11-27",
+        "zqdm": "002308",
+        "zqjc": "*ST威创",
+        "zzrq": "2024-09-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002308.SZ"
+    },
+    {
+      "delist_date": 20240815,
+      "exchange": "SZSE",
+      "list_date": 20091222,
+      "name": "*ST洪涛",
+      "raw": {
+        "ssrq": "2009-12-22",
+        "zqdm": "002325",
+        "zqjc": "*ST洪涛",
+        "zzrq": "2024-08-15"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002325.SZ"
+    },
+    {
+      "delist_date": 20250704,
+      "exchange": "SZSE",
+      "list_date": 20100113,
+      "name": "人乐退",
+      "raw": {
+        "ssrq": "2010-01-13",
+        "zqdm": "002336",
+        "zqjc": "人乐退",
+        "zzrq": "2025-07-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002336.SZ"
+    },
+    {
+      "delist_date": 20240823,
+      "exchange": "SZSE",
+      "list_date": 20100122,
+      "name": "ST新纶",
+      "raw": {
+        "ssrq": "2010-01-22",
+        "zqdm": "002341",
+        "zqjc": "ST新纶",
+        "zzrq": "2024-08-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002341.SZ"
+    },
+    {
+      "delist_date": 20210723,
+      "exchange": "SZSE",
+      "list_date": 20100210,
+      "name": "北讯退",
+      "raw": {
+        "ssrq": "2010-02-10",
+        "zqdm": "002359",
+        "zqjc": "北讯退",
+        "zzrq": "2021-07-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002359.SZ"
+    },
+    {
+      "delist_date": 20230712,
+      "exchange": "SZSE",
+      "list_date": 20100525,
+      "name": "必康退",
+      "raw": {
+        "ssrq": "2010-05-25",
+        "zqdm": "002411",
+        "zqjc": "必康退",
+        "zzrq": "2023-07-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002411.SZ"
+    },
+    {
+      "delist_date": 20230710,
+      "exchange": "SZSE",
+      "list_date": 20100601,
+      "name": "深南退",
+      "raw": {
+        "ssrq": "2010-06-01",
+        "zqdm": "002417",
+        "zqjc": "深南退",
+        "zzrq": "2023-07-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002417.SZ"
+    },
+    {
+      "delist_date": 20240705,
+      "exchange": "SZSE",
+      "list_date": 20100618,
+      "name": "太安退",
+      "raw": {
+        "ssrq": "2010-06-18",
+        "zqdm": "002433",
+        "zqjc": "太安退",
+        "zzrq": "2024-07-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002433.SZ"
+    },
+    {
+      "delist_date": 20240815,
+      "exchange": "SZSE",
+      "list_date": 20100618,
+      "name": "ST长康",
+      "raw": {
+        "ssrq": "2010-06-18",
+        "zqdm": "002435",
+        "zqjc": "ST长康",
+        "zzrq": "2024-08-15"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002435.SZ"
+    },
+    {
+      "delist_date": 20220627,
+      "exchange": "SZSE",
+      "list_date": 20100713,
+      "name": "晨鑫退",
+      "raw": {
+        "ssrq": "2010-07-13",
+        "zqdm": "002447",
+        "zqjc": "晨鑫退",
+        "zzrq": "2022-06-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002447.SZ"
+    },
+    {
+      "delist_date": 20210531,
+      "exchange": "SZSE",
+      "list_date": 20100716,
+      "name": "康得退",
+      "raw": {
+        "ssrq": "2010-07-16",
+        "zqdm": "002450",
+        "zqjc": "康得退",
+        "zzrq": "2021-05-31"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002450.SZ"
+    },
+    {
+      "delist_date": 20220628,
+      "exchange": "SZSE",
+      "list_date": 20100831,
+      "name": "众应退",
+      "raw": {
+        "ssrq": "2010-08-31",
+        "zqdm": "002464",
+        "zqjc": "众应退",
+        "zzrq": "2022-06-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002464.SZ"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SZSE",
+      "list_date": 20100910,
+      "name": "圣莱退",
+      "raw": {
+        "ssrq": "2010-09-10",
+        "zqdm": "002473",
+        "zqjc": "圣莱退",
+        "zzrq": "2022-06-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002473.SZ"
+    },
+    {
+      "delist_date": 20191016,
+      "exchange": "SZSE",
+      "list_date": 20100915,
+      "name": "雏鹰退",
+      "raw": {
+        "ssrq": "2010-09-15",
+        "zqdm": "002477",
+        "zqjc": "雏鹰退",
+        "zzrq": "2019-10-16"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002477.SZ"
+    },
+    {
+      "delist_date": 20230418,
+      "exchange": "SZSE",
+      "list_date": 20101109,
+      "name": "科林退",
+      "raw": {
+        "ssrq": "2010-11-09",
+        "zqdm": "002499",
+        "zqjc": "科林退",
+        "zzrq": "2023-04-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002499.SZ"
+    },
+    {
+      "delist_date": 20240905,
+      "exchange": "SZSE",
+      "list_date": 20101117,
+      "name": "ST鼎龙",
+      "raw": {
+        "ssrq": "2010-11-17",
+        "zqdm": "002502",
+        "zqjc": "ST鼎龙",
+        "zzrq": "2024-09-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002502.SZ"
+    },
+    {
+      "delist_date": 20230811,
+      "exchange": "SZSE",
+      "list_date": 20101117,
+      "name": "*ST搜特",
+      "raw": {
+        "ssrq": "2010-11-17",
+        "zqdm": "002503",
+        "zqjc": "*ST搜特",
+        "zzrq": "2023-08-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002503.SZ"
+    },
+    {
+      "delist_date": 20230821,
+      "exchange": "SZSE",
+      "list_date": 20101118,
+      "name": "*ST弘高",
+      "raw": {
+        "ssrq": "2010-11-18",
+        "zqdm": "002504",
+        "zqjc": "*ST弘高",
+        "zzrq": "2023-08-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002504.SZ"
+    },
+    {
+      "delist_date": 20240830,
+      "exchange": "SZSE",
+      "list_date": 20101118,
+      "name": "鹏都农牧",
+      "raw": {
+        "ssrq": "2010-11-18",
+        "zqdm": "002505",
+        "zqjc": "鹏都农牧",
+        "zzrq": "2024-08-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002505.SZ"
+    },
+    {
+      "delist_date": 20200720,
+      "exchange": "SZSE",
+      "list_date": 20101123,
+      "name": "天茂退",
+      "raw": {
+        "ssrq": "2010-11-23",
+        "zqdm": "002509",
+        "zqjc": "天茂退",
+        "zzrq": "2020-07-20"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002509.SZ"
+    },
+    {
+      "delist_date": 20200715,
+      "exchange": "SZSE",
+      "list_date": 20110728,
+      "name": "龙力退",
+      "raw": {
+        "ssrq": "2011-07-28",
+        "zqdm": "002604",
+        "zqjc": "龙力退",
+        "zzrq": "2020-07-15"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002604.SZ"
+    },
+    {
+      "delist_date": 20240812,
+      "exchange": "SZSE",
+      "list_date": 20110815,
+      "name": "ST爱康",
+      "raw": {
+        "ssrq": "2011-08-15",
+        "zqdm": "002610",
+        "zqjc": "ST爱康",
+        "zzrq": "2024-08-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002610.SZ"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SZSE",
+      "list_date": 20110920,
+      "name": "丹邦退",
+      "raw": {
+        "ssrq": "2011-09-20",
+        "zqdm": "002618",
+        "zqjc": "丹邦退",
+        "zzrq": "2022-06-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002618.SZ"
+    },
+    {
+      "delist_date": 20220428,
+      "exchange": "SZSE",
+      "list_date": 20110929,
+      "name": "*ST艾格",
+      "raw": {
+        "ssrq": "2011-09-29",
+        "zqdm": "002619",
+        "zqjc": "*ST艾格",
+        "zzrq": "2022-04-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002619.SZ"
+    },
+    {
+      "delist_date": 20240805,
+      "exchange": "SZSE",
+      "list_date": 20110929,
+      "name": "*ST美吉",
+      "raw": {
+        "ssrq": "2011-09-29",
+        "zqdm": "002621",
+        "zqjc": "*ST美吉",
+        "zzrq": "2024-08-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002621.SZ"
+    },
+    {
+      "delist_date": 20240826,
+      "exchange": "SZSE",
+      "list_date": 20120327,
+      "name": "ST航高",
+      "raw": {
+        "ssrq": "2012-03-27",
+        "zqdm": "002665",
+        "zqjc": "ST航高",
+        "zzrq": "2024-08-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002665.SZ"
+    },
+    {
+      "delist_date": 20191127,
+      "exchange": "SZSE",
+      "list_date": 20120605,
+      "name": "长生退",
+      "raw": {
+        "ssrq": "2012-06-05",
+        "zqdm": "002680",
+        "zqjc": "长生退",
+        "zzrq": "2019-11-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002680.SZ"
+    },
+    {
+      "delist_date": 20220627,
+      "exchange": "SZSE",
+      "list_date": 20120612,
+      "name": "猛狮退",
+      "raw": {
+        "ssrq": "2012-06-12",
+        "zqdm": "002684",
+        "zqjc": "猛狮退",
+        "zzrq": "2022-06-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002684.SZ"
+    },
+    {
+      "delist_date": 20240605,
+      "exchange": "SZSE",
+      "list_date": 20120911,
+      "name": "*ST美盛",
+      "raw": {
+        "ssrq": "2012-09-11",
+        "zqdm": "002699",
+        "zqjc": "*ST美盛",
+        "zzrq": "2024-06-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002699.SZ"
+    },
+    {
+      "delist_date": 20210715,
+      "exchange": "SZSE",
+      "list_date": 20140127,
+      "name": "欧浦退",
+      "raw": {
+        "ssrq": "2014-01-27",
+        "zqdm": "002711",
+        "zqjc": "欧浦退",
+        "zzrq": "2021-07-15"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002711.SZ"
+    },
+    {
+      "delist_date": 20240304,
+      "exchange": "SZSE",
+      "list_date": 20150122,
+      "name": "*ST爱迪",
+      "raw": {
+        "ssrq": "2015-01-22",
+        "zqdm": "002740",
+        "zqjc": "*ST爱迪",
+        "zzrq": "2024-03-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002740.SZ"
+    },
+    {
+      "delist_date": 20250627,
+      "exchange": "SZSE",
+      "list_date": 20150324,
+      "name": "龙津退",
+      "raw": {
+        "ssrq": "2015-03-24",
+        "zqdm": "002750",
+        "zqjc": "龙津退",
+        "zzrq": "2025-06-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002750.SZ"
+    },
+    {
+      "delist_date": 20230713,
+      "exchange": "SZSE",
+      "list_date": 20150424,
+      "name": "易尚退",
+      "raw": {
+        "ssrq": "2015-04-24",
+        "zqdm": "002751",
+        "zqjc": "易尚退",
+        "zzrq": "2023-07-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002751.SZ"
+    },
+    {
+      "delist_date": 20220623,
+      "exchange": "SZSE",
+      "list_date": 20150630,
+      "name": "科迪退",
+      "raw": {
+        "ssrq": "2015-06-30",
+        "zqdm": "002770",
+        "zqjc": "科迪退",
+        "zzrq": "2022-06-23"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002770.SZ"
+    },
+    {
+      "delist_date": 20240125,
+      "exchange": "SZSE",
+      "list_date": 20150626,
+      "name": "*ST柏龙",
+      "raw": {
+        "ssrq": "2015-06-26",
+        "zqdm": "002776",
+        "zqjc": "*ST柏龙",
+        "zzrq": "2024-01-25"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002776.SZ"
+    },
+    {
+      "delist_date": 20230705,
+      "exchange": "SZSE",
+      "list_date": 20151222,
+      "name": "奇信退",
+      "raw": {
+        "ssrq": "2015-12-22",
+        "zqdm": "002781",
+        "zqjc": "奇信退",
+        "zzrq": "2023-07-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002781.SZ"
+    },
+    {
+      "delist_date": 20260714,
+      "exchange": "SZSE",
+      "list_date": 20160812,
+      "name": "恒久退",
+      "raw": {
+        "ssrq": "2016-08-12",
+        "zqdm": "002808",
+        "zqjc": "恒久退",
+        "zzrq": "2026-07-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002808.SZ"
+    },
+    {
+      "delist_date": 20260717,
+      "exchange": "SZSE",
+      "list_date": 20170912,
+      "name": "赛隆退",
+      "raw": {
+        "ssrq": "2017-09-12",
+        "zqdm": "002898",
+        "zqjc": "赛隆退",
+        "zzrq": "2026-07-17"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "002898.SZ"
+    },
+    {
+      "delist_date": 20140619,
+      "exchange": "SZSE",
+      "list_date": 19930528,
+      "name": "万&nbsp;&nbsp;科Ｂ",
+      "raw": {
+        "ssrq": "1993-05-28",
+        "zqdm": "200002",
+        "zqjc": "万&nbsp;&nbsp;科Ｂ",
+        "zzrq": "2014-06-19"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200002.SZ"
+    },
+    {
+      "delist_date": 20200107,
+      "exchange": "SZSE",
+      "list_date": 19920616,
+      "name": "神城B退",
+      "raw": {
+        "ssrq": "1992-06-16",
+        "zqdm": "200018",
+        "zqjc": "神城B退",
+        "zzrq": "2020-01-07"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200018.SZ"
+    },
+    {
+      "delist_date": 20151211,
+      "exchange": "SZSE",
+      "list_date": 19930607,
+      "name": "招商局Ｂ",
+      "raw": {
+        "ssrq": "1993-06-07",
+        "zqdm": "200024",
+        "zqjc": "招商局Ｂ",
+        "zzrq": "2015-12-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200024.SZ"
+    },
+    {
+      "delist_date": 20121214,
+      "exchange": "SZSE",
+      "list_date": 19940323,
+      "name": "中&nbsp;&nbsp;集Ｂ",
+      "raw": {
+        "ssrq": "1994-03-23",
+        "zqdm": "200039",
+        "zqjc": "中&nbsp;&nbsp;集Ｂ",
+        "zzrq": "2012-12-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200039.SZ"
+    },
+    {
+      "delist_date": 20180615,
+      "exchange": "SZSE",
+      "list_date": 19950728,
+      "name": "深基地Ｂ",
+      "raw": {
+        "ssrq": "1995-07-28",
+        "zqdm": "200053",
+        "zqjc": "深基地Ｂ",
+        "zzrq": "2018-06-15"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200053.SZ"
+    },
+    {
+      "delist_date": 20240822,
+      "exchange": "SZSE",
+      "list_date": 19950725,
+      "name": "建车B",
+      "raw": {
+        "ssrq": "1995-07-25",
+        "zqdm": "200054",
+        "zqjc": "建车B",
+        "zzrq": "2024-08-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200054.SZ"
+    },
+    {
+      "delist_date": 20230710,
+      "exchange": "SZSE",
+      "list_date": 20000912,
+      "name": "山航B退",
+      "raw": {
+        "ssrq": "2000-09-12",
+        "zqdm": "200152",
+        "zqjc": "山航B退",
+        "zzrq": "2023-07-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200152.SZ"
+    },
+    {
+      "delist_date": 20200721,
+      "exchange": "SZSE",
+      "list_date": 20000929,
+      "name": "东沣B退",
+      "raw": {
+        "ssrq": "2000-09-29",
+        "zqdm": "200160",
+        "zqjc": "东沣B退",
+        "zzrq": "2020-07-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200160.SZ"
+    },
+    {
+      "delist_date": 20210526,
+      "exchange": "SZSE",
+      "list_date": 20001027,
+      "name": "*ST舜喆B",
+      "raw": {
+        "ssrq": "2000-10-27",
+        "zqdm": "200168",
+        "zqjc": "*ST舜喆B",
+        "zzrq": "2021-05-26"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200168.SZ"
+    },
+    {
+      "delist_date": 20241011,
+      "exchange": "SZSE",
+      "list_date": 19960708,
+      "name": "ST东旭B",
+      "raw": {
+        "ssrq": "1996-07-08",
+        "zqdm": "200413",
+        "zqjc": "ST东旭B",
+        "zzrq": "2024-10-11"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200413.SZ"
+    },
+    {
+      "delist_date": 20190527,
+      "exchange": "SZSE",
+      "list_date": 19960718,
+      "name": "小天鹅Ｂ",
+      "raw": {
+        "ssrq": "1996-07-18",
+        "zqdm": "200418",
+        "zqjc": "小天鹅Ｂ",
+        "zzrq": "2019-05-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200418.SZ"
+    },
+    {
+      "delist_date": 20140110,
+      "exchange": "SZSE",
+      "list_date": 19930720,
+      "name": "丽&nbsp;&nbsp;珠Ｂ",
+      "raw": {
+        "ssrq": "1993-07-20",
+        "zqdm": "200513",
+        "zqjc": "丽&nbsp;&nbsp;珠Ｂ",
+        "zzrq": "2014-01-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200513.SZ"
+    },
+    {
+      "delist_date": 20220629,
+      "exchange": "SZSE",
+      "list_date": 19961008,
+      "name": "东海B退",
+      "raw": {
+        "ssrq": "1996-10-08",
+        "zqdm": "200613",
+        "zqjc": "东海B退",
+        "zzrq": "2022-06-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200613.SZ"
+    },
+    {
+      "delist_date": 20150713,
+      "exchange": "SZSE",
+      "list_date": 19980415,
+      "name": "武锅B退",
+      "raw": {
+        "ssrq": "1998-04-15",
+        "zqdm": "200770",
+        "zqjc": "武锅B退",
+        "zzrq": "2015-07-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200770.SZ"
+    },
+    {
+      "delist_date": 20251222,
+      "exchange": "SZSE",
+      "list_date": 19980428,
+      "name": "杭汽轮Ｂ",
+      "raw": {
+        "ssrq": "1998-04-28",
+        "zqdm": "200771",
+        "zqjc": "杭汽轮Ｂ",
+        "zzrq": "2025-12-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200771.SZ"
+    },
+    {
+      "delist_date": 20210721,
+      "exchange": "SZSE",
+      "list_date": 20000706,
+      "name": "粤华包Ｂ",
+      "raw": {
+        "ssrq": "2000-07-06",
+        "zqdm": "200986",
+        "zqjc": "粤华包Ｂ",
+        "zzrq": "2021-07-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "200986.SZ"
+    },
+    {
+      "delist_date": 20220629,
+      "exchange": "SZSE",
+      "list_date": 20091030,
+      "name": "宝德退",
+      "raw": {
+        "ssrq": "2009-10-30",
+        "zqdm": "300023",
+        "zqjc": "宝德退",
+        "zzrq": "2022-06-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300023.SZ"
+    },
+    {
+      "delist_date": 20200803,
+      "exchange": "SZSE",
+      "list_date": 20091030,
+      "name": "金亚退",
+      "raw": {
+        "ssrq": "2009-10-30",
+        "zqdm": "300028",
+        "zqjc": "金亚退",
+        "zzrq": "2020-08-03"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300028.SZ"
+    },
+    {
+      "delist_date": 20260710,
+      "exchange": "SZSE",
+      "list_date": 20091225,
+      "name": "天龙退",
+      "raw": {
+        "ssrq": "2009-12-25",
+        "zqdm": "300029",
+        "zqjc": "天龙退",
+        "zzrq": "2026-07-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300029.SZ"
+    },
+    {
+      "delist_date": 20220630,
+      "exchange": "SZSE",
+      "list_date": 20100108,
+      "name": "数知退",
+      "raw": {
+        "ssrq": "2010-01-08",
+        "zqdm": "300038",
+        "zqjc": "数知退",
+        "zzrq": "2022-06-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300038.SZ"
+    },
+    {
+      "delist_date": 20220627,
+      "exchange": "SZSE",
+      "list_date": 20100326,
+      "name": "金刚退",
+      "raw": {
+        "ssrq": "2010-03-26",
+        "zqdm": "300064",
+        "zqjc": "金刚退",
+        "zzrq": "2022-06-27"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300064.SZ"
+    },
+    {
+      "delist_date": 20230713,
+      "exchange": "SZSE",
+      "list_date": 20100625,
+      "name": "文化退",
+      "raw": {
+        "ssrq": "2010-06-25",
+        "zqdm": "300089",
+        "zqjc": "文化退",
+        "zzrq": "2023-07-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300089.SZ"
+    },
+    {
+      "delist_date": 20200825,
+      "exchange": "SZSE",
+      "list_date": 20100625,
+      "name": "盛运退",
+      "raw": {
+        "ssrq": "2010-06-25",
+        "zqdm": "300090",
+        "zqjc": "盛运退",
+        "zzrq": "2020-08-25"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300090.SZ"
+    },
+    {
+      "delist_date": 20200721,
+      "exchange": "SZSE",
+      "list_date": 20100812,
+      "name": "乐视退",
+      "raw": {
+        "ssrq": "2010-08-12",
+        "zqdm": "300104",
+        "zqjc": "乐视退",
+        "zzrq": "2020-07-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300104.SZ"
+    },
+    {
+      "delist_date": 20250529,
+      "exchange": "SZSE",
+      "list_date": 20100825,
+      "name": "*ST吉药",
+      "raw": {
+        "ssrq": "2010-08-25",
+        "zqdm": "300108",
+        "zqjc": "*ST吉药",
+        "zzrq": "2025-05-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300108.SZ"
+    },
+    {
+      "delist_date": 20240725,
+      "exchange": "SZSE",
+      "list_date": 20100902,
+      "name": "*ST保力",
+      "raw": {
+        "ssrq": "2010-09-02",
+        "zqdm": "300116",
+        "zqjc": "*ST保力",
+        "zzrq": "2024-07-25"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300116.SZ"
+    },
+    {
+      "delist_date": 20250430,
+      "exchange": "SZSE",
+      "list_date": 20100902,
+      "name": "*ST嘉寓",
+      "raw": {
+        "ssrq": "2010-09-02",
+        "zqdm": "300117",
+        "zqjc": "*ST嘉寓",
+        "zzrq": "2025-04-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300117.SZ"
+    },
+    {
+      "delist_date": 20200825,
+      "exchange": "SZSE",
+      "list_date": 20110107,
+      "name": "神雾退",
+      "raw": {
+        "ssrq": "2011-01-07",
+        "zqdm": "300156",
+        "zqjc": "神雾退",
+        "zzrq": "2020-08-25"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300156.SZ"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SZSE",
+      "list_date": 20110215,
+      "name": "腾邦退",
+      "raw": {
+        "ssrq": "2011-02-15",
+        "zqdm": "300178",
+        "zqjc": "腾邦退",
+        "zzrq": "2022-06-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300178.SZ"
+    },
+    {
+      "delist_date": 20151102,
+      "exchange": "SZSE",
+      "list_date": 20110308,
+      "name": "大华农",
+      "raw": {
+        "ssrq": "2011-03-08",
+        "zqdm": "300186",
+        "zqjc": "大华农",
+        "zzrq": "2015-11-02"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300186.SZ"
+    },
+    {
+      "delist_date": 20220704,
+      "exchange": "SZSE",
+      "list_date": 20110415,
+      "name": "聚龙退",
+      "raw": {
+        "ssrq": "2011-04-15",
+        "zqdm": "300202",
+        "zqjc": "聚龙退",
+        "zzrq": "2022-07-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300202.SZ"
+    },
+    {
+      "delist_date": 20250721,
+      "exchange": "SZSE",
+      "list_date": 20110426,
+      "name": "中程退",
+      "raw": {
+        "ssrq": "2011-04-26",
+        "zqdm": "300208",
+        "zqjc": "中程退",
+        "zzrq": "2025-07-21"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300208.SZ"
+    },
+    {
+      "delist_date": 20200916,
+      "exchange": "SZSE",
+      "list_date": 20110511,
+      "name": "千山退",
+      "raw": {
+        "ssrq": "2011-05-11",
+        "zqdm": "300216",
+        "zqjc": "千山退",
+        "zzrq": "2020-09-16"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300216.SZ"
+    },
+    {
+      "delist_date": 20240819,
+      "exchange": "SZSE",
+      "list_date": 20110916,
+      "name": "*ST巴安",
+      "raw": {
+        "ssrq": "2011-09-16",
+        "zqdm": "300262",
+        "zqjc": "*ST巴安",
+        "zzrq": "2024-08-19"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300262.SZ"
+    },
+    {
+      "delist_date": 20230706,
+      "exchange": "SZSE",
+      "list_date": 20111026,
+      "name": "和佳退",
+      "raw": {
+        "ssrq": "2011-10-26",
+        "zqdm": "300273",
+        "zqjc": "和佳退",
+        "zzrq": "2023-07-06"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300273.SZ"
+    },
+    {
+      "delist_date": 20251014,
+      "exchange": "SZSE",
+      "list_date": 20111229,
+      "name": "紫天退",
+      "raw": {
+        "ssrq": "2011-12-29",
+        "zqdm": "300280",
+        "zqjc": "紫天退",
+        "zzrq": "2025-10-14"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300280.SZ"
+    },
+    {
+      "delist_date": 20240718,
+      "exchange": "SZSE",
+      "list_date": 20111229,
+      "name": "三盛退",
+      "raw": {
+        "ssrq": "2011-12-29",
+        "zqdm": "300282",
+        "zqjc": "三盛退",
+        "zzrq": "2024-07-18"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300282.SZ"
+    },
+    {
+      "delist_date": 20230731,
+      "exchange": "SZSE",
+      "list_date": 20120315,
+      "name": "蓝盾退",
+      "raw": {
+        "ssrq": "2012-03-15",
+        "zqdm": "300297",
+        "zqjc": "蓝盾退",
+        "zzrq": "2023-07-31"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300297.SZ"
+    },
+    {
+      "delist_date": 20230530,
+      "exchange": "SZSE",
+      "list_date": 20120410,
+      "name": "吉艾退",
+      "raw": {
+        "ssrq": "2012-04-10",
+        "zqdm": "300309",
+        "zqjc": "吉艾退",
+        "zzrq": "2023-05-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300309.SZ"
+    },
+    {
+      "delist_date": 20220704,
+      "exchange": "SZSE",
+      "list_date": 20120508,
+      "name": "邦讯退",
+      "raw": {
+        "ssrq": "2012-05-08",
+        "zqdm": "300312",
+        "zqjc": "邦讯退",
+        "zzrq": "2022-07-04"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300312.SZ"
+    },
+    {
+      "delist_date": 20220628,
+      "exchange": "SZSE",
+      "list_date": 20120601,
+      "name": "德威退",
+      "raw": {
+        "ssrq": "2012-06-01",
+        "zqdm": "300325",
+        "zqjc": "德威退",
+        "zzrq": "2022-06-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300325.SZ"
+    },
+    {
+      "delist_date": 20230524,
+      "exchange": "SZSE",
+      "list_date": 20120619,
+      "name": "计通退",
+      "raw": {
+        "ssrq": "2012-06-19",
+        "zqdm": "300330",
+        "zqjc": "计通退",
+        "zzrq": "2023-05-24"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300330.SZ"
+    },
+    {
+      "delist_date": 20230705,
+      "exchange": "SZSE",
+      "list_date": 20120710,
+      "name": "新文退",
+      "raw": {
+        "ssrq": "2012-07-10",
+        "zqdm": "300336",
+        "zqjc": "新文退",
+        "zzrq": "2023-07-05"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300336.SZ"
+    },
+    {
+      "delist_date": 20260422,
+      "exchange": "SZSE",
+      "list_date": 20120801,
+      "name": "立方退",
+      "raw": {
+        "ssrq": "2012-08-01",
+        "zqdm": "300344",
+        "zqjc": "立方退",
+        "zzrq": "2026-04-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300344.SZ"
+    },
+    {
+      "delist_date": 20230713,
+      "exchange": "SZSE",
+      "list_date": 20121009,
+      "name": "光一退",
+      "raw": {
+        "ssrq": "2012-10-09",
+        "zqdm": "300356",
+        "zqjc": "光一退",
+        "zzrq": "2023-07-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300356.SZ"
+    },
+    {
+      "delist_date": 20210830,
+      "exchange": "SZSE",
+      "list_date": 20140121,
+      "name": "天翔退",
+      "raw": {
+        "ssrq": "2014-01-21",
+        "zqdm": "300362",
+        "zqjc": "天翔退",
+        "zzrq": "2021-08-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300362.SZ"
+    },
+    {
+      "delist_date": 20220630,
+      "exchange": "SZSE",
+      "list_date": 20140129,
+      "name": "网力退",
+      "raw": {
+        "ssrq": "2014-01-29",
+        "zqdm": "300367",
+        "zqjc": "网力退",
+        "zzrq": "2022-06-30"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300367.SZ"
+    },
+    {
+      "delist_date": 20170828,
+      "exchange": "SZSE",
+      "list_date": 20140127,
+      "name": "欣泰退",
+      "raw": {
+        "ssrq": "2014-01-27",
+        "zqdm": "300372",
+        "zqjc": "欣泰退",
+        "zzrq": "2017-08-28"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300372.SZ"
+    },
+    {
+      "delist_date": 20260122,
+      "exchange": "SZSE",
+      "list_date": 20140128,
+      "name": "东通退",
+      "raw": {
+        "ssrq": "2014-01-28",
+        "zqdm": "300379",
+        "zqjc": "东通退",
+        "zzrq": "2026-01-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300379.SZ"
+    },
+    {
+      "delist_date": 20260413,
+      "exchange": "SZSE",
+      "list_date": 20140801,
+      "name": "长药退",
+      "raw": {
+        "ssrq": "2014-08-01",
+        "zqdm": "300391",
+        "zqjc": "长药退",
+        "zzrq": "2026-04-13"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300391.SZ"
+    },
+    {
+      "delist_date": 20230710,
+      "exchange": "SZSE",
+      "list_date": 20140910,
+      "name": "腾信退",
+      "raw": {
+        "ssrq": "2014-09-10",
+        "zqdm": "300392",
+        "zqjc": "腾信退",
+        "zzrq": "2023-07-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300392.SZ"
+    },
+    {
+      "delist_date": 20201110,
+      "exchange": "SZSE",
+      "list_date": 20150324,
+      "name": "暴风退",
+      "raw": {
+        "ssrq": "2015-03-24",
+        "zqdm": "300431",
+        "zqjc": "暴风退",
+        "zzrq": "2020-11-10"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300431.SZ"
+    },
+    {
+      "delist_date": 20240920,
+      "exchange": "SZSE",
+      "list_date": 20151222,
+      "name": "*ST美尚",
+      "raw": {
+        "ssrq": "2015-12-22",
+        "zqdm": "300495",
+        "zqjc": "*ST美尚",
+        "zzrq": "2024-09-20"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300495.SZ"
+    },
+    {
+      "delist_date": 20230712,
+      "exchange": "SZSE",
+      "list_date": 20160802,
+      "name": "中潜退",
+      "raw": {
+        "ssrq": "2016-08-02",
+        "zqdm": "300526",
+        "zqjc": "中潜退",
+        "zzrq": "2023-07-12"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300526.SZ"
+    },
+    {
+      "delist_date": 20250522,
+      "exchange": "SZSE",
+      "list_date": 20170328,
+      "name": "普利退",
+      "raw": {
+        "ssrq": "2017-03-28",
+        "zqdm": "300630",
+        "zqjc": "普利退",
+        "zzrq": "2025-05-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300630.SZ"
+    },
+    {
+      "delist_date": 20240722,
+      "exchange": "SZSE",
+      "list_date": 20180508,
+      "name": "越博退",
+      "raw": {
+        "ssrq": "2018-05-08",
+        "zqdm": "300742",
+        "zqjc": "越博退",
+        "zzrq": "2024-07-22"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300742.SZ"
+    },
+    {
+      "delist_date": 20240729,
+      "exchange": "SZSE",
+      "list_date": 20191029,
+      "name": "左江退",
+      "raw": {
+        "ssrq": "2019-10-29",
+        "zqdm": "300799",
+        "zqjc": "左江退",
+        "zzrq": "2024-07-29"
+      },
+      "source_url": "https://www.szse.cn/market/stock/suspend/index.html",
+      "symbol": "300799.SZ"
+    },
+    {
+      "delist_date": 20100226,
+      "exchange": "SSE",
+      "list_date": 19990810,
+      "name": "ST东北高",
+      "raw": {
+        "A_STOCK_CODE": "600003",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST东北高",
+        "COMPANY_ABBR_EN": "NEEC",
+        "COMPANY_CODE": "600003",
+        "DELIST_DATE": "20100226",
+        "FULL_NAME": "东北高速公路股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990810",
+        "NUM": "4",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600003.SH"
+    },
+    {
+      "delist_date": 20170214,
+      "exchange": "SSE",
+      "list_date": 19990803,
+      "name": "武钢股份",
+      "raw": {
+        "A_STOCK_CODE": "600005",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "武钢股份",
+        "COMPANY_ABBR_EN": "WISCO，LTD",
+        "COMPANY_CODE": "600005",
+        "DELIST_DATE": "20170214",
+        "FULL_NAME": "武汉钢铁股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990803",
+        "NUM": "6",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600005.SH"
+    },
+    {
+      "delist_date": 20210913,
+      "exchange": "SSE",
+      "list_date": 19970526,
+      "name": "葛洲坝",
+      "raw": {
+        "A_STOCK_CODE": "600068",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "葛洲坝",
+        "COMPANY_ABBR_EN": "CGGC",
+        "COMPANY_CODE": "600068",
+        "DELIST_DATE": "20210913",
+        "FULL_NAME": "中国葛洲坝集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970526",
+        "NUM": "57",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600068.SH"
+    },
+    {
+      "delist_date": 20200828,
+      "exchange": "SSE",
+      "list_date": 19970430,
+      "name": "退市银鸽",
+      "raw": {
+        "A_STOCK_CODE": "600069",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市银鸽",
+        "COMPANY_ABBR_EN": "YINGE",
+        "COMPANY_CODE": "600069",
+        "DELIST_DATE": "20200828",
+        "FULL_NAME": "河南银鸽实业投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970430",
+        "NUM": "58",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600069.SH"
+    },
+    {
+      "delist_date": 20250430,
+      "exchange": "SSE",
+      "list_date": 19970604,
+      "name": "*ST富润",
+      "raw": {
+        "A_STOCK_CODE": "600070",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST富润",
+        "COMPANY_ABBR_EN": "ZHEJIANG FURUN",
+        "COMPANY_CODE": "600070",
+        "DELIST_DATE": "20250430",
+        "FULL_NAME": "浙江富润数字科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970604",
+        "NUM": "59",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600070.SH"
+    },
+    {
+      "delist_date": 20200603,
+      "exchange": "SSE",
+      "list_date": 19970623,
+      "name": "退市保千",
+      "raw": {
+        "A_STOCK_CODE": "600074",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市保千",
+        "COMPANY_ABBR_EN": "PROTRULY",
+        "COMPANY_CODE": "600074",
+        "DELIST_DATE": "20200603",
+        "FULL_NAME": "江苏保千里视像科技集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970623",
+        "NUM": "63",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600074.SH"
+    },
+    {
+      "delist_date": 20230725,
+      "exchange": "SSE",
+      "list_date": 19970520,
+      "name": "*ST宋都",
+      "raw": {
+        "A_STOCK_CODE": "600077",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST宋都",
+        "COMPANY_ABBR_EN": "SUNDY CORPORATION",
+        "COMPANY_CODE": "600077",
+        "DELIST_DATE": "20230725",
+        "FULL_NAME": "宋都基业投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970520",
+        "NUM": "66",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600077.SH"
+    },
+    {
+      "delist_date": 20250305,
+      "exchange": "SSE",
+      "list_date": 19970606,
+      "name": "*ST博信",
+      "raw": {
+        "A_STOCK_CODE": "600083",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST博信",
+        "COMPANY_ABBR_EN": "BOOK DIGITAL",
+        "COMPANY_CODE": "600083",
+        "DELIST_DATE": "20250305",
+        "FULL_NAME": "江苏博信投资控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970606",
+        "NUM": "72",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600083.SH"
+    },
+    {
+      "delist_date": 20210318,
+      "exchange": "SSE",
+      "list_date": 19970606,
+      "name": "退市金钰",
+      "raw": {
+        "A_STOCK_CODE": "600086",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市金钰",
+        "COMPANY_ABBR_EN": "EASTERN GOLD JADE",
+        "COMPANY_CODE": "600086",
+        "DELIST_DATE": "20210318",
+        "FULL_NAME": "东方金钰股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970606",
+        "NUM": "75",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600086.SH"
+    },
+    {
+      "delist_date": 20140605,
+      "exchange": "SSE",
+      "list_date": 19970612,
+      "name": "退市长油",
+      "raw": {
+        "A_STOCK_CODE": "600087",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市长油",
+        "COMPANY_ABBR_EN": "NJTC",
+        "COMPANY_CODE": "600087",
+        "DELIST_DATE": "20140605",
+        "FULL_NAME": "招商局南京油运股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970612",
+        "NUM": "76",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600087.SH"
+    },
+    {
+      "delist_date": 20220707,
+      "exchange": "SSE",
+      "list_date": 19970616,
+      "name": "退市济堂",
+      "raw": {
+        "A_STOCK_CODE": "600090",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市济堂",
+        "COMPANY_ABBR_EN": "READY",
+        "COMPANY_CODE": "600090",
+        "DELIST_DATE": "20220707",
+        "FULL_NAME": "新疆同济堂健康产业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970616",
+        "NUM": "79",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600090.SH"
+    },
+    {
+      "delist_date": 20220621,
+      "exchange": "SSE",
+      "list_date": 19970704,
+      "name": "退市明科",
+      "raw": {
+        "A_STOCK_CODE": "600091",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市明科",
+        "COMPANY_ABBR_EN": "BTTT",
+        "COMPANY_CODE": "600091",
+        "DELIST_DATE": "20220621",
+        "FULL_NAME": "包头明天科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970704",
+        "NUM": "80",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600091.SH"
+    },
+    {
+      "delist_date": 20220623,
+      "exchange": "SSE",
+      "list_date": 19970626,
+      "name": "退市易见",
+      "raw": {
+        "A_STOCK_CODE": "600093",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市易见",
+        "COMPANY_ABBR_EN": "EASY VISIBLE",
+        "COMPANY_CODE": "600093",
+        "DELIST_DATE": "20220623",
+        "FULL_NAME": "易见供应链管理股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970626",
+        "NUM": "82",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600093.SH"
+    },
+    {
+      "delist_date": 20120228,
+      "exchange": "SSE",
+      "list_date": 19970828,
+      "name": "莱钢股份",
+      "raw": {
+        "A_STOCK_CODE": "600102",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "莱钢股份",
+        "COMPANY_ABBR_EN": "LS CO.",
+        "COMPANY_CODE": "600102",
+        "DELIST_DATE": "20120228",
+        "FULL_NAME": "莱芜钢铁股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19970828",
+        "NUM": "92",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600102.SH"
+    },
+    {
+      "delist_date": 20240815,
+      "exchange": "SSE",
+      "list_date": 19971127,
+      "name": "*ST天成",
+      "raw": {
+        "A_STOCK_CODE": "600112",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST天成",
+        "COMPANY_ABBR_EN": "TCKG",
+        "COMPANY_CODE": "600112",
+        "DELIST_DATE": "20240815",
+        "FULL_NAME": "贵州长征天成控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19971127",
+        "NUM": "102",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600112.SH"
+    },
+    {
+      "delist_date": 20230626,
+      "exchange": "SSE",
+      "list_date": 19980420,
+      "name": "*ST宏图",
+      "raw": {
+        "A_STOCK_CODE": "600122",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST宏图",
+        "COMPANY_ABBR_EN": "HITEKER",
+        "COMPANY_CODE": "600122",
+        "DELIST_DATE": "20230626",
+        "FULL_NAME": "江苏宏图高科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19980420",
+        "NUM": "112",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600122.SH"
+    },
+    {
+      "delist_date": 20230327,
+      "exchange": "SSE",
+      "list_date": 19980225,
+      "name": "*ST西源",
+      "raw": {
+        "A_STOCK_CODE": "600139",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST西源",
+        "COMPANY_ABBR_EN": "WESTERN RESOURCES",
+        "COMPANY_CODE": "600139",
+        "DELIST_DATE": "20230327",
+        "FULL_NAME": "四川西部资源控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19980225",
+        "NUM": "127",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600139.SH"
+    },
+    {
+      "delist_date": 20220428,
+      "exchange": "SSE",
+      "list_date": 19990923,
+      "name": "退市新亿",
+      "raw": {
+        "A_STOCK_CODE": "600145",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市新亿",
+        "COMPANY_ABBR_EN": "XINYI HOLDING CO., LTD.",
+        "COMPANY_CODE": "600145",
+        "DELIST_DATE": "20220428",
+        "FULL_NAME": "新疆亿路万源实业控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990923",
+        "NUM": "130",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600145.SH"
+    },
+    {
+      "delist_date": 20220630,
+      "exchange": "SSE",
+      "list_date": 19990707,
+      "name": "退市环球",
+      "raw": {
+        "A_STOCK_CODE": "600146",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市环球",
+        "COMPANY_ABBR_EN": "SHANGYING GLOBAL",
+        "COMPANY_CODE": "600146",
+        "DELIST_DATE": "20220630",
+        "FULL_NAME": "商赢环球股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990707",
+        "NUM": "131",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600146.SH"
+    },
+    {
+      "delist_date": 20200817,
+      "exchange": "SSE",
+      "list_date": 19990408,
+      "name": "退市美都",
+      "raw": {
+        "A_STOCK_CODE": "600175",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市美都",
+        "COMPANY_ABBR_EN": "MEIDU ENERGY",
+        "COMPANY_CODE": "600175",
+        "DELIST_DATE": "20200817",
+        "FULL_NAME": "美都能源股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990408",
+        "NUM": "156",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600175.SH"
+    },
+    {
+      "delist_date": 20250728,
+      "exchange": "SSE",
+      "list_date": 19980519,
+      "name": "退市锦港",
+      "raw": {
+        "A_STOCK_CODE": "600190",
+        "B_STOCK_CODE": "900952",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市锦港",
+        "COMPANY_ABBR_EN": "JZP",
+        "COMPANY_CODE": "600190",
+        "DELIST_DATE": "20250728",
+        "FULL_NAME": "锦州港股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19980519",
+        "NUM": "172",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600190.SH"
+    },
+    {
+      "delist_date": 20260706,
+      "exchange": "SSE",
+      "list_date": 19990527,
+      "name": "退市创兴",
+      "raw": {
+        "A_STOCK_CODE": "600193",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市创兴",
+        "COMPANY_ABBR_EN": "PROREAL RESOURCES",
+        "COMPANY_CODE": "600193",
+        "DELIST_DATE": "20260706",
+        "FULL_NAME": "上海创兴资源开发股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990527",
+        "NUM": "175",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600193.SH"
+    },
+    {
+      "delist_date": 20251231,
+      "exchange": "SSE",
+      "list_date": 19990401,
+      "name": "退市苏吴",
+      "raw": {
+        "A_STOCK_CODE": "600200",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市苏吴",
+        "COMPANY_ABBR_EN": "JIANGSU WUZHONG",
+        "COMPANY_CODE": "600200",
+        "DELIST_DATE": "20251231",
+        "FULL_NAME": "江苏吴中医药发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990401",
+        "NUM": "181",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600200.SH"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SSE",
+      "list_date": 19990325,
+      "name": "退市罗顿",
+      "raw": {
+        "A_STOCK_CODE": "600209",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市罗顿",
+        "COMPANY_ABBR_EN": "LAWTON DEVELOPMENT",
+        "COMPANY_CODE": "600209",
+        "DELIST_DATE": "20220622",
+        "FULL_NAME": "罗顿发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990325",
+        "NUM": "189",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600209.SH"
+    },
+    {
+      "delist_date": 20241017,
+      "exchange": "SSE",
+      "list_date": 19990831,
+      "name": "*ST亚星",
+      "raw": {
+        "A_STOCK_CODE": "600213",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST亚星",
+        "COMPANY_ABBR_EN": "YABC",
+        "COMPANY_CODE": "600213",
+        "DELIST_DATE": "20241017",
+        "FULL_NAME": "扬州亚星客车股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990831",
+        "NUM": "193",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600213.SH"
+    },
+    {
+      "delist_date": 20240710,
+      "exchange": "SSE",
+      "list_date": 19990927,
+      "name": "ST阳光",
+      "raw": {
+        "A_STOCK_CODE": "600220",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST阳光",
+        "COMPANY_ABBR_EN": "JSSS",
+        "COMPANY_CODE": "600220",
+        "DELIST_DATE": "20240710",
+        "FULL_NAME": "江苏阳光股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990927",
+        "NUM": "199",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600220.SH"
+    },
+    {
+      "delist_date": 20250306,
+      "exchange": "SSE",
+      "list_date": 20000127,
+      "name": "退市卓朗",
+      "raw": {
+        "A_STOCK_CODE": "600225",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市卓朗",
+        "COMPANY_ABBR_EN": "TROILA TECHNOLOGY",
+        "COMPANY_CODE": "600225",
+        "DELIST_DATE": "20250306",
+        "FULL_NAME": "天津卓朗信息科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000127",
+        "NUM": "204",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600225.SH"
+    },
+    {
+      "delist_date": 20200206,
+      "exchange": "SSE",
+      "list_date": 20000628,
+      "name": "退市华业",
+      "raw": {
+        "A_STOCK_CODE": "600240",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市华业",
+        "COMPANY_ABBR_EN": "BJHY",
+        "COMPANY_CODE": "600240",
+        "DELIST_DATE": "20200206",
+        "FULL_NAME": "北京华业资本控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000628",
+        "NUM": "219",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600240.SH"
+    },
+    {
+      "delist_date": 20230629,
+      "exchange": "SSE",
+      "list_date": 20001207,
+      "name": "退市中昌",
+      "raw": {
+        "A_STOCK_CODE": "600242",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市中昌",
+        "COMPANY_ABBR_EN": "ZHONGCHANG DATA",
+        "COMPANY_CODE": "600242",
+        "DELIST_DATE": "20230629",
+        "FULL_NAME": "中昌大数据股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001207",
+        "NUM": "221",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600242.SH"
+    },
+    {
+      "delist_date": 20210322,
+      "exchange": "SSE",
+      "list_date": 20001123,
+      "name": "*ST成城",
+      "raw": {
+        "A_STOCK_CODE": "600247",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST成城",
+        "COMPANY_ABBR_EN": "JILIN CHENGCHENG GROUP",
+        "COMPANY_CODE": "600247",
+        "DELIST_DATE": "20210322",
+        "FULL_NAME": "吉林成城集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001123",
+        "NUM": "224",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600247.SH"
+    },
+    {
+      "delist_date": 20130715,
+      "exchange": "SSE",
+      "list_date": 20001227,
+      "name": "天方药业",
+      "raw": {
+        "A_STOCK_CODE": "600253",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "天方药业",
+        "COMPANY_ABBR_EN": "TOPFOND",
+        "COMPANY_CODE": "600253",
+        "DELIST_DATE": "20130715",
+        "FULL_NAME": "河南天方药业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001227",
+        "NUM": "230",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600253.SH"
+    },
+    {
+      "delist_date": 20230215,
+      "exchange": "SSE",
+      "list_date": 20000706,
+      "name": "*ST凯乐",
+      "raw": {
+        "A_STOCK_CODE": "600260",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST凯乐",
+        "COMPANY_ABBR_EN": "KAILE SCIENCE AND TECHNOLOGY",
+        "COMPANY_CODE": "600260",
+        "DELIST_DATE": "20230215",
+        "FULL_NAME": "湖北凯乐科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000706",
+        "NUM": "236",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600260.SH"
+    },
+    {
+      "delist_date": 20120301,
+      "exchange": "SSE",
+      "list_date": 20000725,
+      "name": "路桥建设",
+      "raw": {
+        "A_STOCK_CODE": "600263",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "路桥建设",
+        "COMPANY_ABBR_EN": "CRBCINT",
+        "COMPANY_CODE": "600263",
+        "DELIST_DATE": "20120301",
+        "FULL_NAME": "路桥集团国际建设股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000725",
+        "NUM": "239",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600263.SH"
+    },
+    {
+      "delist_date": 20181228,
+      "exchange": "SSE",
+      "list_date": 20001228,
+      "name": "外运发展",
+      "raw": {
+        "A_STOCK_CODE": "600270",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "外运发展",
+        "COMPANY_ABBR_EN": "SINOAIR",
+        "COMPANY_CODE": "600270",
+        "DELIST_DATE": "20181228",
+        "FULL_NAME": "中外运空运发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001228",
+        "NUM": "245",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600270.SH"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SSE",
+      "list_date": 20000810,
+      "name": "退市昌鱼",
+      "raw": {
+        "A_STOCK_CODE": "600275",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市昌鱼",
+        "COMPANY_ABBR_EN": "WCY",
+        "COMPANY_CODE": "600275",
+        "DELIST_DATE": "20220622",
+        "FULL_NAME": "湖北武昌鱼股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000810",
+        "NUM": "250",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600275.SH"
+    },
+    {
+      "delist_date": 20240718,
+      "exchange": "SSE",
+      "list_date": 20000725,
+      "name": "ST亿利",
+      "raw": {
+        "A_STOCK_CODE": "600277",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST亿利",
+        "COMPANY_ABBR_EN": "ELION",
+        "COMPANY_CODE": "600277",
+        "DELIST_DATE": "20240718",
+        "FULL_NAME": "亿利洁能股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000725",
+        "NUM": "252",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600277.SH"
+    },
+    {
+      "delist_date": 20240116,
+      "exchange": "SSE",
+      "list_date": 20001106,
+      "name": "*ST华仪",
+      "raw": {
+        "A_STOCK_CODE": "600290",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST华仪",
+        "COMPANY_ABBR_EN": "HUAYI ELEC",
+        "COMPANY_CODE": "600290",
+        "DELIST_DATE": "20240116",
+        "FULL_NAME": "华仪电气股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001106",
+        "NUM": "265",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600290.SH"
+    },
+    {
+      "delist_date": 20220614,
+      "exchange": "SSE",
+      "list_date": 20000731,
+      "name": "退市西水",
+      "raw": {
+        "A_STOCK_CODE": "600291",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市西水",
+        "COMPANY_ABBR_EN": "XC5",
+        "COMPANY_CODE": "600291",
+        "DELIST_DATE": "20220614",
+        "FULL_NAME": "内蒙古西水创业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20000731",
+        "NUM": "266",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600291.SH"
+    },
+    {
+      "delist_date": 20240828,
+      "exchange": "SSE",
+      "list_date": 20001116,
+      "name": "广汇汽车",
+      "raw": {
+        "A_STOCK_CODE": "600297",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "广汇汽车",
+        "COMPANY_ABBR_EN": "CGA",
+        "COMPANY_CODE": "600297",
+        "DELIST_DATE": "20240828",
+        "FULL_NAME": "广汇汽车服务集团股份公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001116",
+        "NUM": "272",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600297.SH"
+    },
+    {
+      "delist_date": 20240626,
+      "exchange": "SSE",
+      "list_date": 20001226,
+      "name": "退市商城",
+      "raw": {
+        "A_STOCK_CODE": "600306",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市商城",
+        "COMPANY_ABBR_EN": "S.Y.C.C.",
+        "COMPANY_CODE": "600306",
+        "DELIST_DATE": "20240626",
+        "FULL_NAME": "沈阳商业城股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20001226",
+        "NUM": "280",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600306.SH"
+    },
+    {
+      "delist_date": 20230327,
+      "exchange": "SSE",
+      "list_date": 20010626,
+      "name": "*ST荣华",
+      "raw": {
+        "A_STOCK_CODE": "600311",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST荣华",
+        "COMPANY_ABBR_EN": "GSRH",
+        "COMPANY_CODE": "600311",
+        "DELIST_DATE": "20230327",
+        "FULL_NAME": "甘肃荣华实业(集团)股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010626",
+        "NUM": "285",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600311.SH"
+    },
+    {
+      "delist_date": 20210129,
+      "exchange": "SSE",
+      "list_date": 20020131,
+      "name": "营口港",
+      "raw": {
+        "A_STOCK_CODE": "600317",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "营口港",
+        "COMPANY_ABBR_EN": "YKPLC",
+        "COMPANY_CODE": "600317",
+        "DELIST_DATE": "20210129",
+        "FULL_NAME": "营口港务股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20020131",
+        "NUM": "290",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600317.SH"
+    },
+    {
+      "delist_date": 20240627,
+      "exchange": "SSE",
+      "list_date": 20010524,
+      "name": "正源股份",
+      "raw": {
+        "A_STOCK_CODE": "600321",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "正源股份",
+        "COMPANY_ABBR_EN": "RIGHTWAY HOLDINGS",
+        "COMPANY_CODE": "600321",
+        "DELIST_DATE": "20240627",
+        "FULL_NAME": "正源控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010524",
+        "NUM": "295",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600321.SH"
+    },
+    {
+      "delist_date": 20260427,
+      "exchange": "SSE",
+      "list_date": 20020613,
+      "name": "*ST精伦",
+      "raw": {
+        "A_STOCK_CODE": "600355",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST精伦",
+        "COMPANY_ABBR_EN": "ROUTON",
+        "COMPANY_CODE": "600355",
+        "DELIST_DATE": "20260427",
+        "FULL_NAME": "精伦电子股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20020613",
+        "NUM": "322",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600355.SH"
+    },
+    {
+      "delist_date": 20220707,
+      "exchange": "SSE",
+      "list_date": 20010723,
+      "name": "退市金泰",
+      "raw": {
+        "A_STOCK_CODE": "600385",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市金泰",
+        "COMPANY_ABBR_EN": "SDJT",
+        "COMPANY_CODE": "600385",
+        "DELIST_DATE": "20220707",
+        "FULL_NAME": "山东金泰集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010723",
+        "NUM": "349",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600385.SH"
+    },
+    {
+      "delist_date": 20250711,
+      "exchange": "SSE",
+      "list_date": 20040218,
+      "name": "退市海越",
+      "raw": {
+        "A_STOCK_CODE": "600387",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市海越",
+        "COMPANY_ABBR_EN": "HY ENERGY",
+        "COMPANY_CODE": "600387",
+        "DELIST_DATE": "20250711",
+        "FULL_NAME": "海越能源集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20040218",
+        "NUM": "351",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600387.SH"
+    },
+    {
+      "delist_date": 20230718,
+      "exchange": "SSE",
+      "list_date": 20010319,
+      "name": "ST粤泰",
+      "raw": {
+        "A_STOCK_CODE": "600393",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST粤泰",
+        "COMPANY_ABBR_EN": "GZYT",
+        "COMPANY_CODE": "600393",
+        "DELIST_DATE": "20230718",
+        "FULL_NAME": "广州粤泰集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010319",
+        "NUM": "357",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600393.SH"
+    },
+    {
+      "delist_date": 20190715,
+      "exchange": "SSE",
+      "list_date": 20030924,
+      "name": "退市海润",
+      "raw": {
+        "A_STOCK_CODE": "600401",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市海润",
+        "COMPANY_ABBR_EN": "HAREON SOLAR",
+        "COMPANY_CODE": "600401",
+        "DELIST_DATE": "20190715",
+        "FULL_NAME": "海润光伏科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20030924",
+        "NUM": "364",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600401.SH"
+    },
+    {
+      "delist_date": 20260626,
+      "exchange": "SSE",
+      "list_date": 20040607,
+      "name": "退市华嵘",
+      "raw": {
+        "A_STOCK_CODE": "600421",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市华嵘",
+        "COMPANY_ABBR_EN": "HUARONG HOLDING",
+        "COMPANY_CODE": "600421",
+        "DELIST_DATE": "20260626",
+        "FULL_NAME": "湖北华嵘控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20040607",
+        "NUM": "376",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600421.SH"
+    },
+    {
+      "delist_date": 20180713,
+      "exchange": "SSE",
+      "list_date": 20030905,
+      "name": "退市吉恩",
+      "raw": {
+        "A_STOCK_CODE": "600432",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市吉恩",
+        "COMPANY_ABBR_EN": "JE NICKEL",
+        "COMPANY_CODE": "600432",
+        "DELIST_DATE": "20180713",
+        "FULL_NAME": "吉林吉恩镍业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20030905",
+        "NUM": "383",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600432.SH"
+    },
+    {
+      "delist_date": 20250721,
+      "exchange": "SSE",
+      "list_date": 20030903,
+      "name": "退市九有",
+      "raw": {
+        "A_STOCK_CODE": "600462",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市九有",
+        "COMPANY_ABBR_EN": "G.W",
+        "COMPANY_CODE": "600462",
+        "DELIST_DATE": "20250721",
+        "FULL_NAME": "湖北九有投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20030903",
+        "NUM": "400",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600462.SH"
+    },
+    {
+      "delist_date": 20230606,
+      "exchange": "SSE",
+      "list_date": 20010212,
+      "name": "*ST蓝光",
+      "raw": {
+        "A_STOCK_CODE": "600466",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST蓝光",
+        "COMPANY_ABBR_EN": "BRC",
+        "COMPANY_CODE": "600466",
+        "DELIST_DATE": "20230606",
+        "FULL_NAME": "四川蓝光发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010212",
+        "NUM": "402",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600466.SH"
+    },
+    {
+      "delist_date": 20210601,
+      "exchange": "SSE",
+      "list_date": 20030807,
+      "name": "*ST信威",
+      "raw": {
+        "A_STOCK_CODE": "600485",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST信威",
+        "COMPANY_ABBR_EN": "XINWEI GROUP",
+        "COMPANY_CODE": "600485",
+        "DELIST_DATE": "20210601",
+        "FULL_NAME": "北京信威科技集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20030807",
+        "NUM": "417",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600485.SH"
+    },
+    {
+      "delist_date": 20230628,
+      "exchange": "SSE",
+      "list_date": 20021031,
+      "name": "退市未来",
+      "raw": {
+        "A_STOCK_CODE": "600532",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市未来",
+        "COMPANY_ABBR_EN": "TOPCARE MEDICAL SERVICES",
+        "COMPANY_CODE": "600532",
+        "DELIST_DATE": "20230628",
+        "FULL_NAME": "上海智汇未来医疗服务股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20021031",
+        "NUM": "459",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600532.SH"
+    },
+    {
+      "delist_date": 20110218,
+      "exchange": "SSE",
+      "list_date": 20020822,
+      "name": "太行水泥",
+      "raw": {
+        "A_STOCK_CODE": "600553",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "太行水泥",
+        "COMPANY_ABBR_EN": "THCC",
+        "COMPANY_CODE": "600553",
+        "DELIST_DATE": "20110218",
+        "FULL_NAME": "河北太行水泥股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20020822",
+        "NUM": "476",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600553.SH"
+    },
+    {
+      "delist_date": 20220714,
+      "exchange": "SSE",
+      "list_date": 19990118,
+      "name": "退市海创",
+      "raw": {
+        "A_STOCK_CODE": "600555",
+        "B_STOCK_CODE": "900955",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市海创",
+        "COMPANY_ABBR_EN": "HNA INNOVATION",
+        "COMPANY_CODE": "600555",
+        "DELIST_DATE": "20220714",
+        "FULL_NAME": "海航创新股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19990118",
+        "NUM": "477",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600555.SH"
+    },
+    {
+      "delist_date": 20240807,
+      "exchange": "SSE",
+      "list_date": 20020723,
+      "name": "ST迪马",
+      "raw": {
+        "A_STOCK_CODE": "600565",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST迪马",
+        "COMPANY_ABBR_EN": "DIMA",
+        "COMPANY_CODE": "600565",
+        "DELIST_DATE": "20240807",
+        "FULL_NAME": "重庆市迪马实业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20020723",
+        "NUM": "487",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600565.SH"
+    },
+    {
+      "delist_date": 20100125,
+      "exchange": "SSE",
+      "list_date": 20021011,
+      "name": "*ST上航",
+      "raw": {
+        "A_STOCK_CODE": "600591",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST上航",
+        "COMPANY_ABBR_EN": "SAL",
+        "COMPANY_CODE": "600591",
+        "DELIST_DATE": "20100125",
+        "FULL_NAME": "上海航空股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20021011",
+        "NUM": "512",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600591.SH"
+    },
+    {
+      "delist_date": 20260626,
+      "exchange": "SSE",
+      "list_date": 20010828,
+      "name": "退市熊猫",
+      "raw": {
+        "A_STOCK_CODE": "600599",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市熊猫",
+        "COMPANY_ABBR_EN": "PANDA FINANCIAL",
+        "COMPANY_CODE": "600599",
+        "DELIST_DATE": "20260626",
+        "FULL_NAME": "熊猫金控股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20010828",
+        "NUM": "520",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600599.SH"
+    },
+    {
+      "delist_date": 20100212,
+      "exchange": "SSE",
+      "list_date": 19920327,
+      "name": "上实医药",
+      "raw": {
+        "A_STOCK_CODE": "600607",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "上实医药",
+        "COMPANY_ABBR_EN": "SHANGHAI INDUSTRIAL PHARMACEUTICAL INVESTMENT CO., LTD.",
+        "COMPANY_CODE": "600607",
+        "DELIST_DATE": "20100212",
+        "FULL_NAME": "上海实业医药投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19920327",
+        "NUM": "530",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600607.SH"
+    },
+    {
+      "delist_date": 20260703,
+      "exchange": "SSE",
+      "list_date": 19920327,
+      "name": "退市沪科",
+      "raw": {
+        "A_STOCK_CODE": "600608",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市沪科",
+        "COMPANY_ABBR_EN": "SBT",
+        "COMPANY_CODE": "600608",
+        "DELIST_DATE": "20260703",
+        "FULL_NAME": "上海宽频科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19920327",
+        "NUM": "531",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600608.SH"
+    },
+    {
+      "delist_date": 20210722,
+      "exchange": "SSE",
+      "list_date": 19920728,
+      "name": "退市鹏起",
+      "raw": {
+        "A_STOCK_CODE": "600614",
+        "B_STOCK_CODE": "900907",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市鹏起",
+        "COMPANY_ABBR_EN": "PENGQI CO.,LTD",
+        "COMPANY_CODE": "600614",
+        "DELIST_DATE": "20210722",
+        "FULL_NAME": "鹏起科技发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19920728",
+        "NUM": "542",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600614.SH"
+    },
+    {
+      "delist_date": 20110823,
+      "exchange": "SSE",
+      "list_date": 19930219,
+      "name": "百联股份",
+      "raw": {
+        "A_STOCK_CODE": "600631",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "百联股份",
+        "COMPANY_ABBR_EN": "SHANGHAI BAILIAN GROUP",
+        "COMPANY_CODE": "600631",
+        "DELIST_DATE": "20110823",
+        "FULL_NAME": "上海百联集团股份有限公司(原)",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19930219",
+        "NUM": "564",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600631.SH"
+    },
+    {
+      "delist_date": 20210722,
+      "exchange": "SSE",
+      "list_date": 19930304,
+      "name": "退市富控",
+      "raw": {
+        "A_STOCK_CODE": "600634",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市富控",
+        "COMPANY_ABBR_EN": "FUKONG INTERACTIVE",
+        "COMPANY_CODE": "600634",
+        "DELIST_DATE": "20210722",
+        "FULL_NAME": "上海富控互动娱乐股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19930304",
+        "NUM": "567",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600634.SH"
+    },
+    {
+      "delist_date": 20260629,
+      "exchange": "SSE",
+      "list_date": 19930316,
+      "name": "退市国化",
+      "raw": {
+        "A_STOCK_CODE": "600636",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市国化",
+        "COMPANY_ABBR_EN": "CRCH",
+        "COMPANY_CODE": "600636",
+        "DELIST_DATE": "20260629",
+        "FULL_NAME": "国新文化控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19930316",
+        "NUM": "569",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600636.SH"
+    },
+    {
+      "delist_date": 20240703,
+      "exchange": "SSE",
+      "list_date": 19930504,
+      "name": "退市同达",
+      "raw": {
+        "A_STOCK_CODE": "600647",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市同达",
+        "COMPANY_ABBR_EN": "SHTD",
+        "COMPANY_CODE": "600647",
+        "DELIST_DATE": "20240703",
+        "FULL_NAME": "上海同达创业投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19930504",
+        "NUM": "581",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600647.SH"
+    },
+    {
+      "delist_date": 20220621,
+      "exchange": "SSE",
+      "list_date": 19901219,
+      "name": "退市游久",
+      "raw": {
+        "A_STOCK_CODE": "600652",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市游久",
+        "COMPANY_ABBR_EN": "U9 GAME",
+        "COMPANY_CODE": "600652",
+        "DELIST_DATE": "20220621",
+        "FULL_NAME": "上海游久游戏股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19901219",
+        "NUM": "588",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600652.SH"
+    },
+    {
+      "delist_date": 20160513,
+      "exchange": "SSE",
+      "list_date": 19901219,
+      "name": "退市博元",
+      "raw": {
+        "A_STOCK_CODE": "600656",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市博元",
+        "COMPANY_ABBR_EN": "ZHBY",
+        "COMPANY_CODE": "600656",
+        "DELIST_DATE": "20160513",
+        "FULL_NAME": "珠海市博元投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19901219",
+        "NUM": "592",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600656.SH"
+    },
+    {
+      "delist_date": 20210318,
+      "exchange": "SSE",
+      "list_date": 19930928,
+      "name": "*ST航通",
+      "raw": {
+        "A_STOCK_CODE": "600677",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST航通",
+        "COMPANY_ABBR_EN": "AEROCOM",
+        "COMPANY_CODE": "600677",
+        "DELIST_DATE": "20210318",
+        "FULL_NAME": "航天通信控股集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19930928",
+        "NUM": "614",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600677.SH"
+    },
+    {
+      "delist_date": 20190524,
+      "exchange": "SSE",
+      "list_date": 19931018,
+      "name": "*ST上普",
+      "raw": {
+        "A_STOCK_CODE": "600680",
+        "B_STOCK_CODE": "900930",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST上普",
+        "COMPANY_ABBR_EN": "SHPTE",
+        "COMPANY_CODE": "600680",
+        "DELIST_DATE": "20190524",
+        "FULL_NAME": "上海普天邮通科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19931018",
+        "NUM": "618",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600680.SH"
+    },
+    {
+      "delist_date": 20210304,
+      "exchange": "SSE",
+      "list_date": 19931108,
+      "name": "退市刚泰",
+      "raw": {
+        "A_STOCK_CODE": "600687",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市刚泰",
+        "COMPANY_ABBR_EN": "GTKG",
+        "COMPANY_CODE": "600687",
+        "DELIST_DATE": "20210304",
+        "FULL_NAME": "甘肃刚泰控股(集团)股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19931108",
+        "NUM": "626",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600687.SH"
+    },
+    {
+      "delist_date": 20220615,
+      "exchange": "SSE",
+      "list_date": 19931122,
+      "name": "退市绿庭",
+      "raw": {
+        "A_STOCK_CODE": "600695",
+        "B_STOCK_CODE": "900919",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市绿庭",
+        "COMPANY_ABBR_EN": "GIG",
+        "COMPANY_CODE": "600695",
+        "DELIST_DATE": "20220615",
+        "FULL_NAME": "上海绿庭投资控股集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19931122",
+        "NUM": "636",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600695.SH"
+    },
+    {
+      "delist_date": 20260629,
+      "exchange": "SSE",
+      "list_date": 19931206,
+      "name": "退市岩石",
+      "raw": {
+        "A_STOCK_CODE": "600696",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市岩石",
+        "COMPANY_ABBR_EN": "SHANGHAIGUIJIU",
+        "COMPANY_CODE": "600696",
+        "DELIST_DATE": "20260629",
+        "FULL_NAME": "上海君道酒企业发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19931206",
+        "NUM": "637",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600696.SH"
+    },
+    {
+      "delist_date": 20210506,
+      "exchange": "SSE",
+      "list_date": 19960528,
+      "name": "退市工新",
+      "raw": {
+        "A_STOCK_CODE": "600701",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市工新",
+        "COMPANY_ABBR_EN": "HGDHTED",
+        "COMPANY_CODE": "600701",
+        "DELIST_DATE": "20210506",
+        "FULL_NAME": "哈尔滨工大高新技术产业开发股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960528",
+        "NUM": "643",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600701.SH"
+    },
+    {
+      "delist_date": 20250527,
+      "exchange": "SSE",
+      "list_date": 19960516,
+      "name": "中航产融",
+      "raw": {
+        "A_STOCK_CODE": "600705",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "中航产融",
+        "COMPANY_ABBR_EN": "AVIC I.F",
+        "COMPANY_CODE": "600705",
+        "DELIST_DATE": "20250527",
+        "FULL_NAME": "中航工业产融控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960516",
+        "NUM": "647",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600705.SH"
+    },
+    {
+      "delist_date": 20211022,
+      "exchange": "SSE",
+      "list_date": 19960716,
+      "name": "首商股份",
+      "raw": {
+        "A_STOCK_CODE": "600723",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "首商股份",
+        "COMPANY_ABBR_EN": "BCRG",
+        "COMPANY_CODE": "600723",
+        "DELIST_DATE": "20211022",
+        "FULL_NAME": "北京首商集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960716",
+        "NUM": "665",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600723.SH"
+    },
+    {
+      "delist_date": 20191213,
+      "exchange": "SSE",
+      "list_date": 19960916,
+      "name": "退市大控",
+      "raw": {
+        "A_STOCK_CODE": "600747",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市大控",
+        "COMPANY_ABBR_EN": "DLKG",
+        "COMPANY_CODE": "600747",
+        "DELIST_DATE": "20191213",
+        "FULL_NAME": "大连大福控股股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960916",
+        "NUM": "690",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600747.SH"
+    },
+    {
+      "delist_date": 20240703,
+      "exchange": "SSE",
+      "list_date": 19961028,
+      "name": "退市园城",
+      "raw": {
+        "A_STOCK_CODE": "600766",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市园城",
+        "COMPANY_ABBR_EN": "YUANCHENG GOLD",
+        "COMPANY_CODE": "600766",
+        "DELIST_DATE": "20240703",
+        "FULL_NAME": "烟台园城黄金股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19961028",
+        "NUM": "711",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600766.SH"
+    },
+    {
+      "delist_date": 20230629,
+      "exchange": "SSE",
+      "list_date": 19961115,
+      "name": "退市运盛",
+      "raw": {
+        "A_STOCK_CODE": "600767",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市运盛",
+        "COMPANY_ABBR_EN": "WINSAN",
+        "COMPANY_CODE": "600767",
+        "DELIST_DATE": "20230629",
+        "FULL_NAME": "运盛(成都)医疗科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19961115",
+        "NUM": "712",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600767.SH"
+    },
+    {
+      "delist_date": 20230628,
+      "exchange": "SSE",
+      "list_date": 19961218,
+      "name": "退市辅仁",
+      "raw": {
+        "A_STOCK_CODE": "600781",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市辅仁",
+        "COMPANY_ABBR_EN": "FRYY",
+        "COMPANY_CODE": "600781",
+        "DELIST_DATE": "20230628",
+        "FULL_NAME": "辅仁药业集团制药股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19961218",
+        "NUM": "727",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600781.SH"
+    },
+    {
+      "delist_date": 20250703,
+      "exchange": "SSE",
+      "list_date": 19940103,
+      "name": "退市鹏博",
+      "raw": {
+        "A_STOCK_CODE": "600804",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市鹏博",
+        "COMPANY_ABBR_EN": "DR.PENG",
+        "COMPANY_CODE": "600804",
+        "DELIST_DATE": "20250703",
+        "FULL_NAME": "鹏博士电信传媒集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940103",
+        "NUM": "750",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600804.SH"
+    },
+    {
+      "delist_date": 20180713,
+      "exchange": "SSE",
+      "list_date": 19940103,
+      "name": "退市昆机",
+      "raw": {
+        "A_STOCK_CODE": "600806",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市昆机",
+        "COMPANY_ABBR_EN": "KUNMING MACHINE TOOL",
+        "COMPANY_CODE": "600806",
+        "DELIST_DATE": "20180713",
+        "FULL_NAME": "沈机集团昆明机床股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940103",
+        "NUM": "752",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600806.SH"
+    },
+    {
+      "delist_date": 20250430,
+      "exchange": "SSE",
+      "list_date": 19940106,
+      "name": "*ST东方",
+      "raw": {
+        "A_STOCK_CODE": "600811",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST东方",
+        "COMPANY_ABBR_EN": "OGI",
+        "COMPANY_CODE": "600811",
+        "DELIST_DATE": "20250430",
+        "FULL_NAME": "东方集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940106",
+        "NUM": "757",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600811.SH"
+    },
+    {
+      "delist_date": 20240614,
+      "exchange": "SSE",
+      "list_date": 19940204,
+      "name": "*ST世茂",
+      "raw": {
+        "A_STOCK_CODE": "600823",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST世茂",
+        "COMPANY_ABBR_EN": "SMC",
+        "COMPANY_CODE": "600823",
+        "DELIST_DATE": "20240614",
+        "FULL_NAME": "上海世茂股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940204",
+        "NUM": "772",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600823.SH"
+    },
+    {
+      "delist_date": 20150520,
+      "exchange": "SSE",
+      "list_date": 19940224,
+      "name": "东方明珠",
+      "raw": {
+        "A_STOCK_CODE": "600832",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "东方明珠",
+        "COMPANY_ABBR_EN": "OPG",
+        "COMPANY_CODE": "600832",
+        "DELIST_DATE": "20150520",
+        "FULL_NAME": "上海东方明珠(集团)股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940224",
+        "NUM": "782",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600832.SH"
+    },
+    {
+      "delist_date": 20240711,
+      "exchange": "SSE",
+      "list_date": 19940224,
+      "name": "*ST易连",
+      "raw": {
+        "A_STOCK_CODE": "600836",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST易连",
+        "COMPANY_ABBR_EN": "ELIANSH",
+        "COMPANY_CODE": "600836",
+        "DELIST_DATE": "20240711",
+        "FULL_NAME": "上海易连实业集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940224",
+        "NUM": "787",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600836.SH"
+    },
+    {
+      "delist_date": 20250304,
+      "exchange": "SSE",
+      "list_date": 19940224,
+      "name": "海通证券",
+      "raw": {
+        "A_STOCK_CODE": "600837",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "海通证券",
+        "COMPANY_ABBR_EN": "HAITONG SECURITIES",
+        "COMPANY_CODE": "600837",
+        "DELIST_DATE": "20250304",
+        "FULL_NAME": "海通证券股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940224",
+        "NUM": "788",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600837.SH"
+    },
+    {
+      "delist_date": 20100212,
+      "exchange": "SSE",
+      "list_date": 19940311,
+      "name": "中西药业",
+      "raw": {
+        "A_STOCK_CODE": "600842",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "中西药业",
+        "COMPANY_ABBR_EN": "ZXP",
+        "COMPANY_CODE": "600842",
+        "DELIST_DATE": "20100212",
+        "FULL_NAME": "上海中西药业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940311",
+        "NUM": "794",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600842.SH"
+    },
+    {
+      "delist_date": 20220622,
+      "exchange": "SSE",
+      "list_date": 19940425,
+      "name": "退市中天",
+      "raw": {
+        "A_STOCK_CODE": "600856",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市中天",
+        "COMPANY_ABBR_EN": "SINOENERGY CORPORATION",
+        "COMPANY_CODE": "600856",
+        "DELIST_DATE": "20220622",
+        "FULL_NAME": "中兴天恒能源科技(北京)股份公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19940425",
+        "NUM": "812",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600856.SH"
+    },
+    {
+      "delist_date": 20220630,
+      "exchange": "SSE",
+      "list_date": 19950228,
+      "name": "退市厦华",
+      "raw": {
+        "A_STOCK_CODE": "600870",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市厦华",
+        "COMPANY_ABBR_EN": "XOCECO",
+        "COMPANY_CODE": "600870",
+        "DELIST_DATE": "20220630",
+        "FULL_NAME": "厦门华侨电子股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19950228",
+        "NUM": "826",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600870.SH"
+    },
+    {
+      "delist_date": 20220621,
+      "exchange": "SSE",
+      "list_date": 19960318,
+      "name": "退市中房",
+      "raw": {
+        "A_STOCK_CODE": "600890",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市中房",
+        "COMPANY_ABBR_EN": "CRED HOLDING",
+        "COMPANY_CODE": "600890",
+        "DELIST_DATE": "20220621",
+        "FULL_NAME": "中房置业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960318",
+        "NUM": "846",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600890.SH"
+    },
+    {
+      "delist_date": 20210512,
+      "exchange": "SSE",
+      "list_date": 19960325,
+      "name": "退市秋林",
+      "raw": {
+        "A_STOCK_CODE": "600891",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市秋林",
+        "COMPANY_ABBR_EN": "HQL",
+        "COMPANY_CODE": "600891",
+        "DELIST_DATE": "20210512",
+        "FULL_NAME": "哈尔滨秋林集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960325",
+        "NUM": "847",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600891.SH"
+    },
+    {
+      "delist_date": 20220725,
+      "exchange": "SSE",
+      "list_date": 19960503,
+      "name": "退市海医",
+      "raw": {
+        "A_STOCK_CODE": "600896",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市海医",
+        "COMPANY_ABBR_EN": "LMI",
+        "COMPANY_CODE": "600896",
+        "DELIST_DATE": "20220725",
+        "FULL_NAME": "览海医疗产业投资股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960503",
+        "NUM": "852",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600896.SH"
+    },
+    {
+      "delist_date": 20250210,
+      "exchange": "SSE",
+      "list_date": 19960418,
+      "name": "*ST美讯",
+      "raw": {
+        "A_STOCK_CODE": "600898",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST美讯",
+        "COMPANY_ABBR_EN": "GMTC",
+        "COMPANY_CODE": "600898",
+        "DELIST_DATE": "20250210",
+        "FULL_NAME": "国美通讯设备股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "19960418",
+        "NUM": "854",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600898.SH"
+    },
+    {
+      "delist_date": 20210322,
+      "exchange": "SSE",
+      "list_date": 20040824,
+      "name": "*ST宜生",
+      "raw": {
+        "A_STOCK_CODE": "600978",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST宜生",
+        "COMPANY_ABBR_EN": "YIHUA LIFE",
+        "COMPANY_CODE": "600978",
+        "DELIST_DATE": "20210322",
+        "FULL_NAME": "宜华生活科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20040824",
+        "NUM": "898",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600978.SH"
+    },
+    {
+      "delist_date": 20120320,
+      "exchange": "SSE",
+      "list_date": 20040614,
+      "name": "广汽长丰",
+      "raw": {
+        "A_STOCK_CODE": "600991",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "广汽长丰",
+        "COMPANY_ABBR_EN": "GACCF",
+        "COMPANY_CODE": "600991",
+        "DELIST_DATE": "20120320",
+        "FULL_NAME": "广汽长丰汽车有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20040614",
+        "NUM": "911",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "600991.SH"
+    },
+    {
+      "delist_date": 20250527,
+      "exchange": "SSE",
+      "list_date": 20111107,
+      "name": "玉龙股份",
+      "raw": {
+        "A_STOCK_CODE": "601028",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "玉龙股份",
+        "COMPANY_ABBR_EN": "YULONG GOLD",
+        "COMPANY_CODE": "601028",
+        "DELIST_DATE": "20250527",
+        "FULL_NAME": "山东玉龙黄金股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20111107",
+        "NUM": "939",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601028.SH"
+    },
+    {
+      "delist_date": 20230630,
+      "exchange": "SSE",
+      "list_date": 20110428,
+      "name": "*ST庞大",
+      "raw": {
+        "A_STOCK_CODE": "601258",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST庞大",
+        "COMPANY_ABBR_EN": "PD GROUP",
+        "COMPANY_CODE": "601258",
+        "DELIST_DATE": "20230630",
+        "FULL_NAME": "庞大汽贸集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20110428",
+        "NUM": "1007",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601258.SH"
+    },
+    {
+      "delist_date": 20150521,
+      "exchange": "SSE",
+      "list_date": 20100202,
+      "name": "*ST二重",
+      "raw": {
+        "A_STOCK_CODE": "601268",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST二重",
+        "COMPANY_ABBR_EN": "SIN0MACH-HE",
+        "COMPANY_CODE": "601268",
+        "DELIST_DATE": "20150521",
+        "FULL_NAME": "国机重型装备集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20100202",
+        "NUM": "1008",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601268.SH"
+    },
+    {
+      "delist_date": 20150520,
+      "exchange": "SSE",
+      "list_date": 20091229,
+      "name": "中国北车",
+      "raw": {
+        "A_STOCK_CODE": "601299",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "中国北车",
+        "COMPANY_ABBR_EN": "CHINA CNR",
+        "COMPANY_CODE": "601299",
+        "DELIST_DATE": "20150520",
+        "FULL_NAME": "中国北车股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20091229",
+        "NUM": "1012",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601299.SH"
+    },
+    {
+      "delist_date": 20200703,
+      "exchange": "SSE",
+      "list_date": 20110113,
+      "name": "退市锐电",
+      "raw": {
+        "A_STOCK_CODE": "601558",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市锐电",
+        "COMPANY_ABBR_EN": "SINOVEL",
+        "COMPANY_CODE": "601558",
+        "DELIST_DATE": "20200703",
+        "FULL_NAME": "华锐风电科技(集团)股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20110113",
+        "NUM": "1040",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601558.SH"
+    },
+    {
+      "delist_date": 20250905,
+      "exchange": "SSE",
+      "list_date": 20091216,
+      "name": "中国重工",
+      "raw": {
+        "A_STOCK_CODE": "601989",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "中国重工",
+        "COMPANY_ABBR_EN": "CSICL",
+        "COMPANY_CODE": "601989",
+        "DELIST_DATE": "20250905",
+        "FULL_NAME": "中国船舶重工股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20091216",
+        "NUM": "1141",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "601989.SH"
+    },
+    {
+      "delist_date": 20250703,
+      "exchange": "SSE",
+      "list_date": 20120817,
+      "name": "退市龙宇",
+      "raw": {
+        "A_STOCK_CODE": "603003",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市龙宇",
+        "COMPANY_ABBR_EN": "SHANGHAI LONYER DATA",
+        "COMPANY_CODE": "603003",
+        "DELIST_DATE": "20250703",
+        "FULL_NAME": "上海龙宇数据股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20120817",
+        "NUM": "1153",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603003.SH"
+    },
+    {
+      "delist_date": 20260331,
+      "exchange": "SSE",
+      "list_date": 20180116,
+      "name": "德邦股份",
+      "raw": {
+        "A_STOCK_CODE": "603056",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "德邦股份",
+        "COMPANY_ABBR_EN": "DEPPON",
+        "COMPANY_CODE": "603056",
+        "DELIST_DATE": "20260331",
+        "FULL_NAME": "德邦物流股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20180116",
+        "NUM": "1200",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603056.SH"
+    },
+    {
+      "delist_date": 20240703,
+      "exchange": "SSE",
+      "list_date": 20170320,
+      "name": "退市碳元",
+      "raw": {
+        "A_STOCK_CODE": "603133",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市碳元",
+        "COMPANY_ABBR_EN": "TANYUAN TECH",
+        "COMPANY_CODE": "603133",
+        "DELIST_DATE": "20240703",
+        "FULL_NAME": "碳元科技股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20170320",
+        "NUM": "1271",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603133.SH"
+    },
+    {
+      "delist_date": 20220524,
+      "exchange": "SSE",
+      "list_date": 20170925,
+      "name": "退市拉夏",
+      "raw": {
+        "A_STOCK_CODE": "603157",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市拉夏",
+        "COMPANY_ABBR_EN": "LA CHAPELLE",
+        "COMPANY_CODE": "603157",
+        "DELIST_DATE": "20220524",
+        "FULL_NAME": "新疆拉夏贝尔服饰股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20170925",
+        "NUM": "1282",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603157.SH"
+    },
+    {
+      "delist_date": 20251205,
+      "exchange": "SSE",
+      "list_date": 20170324,
+      "name": "*ST元成",
+      "raw": {
+        "A_STOCK_CODE": "603388",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST元成",
+        "COMPANY_ABBR_EN": "YUANCHENG",
+        "COMPANY_CODE": "603388",
+        "DELIST_DATE": "20251205",
+        "FULL_NAME": "元成环境股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20170324",
+        "NUM": "1468",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603388.SH"
+    },
+    {
+      "delist_date": 20240329,
+      "exchange": "SSE",
+      "list_date": 20140124,
+      "name": "ST贵人",
+      "raw": {
+        "A_STOCK_CODE": "603555",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "ST贵人",
+        "COMPANY_ABBR_EN": "GUIRENNIAO",
+        "COMPANY_CODE": "603555",
+        "DELIST_DATE": "20240329",
+        "FULL_NAME": "贵人鸟股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20140124",
+        "NUM": "1523",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603555.SH"
+    },
+    {
+      "delist_date": 20240425,
+      "exchange": "SSE",
+      "list_date": 20170217,
+      "name": "退市博天",
+      "raw": {
+        "A_STOCK_CODE": "603603",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市博天",
+        "COMPANY_ABBR_EN": "POTEN",
+        "COMPANY_CODE": "603603",
+        "DELIST_DATE": "20240425",
+        "FULL_NAME": "博天环境集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20170217",
+        "NUM": "1551",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603603.SH"
+    },
+    {
+      "delist_date": 20250321,
+      "exchange": "SSE",
+      "list_date": 20170922,
+      "name": "*ST大药",
+      "raw": {
+        "A_STOCK_CODE": "603963",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "*ST大药",
+        "COMPANY_ABBR_EN": "DALI PHARMACEUTICAL",
+        "COMPANY_CODE": "603963",
+        "DELIST_DATE": "20250321",
+        "FULL_NAME": "大理药业股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20170922",
+        "NUM": "1746",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603963.SH"
+    },
+    {
+      "delist_date": 20220524,
+      "exchange": "SSE",
+      "list_date": 20151222,
+      "name": "退市中新",
+      "raw": {
+        "A_STOCK_CODE": "603996",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市中新",
+        "COMPANY_ABBR_EN": "CHUNGHSIN TECHNOLOGY",
+        "COMPANY_CODE": "603996",
+        "DELIST_DATE": "20220524",
+        "FULL_NAME": "中新科技集团股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20151222",
+        "NUM": "1769",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "603996.SH"
+    },
+    {
+      "delist_date": 20260703,
+      "exchange": "SSE",
+      "list_date": 20210209,
+      "name": "退市太和",
+      "raw": {
+        "A_STOCK_CODE": "605081",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市太和",
+        "COMPANY_ABBR_EN": "TAIHE",
+        "COMPANY_CODE": "605081",
+        "DELIST_DATE": "20260703",
+        "FULL_NAME": "上海太和水科技发展股份有限公司",
+        "LIST_BOARD": "1",
+        "LIST_DATE": "20210209",
+        "NUM": "1796",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "605081.SH"
+    },
+    {
+      "delist_date": 20230707,
+      "exchange": "SSE",
+      "list_date": 20200226,
+      "name": "退市紫晶",
+      "raw": {
+        "A_STOCK_CODE": "688086",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市紫晶",
+        "COMPANY_ABBR_EN": "AMETHYSTUM",
+        "COMPANY_CODE": "688086",
+        "DELIST_DATE": "20230707",
+        "FULL_NAME": "广东紫晶信息存储技术股份有限公司",
+        "LIST_BOARD": "2",
+        "LIST_DATE": "20200226",
+        "NUM": "1961",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "688086.SH"
+    },
+    {
+      "delist_date": 20260610,
+      "exchange": "SSE",
+      "list_date": 20220525,
+      "name": "退市观典",
+      "raw": {
+        "A_STOCK_CODE": "688287",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市观典",
+        "COMPANY_ABBR_EN": "GUANDIAN DEFENSE",
+        "COMPANY_CODE": "688287",
+        "DELIST_DATE": "20260610",
+        "FULL_NAME": "观典防务技术股份有限公司",
+        "LIST_BOARD": "2",
+        "LIST_DATE": "20220525",
+        "NUM": "2135",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "688287.SH"
+    },
+    {
+      "delist_date": 20230707,
+      "exchange": "SSE",
+      "list_date": 20200623,
+      "name": "退市泽达",
+      "raw": {
+        "A_STOCK_CODE": "688555",
+        "B_STOCK_CODE": "-",
+        "CHANGE_DATE": "-",
+        "COMPANY_ABBR": "退市泽达",
+        "COMPANY_ABBR_EN": "ESSENCE",
+        "COMPANY_CODE": "688555",
+        "DELIST_DATE": "20230707",
+        "FULL_NAME": "泽达易盛(天津)科技股份有限公司",
+        "LIST_BOARD": "2",
+        "LIST_DATE": "20200623",
+        "NUM": "2318",
+        "PRODUCT_STATUS": "-",
+        "SEC_NAME_CN": "-",
+        "SEC_NAME_FULL": "-"
+      },
+      "source_url": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+      "symbol": "688555.SH"
+    }
+  ],
+  "scope": {
+    "end": 20260717,
+    "start": 20100101
+  },
+  "selected_count": 285,
+  "sources": {
+    "SSE": "https://www.sse.com.cn/assortment/stock/list/delisting/",
+    "SZSE": "https://www.szse.cn/market/stock/suspend/index.html"
+  }
+}

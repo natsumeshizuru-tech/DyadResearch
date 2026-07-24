@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+id: low-turnover-synthetic
+title: "Low-turnover ranking mechanics on deterministic A-share-shaped data"
+classification: EXPLORATORY_ONLY
+research_question: "Can the research pipeline rank a 20-bar traded-amount proxy with deterministic inputs and hashes?"
+citation:
+  title: "Illiquidity and Stock Returns: Cross-Section and Time-Series Effects"
+  authors: ["Yakov Amihud"]
+  year: 2002
+  identifier: "DOI:10.1016/S0304-405X(01)00024-6"
+  url: "https://doi.org/10.1016/S0304-405X(01)00024-6"
+method:
+  factor: average_turnover_20
+  direction: low
+  description: "Compute 20-bar average traded amount and rank low values first as a simple activity proxy."
+dataset:
+  source_classification: "SYNTHETIC DATA"
+  symbols: ["000001.SZ", "600001.SH", "510300.SH", "510500.SH", "159915.SZ"]
+  period: 1d
+  start: 20240102
+  end: 20240325
+limitations:
+  - "Average traded amount is not Amihud's return-to-volume illiquidity ratio."
+  - "Synthetic volumes and prices do not represent market liquidity."
+  - "The report demonstrates a reproducible research contract, not a return premium."

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Low-volatility ranking mechanics on deterministic A-share-shaped data</title>
+<style>body{font-family:system-ui;margin:2rem auto;max-width:960px;padding:0 1rem}
+.badge{display:inline-block;padding:.3rem .6rem;background:#ffe8a3;color:#4b3900;font-weight:700}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ddd;padding:.5rem;text-align:left}
+code{word-break:break-all}</style></head><body>
+<p class="badge">EXPLORATORY_ONLY</p><h1>Low-volatility ranking mechanics on deterministic A-share-shaped data</h1>
+<p><strong>Research question:</strong> Can the research pipeline measure 20-bar realized volatility and rank a synthetic cross-section without future data?</p>
+<h2>Citation</h2><p>Andrew Ang, Robert J. Hodrick, Yuhang Xing, Xiaoyan Zhang (2006).
+The Cross-Section of Volatility and Expected Returns. <a href="https://doi.org/10.1111/j.1540-6261.2006.00836.x">DOI:10.1111/j.1540-6261.2006.00836.x</a>.</p>
+<h2>Method and data</h2><p>Compute the population volatility of simple close returns over 20 bars and rank low values first.</p>
+<p>Data classification: <strong>SYNTHETIC DATA</strong>;
+range 20240102–20240325; rows 300.</p>
+<p>Data fingerprint: <code>5d2378c0c23fe984a456e7e1a1ded9eacf9f7e49f176aa0dac0d24c8775caf9a</code><br>
+Result hash: <code>9e4734607f58c6e0f5088dc9a8f098a13dee4f6f04b7ea7043d72f4b2c5cd106</code></p>
+<h2>Metrics</h2><table><tr><th>count</th><td>205.0</td></tr><tr><th>coverage_ratio</th><td>1.0</td></tr><tr><th>latest_cross_section_count</th><td>5</td></tr><tr><th>maximum</th><td>0.022769837093904052</td></tr><tr><th>mean</th><td>0.006764514787032353</td></tr><tr><th>minimum</th><td>0.004924832418082082</td></tr></table>
+<h2>Latest synthetic cross-section</h2><table><tr><th>Rank</th><th>Symbol</th>
+<th>Date</th><th>Value</th></tr><tr><td>1</td><td>510500.SH</td><td>20240325</td><td>0.0050406503133437275</td></tr><tr><td>2</td><td>000001.SZ</td><td>20240325</td><td>0.0050484863574560826</td></tr><tr><td>3</td><td>510300.SH</td><td>20240325</td><td>0.005111791224541337</td></tr><tr><td>4</td><td>600001.SH</td><td>20240325</td><td>0.0053216666004304745</td></tr><tr><td>5</td><td>159915.SZ</td><td>20240325</td><td>0.005326913918791403</td></tr></table>
+<h2>Limitations</h2><ul><li>The exercise uses total volatility, not the paper&#x27;s exact idiosyncratic-volatility construction.</li><li>Synthetic prices cannot support an expected-return claim.</li><li>No industry neutralization, risk model, portfolio formation or inference is performed.</li></ul>
+<h2>Reproduce</h2><pre><code>dyadresearch reproduce run reproductions/specs/low-volatility.yaml --output reproductions/generated</code></pre>
+</body></html>

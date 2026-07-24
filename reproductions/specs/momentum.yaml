@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+id: momentum-synthetic
+title: "Momentum signal mechanics on deterministic A-share-shaped data"
+classification: EXPLORATORY_ONLY
+research_question: "Can the research pipeline calculate and rank a 20-bar momentum signal without hidden data dependencies?"
+citation:
+  title: "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency"
+  authors: ["Narasimhan Jegadeesh", "Sheridan Titman"]
+  year: 1993
+  identifier: "DOI:10.1111/j.1540-6261.1993.tb04702.x"
+  url: "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x"
+method:
+  factor: momentum_20
+  direction: high
+  description: "Compute 20-bar close-to-close momentum and rank the latest synthetic cross-section from high to low."
+dataset:
+  source_classification: "SYNTHETIC DATA"
+  symbols: ["000001.SZ", "600001.SH", "510300.SH", "510500.SH", "159915.SZ"]
+  period: 1d
+  start: 20240102
+  end: 20240325
+limitations:
+  - "The five symbols and prices are deterministic synthetic examples, not investable securities history."
+  - "This validates method plumbing and reproducibility, not the paper's empirical return claim."
+  - "The 60-day window is too short for statistical inference or transaction-cost conclusions."

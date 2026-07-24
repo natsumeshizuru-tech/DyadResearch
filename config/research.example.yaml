@@ -1,0 +1,20 @@
+project:
+  name: DyadResearch
+  timezone: Asia/Shanghai
+  random_seed: 0
+
+data:
+  root: ./examples/sample_data/sqlite
+  catalog: catalog.db
+  readonly: true
+  default_adjustment: none
+
+research:
+  database: ./var/research.db
+  reports_root: ./var/reports
+
+backtest:
+  policy: strict_research
+  initial_cash: "1000000"
+  result_root: ./var/backtests
+  random_seed: 0

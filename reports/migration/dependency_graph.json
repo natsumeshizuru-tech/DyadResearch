@@ -1,0 +1,9 @@
+{
+  "dyadtetrade.data": [],
+  "dyadtetrade.modules.backtest": ["dyadtetrade.db", "dyadtetrade.domain", "dyadtetrade.modules.performance", "dyadtetrade.modules.reporting", "dyadtetrade.modules.strategy"],
+  "dyadtetrade.modules.research": ["dyadtetrade.db.models"],
+  "dyadtetrade.modules.strategy": ["dyadtetrade.core", "dyadtetrade.db", "dyadtetrade.domain", "dyadtetrade.modules.backtest"],
+  "dyadtetrade.modules.optimization": ["dyadtetrade.db", "dyadtetrade.modules.backtest"],
+  "dyadtetrade.modules.reporting": ["dyadtetrade.modules.backtest.result", "dyadtetrade.modules.performance"],
+  "dyadtetrade.modules.performance": []
+}

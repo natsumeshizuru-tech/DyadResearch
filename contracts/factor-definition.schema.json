@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dyadquant.dev/schemas/factor-definition.schema.json",
+  "title": "DyadQuant Factor Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "factor_id", "factor_version", "inputs", "lookback_bars", "point_in_time", "definition_hash"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "factor_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]{2,63}$"},
+    "factor_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "inputs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "uniqueItems": true},
+    "lookback_bars": {"type": "integer", "minimum": 1},
+    "point_in_time": {"const": true},
+    "expression": {"type": ["string", "null"]},
+    "preprocessing": {"type": "array", "items": {"type": "string"}},
+    "neutralization": {"type": "array", "items": {"type": "string"}},
+    "definition_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

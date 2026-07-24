@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: python -m pip install -e ".[research,web,dev]" build
+      - name: Static gates
+        run: |
+          python -m ruff check .
+          python -m ruff format --check .
+          python -m mypy src/dyadresearch
+      - name: Tests and coverage
+        run: >-
+          python -m pytest --cov=dyadresearch --cov-report=term-missing
+          --cov-report=xml --cov-fail-under=75
+      - name: Synthetic-data smoke
+        run: |
+          dyadresearch demo generate-data --overwrite
+          dyadresearch doctor
+          dyadresearch factor run --name momentum_20 --symbols 000001.SZ --period 1d --start 20240102 --end 20240325
+          dyadresearch backtest run --strategy buy_and_hold --symbols 000001.SZ --period 1d --start 20240102 --end 20240325
+      - name: Build wheel
+        run: python -m build
+      - name: Dependency consistency
+        run: python -m pip check
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: frontend/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run test
+      - run: pnpm run lint
+      - run: pnpm run build

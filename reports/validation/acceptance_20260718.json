@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-18T22:00:00+08:00",
+  "python": "3.12.10",
+  "package": {
+    "name": "dyadresearch",
+    "version": "0.1.0",
+    "source_files": 40,
+    "source_lines": 2459,
+    "wheel": "dist/dyadresearch-0.1.0-py3-none-any.whl",
+    "wheel_sha256": "3b2d0aacdd199fb3bd556dd9d4524365bfa96c2e280fc8d0265d03f2b60be482",
+    "pip_check": "passed"
+  },
+  "quality": {
+    "pytest": {"passed": 67, "failed": 0},
+    "ruff": "passed",
+    "mypy_strict": "passed",
+    "whole_project_line_coverage_percent": 93.9547,
+    "backtest_line_coverage_percent": 99.0074,
+    "coverage_thresholds_met": true,
+    "coverage_json": "reports/test/coverage.json"
+  },
+  "data_contract": {
+    "source_root": "private-local-data/sqlite",
+    "connection": "SQLite URI mode=ro plus PRAGMA query_only=ON",
+    "doctor": "passed",
+    "forbidden_import_scan": "passed",
+    "real_daily_query": "passed",
+    "real_cross_month_minute_query": "passed",
+    "real_financial_point_in_time": "passed",
+    "historical_snapshot_rejection": "passed",
+    "source_validation": "private-local-report:full_validation_20260718_after_supplement.json"
+  },
+  "real_smoke": {
+    "factor": {
+      "name": "momentum_20",
+      "experiment_id": 1,
+      "observations": 9,
+      "result_hash": "532590c0e328b09f5f224e3e0c24ea81f4acc33ed94c89a83f146c3c6974061f"
+    },
+    "backtest": {
+      "strategy": "buy_and_hold",
+      "experiment_id": 2,
+      "trades": 1,
+      "result_hash": "03946b6852921cb492d971ae27172d415beaaab27fc3b375021c5492ba8422a4",
+      "native_qmt_parity": true,
+      "repeat_hash_equal": true
+    },
+    "static_report": "reports/generated/experiment-2-03946b685292.html"
+  },
+  "dyadtetrade_regression": {
+    "passed": 282,
+    "skipped": 1,
+    "failed": 0,
+    "skip_reason": "DyadResearch remains an optional install in the legacy venv",
+    "compatibility_integration_separately_passed": 2
+  },
+  "accepted": true
+}

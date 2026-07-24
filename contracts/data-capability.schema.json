@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dyadquant.dev/schemas/data-capability.schema.json",
+  "title": "DyadQuant Data Capability",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "capability_id", "markets", "periods", "adjustments", "fields", "point_in_time"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "capability_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.:-]{2,127}$"},
+    "markets": {"type": "array", "items": {"enum": ["SH", "SZ", "BJ"]}, "minItems": 1, "uniqueItems": true},
+    "periods": {"type": "array", "items": {"enum": ["tick", "1m", "5m", "15m", "30m", "1h", "1d", "1w", "1q", "1y"]}, "minItems": 1, "uniqueItems": true},
+    "adjustments": {"type": "array", "items": {"enum": ["none", "front", "back", "front_ratio", "back_ratio"]}, "minItems": 1, "uniqueItems": true},
+    "fields": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1, "uniqueItems": true},
+    "point_in_time": {"type": "boolean"},
+    "available_from": {"type": ["string", "null"], "format": "date"},
+    "available_to": {"type": ["string", "null"], "format": "date"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

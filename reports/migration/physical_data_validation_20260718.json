@@ -1,0 +1,1102 @@
+{
+  "accepted": true,
+  "source_root": "../DyadTetrade/data/sqlite",
+  "target_root": "data/sqlite",
+  "database_count": 45,
+  "missing": [],
+  "extras": [],
+  "source_bytes": 49645150208,
+  "target_bytes": 49645150208,
+  "all_hashes_equal": true,
+  "all_integrity_ok": true,
+  "duplicate_primary_keys": 0,
+  "databases": [
+    {
+      "name": "bars_1d.db",
+      "source_bytes": 749887488,
+      "target_bytes": 749887488,
+      "source_sha256": "66d9fd343106a841798308e73dfe091b1953982ac88aa4b480d1790e43b032b0",
+      "target_sha256": "66d9fd343106a841798308e73dfe091b1953982ac88aa4b480d1790e43b032b0",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 3290811,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20240102,
+        "last_trade_date": 20260717
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 44.287
+    },
+    {
+      "name": "bars_1m_BJ_202507.db",
+      "source_bytes": 127246336,
+      "target_bytes": 127246336,
+      "source_sha256": "1b0b7ee4047c1a985b7c806ba2b74c70a93ea5c6daa9e1e052090cbf2b9d52e5",
+      "target_sha256": "1b0b7ee4047c1a985b7c806ba2b74c70a93ea5c6daa9e1e052090cbf2b9d52e5",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 751805,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_trade_date": 20250716,
+        "last_trade_date": 20250731
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 7.175
+    },
+    {
+      "name": "bars_1m_BJ_202508.db",
+      "source_bytes": 231170048,
+      "target_bytes": 231170048,
+      "source_sha256": "62528344516643fd102dbc9f92032e38a10c3147a54931bd7027c24ad2505b8b",
+      "target_sha256": "62528344516643fd102dbc9f92032e38a10c3147a54931bd7027c24ad2505b8b",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1362076,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_trade_date": 20250801,
+        "last_trade_date": 20250829
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 12.818
+    },
+    {
+      "name": "bars_1m_BJ_202509.db",
+      "source_bytes": 212156416,
+      "target_bytes": 212156416,
+      "source_sha256": "593ddb28015114fde2335032093fdd0e01ce0e9a4eea475c8420b554d3597ac4",
+      "target_sha256": "593ddb28015114fde2335032093fdd0e01ce0e9a4eea475c8420b554d3597ac4",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1453230,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20250901,
+        "last_trade_date": 20250930
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.509
+    },
+    {
+      "name": "bars_1m_BJ_202510.db",
+      "source_bytes": 163135488,
+      "target_bytes": 163135488,
+      "source_sha256": "8e381847492ec45e0d9c746c0f7e34de5c36b7bb7c1a764ed406dc51c0e4eb59",
+      "target_sha256": "8e381847492ec45e0d9c746c0f7e34de5c36b7bb7c1a764ed406dc51c0e4eb59",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1118719,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251009,
+        "last_trade_date": 20251031
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.264
+    },
+    {
+      "name": "bars_1m_BJ_202511.db",
+      "source_bytes": 195805184,
+      "target_bytes": 195805184,
+      "source_sha256": "ca076d623b068b13c5920e9b420953edb6fcc4a0ca736a8296256ebead4f1cfc",
+      "target_sha256": "ca076d623b068b13c5920e9b420953edb6fcc4a0ca736a8296256ebead4f1cfc",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1343234,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251103,
+        "last_trade_date": 20251128
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.634
+    },
+    {
+      "name": "bars_1m_BJ_202512.db",
+      "source_bytes": 226295808,
+      "target_bytes": 226295808,
+      "source_sha256": "d039afc72a349751dac64ab66a2b96d97ca5e3ac0aaa122c351b39ef46ae5ddc",
+      "target_sha256": "d039afc72a349751dac64ab66a2b96d97ca5e3ac0aaa122c351b39ef46ae5ddc",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1553929,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251201,
+        "last_trade_date": 20251231
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 3.227
+    },
+    {
+      "name": "bars_1m_BJ_202601.db",
+      "source_bytes": 199856128,
+      "target_bytes": 199856128,
+      "source_sha256": "5eec01ecbbde94d14f93c7c856ab31a9e338de8c1ee969b1fa90cca1369f939e",
+      "target_sha256": "5eec01ecbbde94d14f93c7c856ab31a9e338de8c1ee969b1fa90cca1369f939e",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1370253,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260105,
+        "last_trade_date": 20260130
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.663
+    },
+    {
+      "name": "bars_1m_BJ_202602.db",
+      "source_bytes": 140410880,
+      "target_bytes": 140410880,
+      "source_sha256": "2f4394f2158e85b623067604cab271f13e861d8a50c0e5b4f093e44c5af81b39",
+      "target_sha256": "2f4394f2158e85b623067604cab271f13e861d8a50c0e5b4f093e44c5af81b39",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 967023,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260202,
+        "last_trade_date": 20260227
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 1.902
+    },
+    {
+      "name": "bars_1m_BJ_202603.db",
+      "source_bytes": 225443840,
+      "target_bytes": 225443840,
+      "source_sha256": "f8cfbf0be24d647d8eecf086d0169603c91cd4e1f423d9a1f8fa38e13be0b19c",
+      "target_sha256": "f8cfbf0be24d647d8eecf086d0169603c91cd4e1f423d9a1f8fa38e13be0b19c",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1552106,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260302,
+        "last_trade_date": 20260331
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.985
+    },
+    {
+      "name": "bars_1m_BJ_202604.db",
+      "source_bytes": 220811264,
+      "target_bytes": 220811264,
+      "source_sha256": "b684e55e171a06f889e17f1798d75a7449d5ade56a2128edf3d331ca681954cb",
+      "target_sha256": "b684e55e171a06f889e17f1798d75a7449d5ade56a2128edf3d331ca681954cb",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1521328,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260401,
+        "last_trade_date": 20260430
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.812
+    },
+    {
+      "name": "bars_1m_BJ_202605.db",
+      "source_bytes": 193482752,
+      "target_bytes": 193482752,
+      "source_sha256": "2530dbeb13b62df7f5ed4b3bf6df773f8bcca8639d2d07ac536caacb0dee2844",
+      "target_sha256": "2530dbeb13b62df7f5ed4b3bf6df773f8bcca8639d2d07ac536caacb0dee2844",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1332458,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260506,
+        "last_trade_date": 20260529
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 2.515
+    },
+    {
+      "name": "bars_1m_BJ_202606.db",
+      "source_bytes": 228933632,
+      "target_bytes": 228933632,
+      "source_sha256": "1af854bb71b8a21299fa2ed361bd195bcacfc52328295a4e6de992590b63624b",
+      "target_sha256": "1af854bb71b8a21299fa2ed361bd195bcacfc52328295a4e6de992590b63624b",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 1576620,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260601,
+        "last_trade_date": 20260630
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 3.036
+    },
+    {
+      "name": "bars_1m_BJ_202607.db",
+      "source_bytes": 144502784,
+      "target_bytes": 144502784,
+      "source_sha256": "d84c086290d8990c23150dddef95621f0dfe621a71435f361aa83e3c3947ad78",
+      "target_sha256": "d84c086290d8990c23150dddef95621f0dfe621a71435f361aa83e3c3947ad78",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 996588,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260701,
+        "last_trade_date": 20260717
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 1.968
+    },
+    {
+      "name": "bars_1m_SH_202507.db",
+      "source_bytes": 1085681664,
+      "target_bytes": 1085681664,
+      "source_sha256": "377c81ceebb71cc8aabca9615869fe0e2f3687c78f7c55578f8f577e2e5d707f",
+      "target_sha256": "377c81ceebb71cc8aabca9615869fe0e2f3687c78f7c55578f8f577e2e5d707f",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 6652299,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20250711,
+        "last_trade_date": 20250731
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 14.247
+    },
+    {
+      "name": "bars_1m_SH_202508.db",
+      "source_bytes": 1940750336,
+      "target_bytes": 1940750336,
+      "source_sha256": "e17012a242381491265b0a4a6f15ecbccbe17e341c765767e7d0c2e3c240799f",
+      "target_sha256": "e17012a242381491265b0a4a6f15ecbccbe17e341c765767e7d0c2e3c240799f",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 11345556,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_trade_date": 20250801,
+        "last_trade_date": 20250829
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 177.765
+    },
+    {
+      "name": "bars_1m_SH_202509.db",
+      "source_bytes": 1768316928,
+      "target_bytes": 1768316928,
+      "source_sha256": "911aec3a17743a50695a7a47ffe3e35c49759b568ad9406e11405e5912457d8d",
+      "target_sha256": "911aec3a17743a50695a7a47ffe3e35c49759b568ad9406e11405e5912457d8d",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 12024213,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20250901,
+        "last_trade_date": 20250930
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 24.002
+    },
+    {
+      "name": "bars_1m_SH_202510.db",
+      "source_bytes": 1347747840,
+      "target_bytes": 1347747840,
+      "source_sha256": "9ed181d36c4f880cea176c9b3a7019590d7fb2f8c9b8e3d9551dd567d91ea03d",
+      "target_sha256": "9ed181d36c4f880cea176c9b3a7019590d7fb2f8c9b8e3d9551dd567d91ea03d",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 9171043,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251009,
+        "last_trade_date": 20251031
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 20.275
+    },
+    {
+      "name": "bars_1m_SH_202511.db",
+      "source_bytes": 1580163072,
+      "target_bytes": 1580163072,
+      "source_sha256": "2a77ff38dec4c6252bf2e7766ba95eb8aec75e66a6167724e191516bf4b130c8",
+      "target_sha256": "2a77ff38dec4c6252bf2e7766ba95eb8aec75e66a6167724e191516bf4b130c8",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 10752171,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251103,
+        "last_trade_date": 20251128
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 23.314
+    },
+    {
+      "name": "bars_1m_SH_202512.db",
+      "source_bytes": 1818771456,
+      "target_bytes": 1818771456,
+      "source_sha256": "566ab7e1c61be264a73fa929f0c2f25db73f576f0fdcd2392a35ef280de3f2d9",
+      "target_sha256": "566ab7e1c61be264a73fa929f0c2f25db73f576f0fdcd2392a35ef280de3f2d9",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 12389167,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251201,
+        "last_trade_date": 20251231
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 24.804
+    },
+    {
+      "name": "bars_1m_SH_202601.db",
+      "source_bytes": 1587585024,
+      "target_bytes": 1587585024,
+      "source_sha256": "8449908b6394e9eaa8bf90bc88cbe86aba907ada50543411542f081bdad71909",
+      "target_sha256": "8449908b6394e9eaa8bf90bc88cbe86aba907ada50543411542f081bdad71909",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 10789043,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260105,
+        "last_trade_date": 20260130
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 23.876
+    },
+    {
+      "name": "bars_1m_SH_202602.db",
+      "source_bytes": 1115639808,
+      "target_bytes": 1115639808,
+      "source_sha256": "ba10cfcfe5b24befc3594d862a3eef559064a625f72bbb0697d9f90cfb79cd1f",
+      "target_sha256": "ba10cfcfe5b24befc3594d862a3eef559064a625f72bbb0697d9f90cfb79cd1f",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 7593381,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260202,
+        "last_trade_date": 20260227
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 17.845
+    },
+    {
+      "name": "bars_1m_SH_202603.db",
+      "source_bytes": 1747525632,
+      "target_bytes": 1747525632,
+      "source_sha256": "ae8737f93c86194ef5058a0c8e4a2f335dddc3688d859f31430c021890008c03",
+      "target_sha256": "ae8737f93c86194ef5058a0c8e4a2f335dddc3688d859f31430c021890008c03",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 11891572,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260302,
+        "last_trade_date": 20260331
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 25.237
+    },
+    {
+      "name": "bars_1m_SH_202604.db",
+      "source_bytes": 1671221248,
+      "target_bytes": 1671221248,
+      "source_sha256": "7d4383fef6e4a7a6e32b249914ae53140198d09e96840e96303a7dd7f6c24d96",
+      "target_sha256": "7d4383fef6e4a7a6e32b249914ae53140198d09e96840e96303a7dd7f6c24d96",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 11371274,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260401,
+        "last_trade_date": 20260430
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 23.52
+    },
+    {
+      "name": "bars_1m_SH_202605.db",
+      "source_bytes": 1432879104,
+      "target_bytes": 1432879104,
+      "source_sha256": "6c8f84f16347a7a5563207c0e4981ee83c1e396b1c1e03c71e6cf43f0d755e80",
+      "target_sha256": "6c8f84f16347a7a5563207c0e4981ee83c1e396b1c1e03c71e6cf43f0d755e80",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 9759917,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260506,
+        "last_trade_date": 20260529
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 25.813
+    },
+    {
+      "name": "bars_1m_SH_202606.db",
+      "source_bytes": 1670987776,
+      "target_bytes": 1670987776,
+      "source_sha256": "2c023b56c7f7958ca5d71b103a8685ec4758d890571aac5ae77501004bbbe943",
+      "target_sha256": "2c023b56c7f7958ca5d71b103a8685ec4758d890571aac5ae77501004bbbe943",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 11370467,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260601,
+        "last_trade_date": 20260630
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 25.389
+    },
+    {
+      "name": "bars_1m_SH_202607.db",
+      "source_bytes": 1038688256,
+      "target_bytes": 1038688256,
+      "source_sha256": "c1395ba862a62e70604ea9bd87e693901e6ed099dc9b36273e2317b7be76e955",
+      "target_sha256": "c1395ba862a62e70604ea9bd87e693901e6ed099dc9b36273e2317b7be76e955",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 7073637,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260701,
+        "last_trade_date": 20260717
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 14.53
+    },
+    {
+      "name": "bars_1m_SZ_202507.db",
+      "source_bytes": 1370275840,
+      "target_bytes": 1370275840,
+      "source_sha256": "2bdc15acc3d878e57773bb8c91b72b5f5a023e24aaaceee6001d2e620306d323",
+      "target_sha256": "2bdc15acc3d878e57773bb8c91b72b5f5a023e24aaaceee6001d2e620306d323",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 8350116,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20250711,
+        "last_trade_date": 20250731
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 25.671
+    },
+    {
+      "name": "bars_1m_SZ_202508.db",
+      "source_bytes": 2455814144,
+      "target_bytes": 2455814144,
+      "source_sha256": "d6c537c747bc69fc2d493f0eddff596012deec20e5f98cd1b24113ef3a98a05e",
+      "target_sha256": "d6c537c747bc69fc2d493f0eddff596012deec20e5f98cd1b24113ef3a98a05e",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 14332577,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_trade_date": 20250801,
+        "last_trade_date": 20250829
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 184.693
+    },
+    {
+      "name": "bars_1m_SZ_202509.db",
+      "source_bytes": 2228826112,
+      "target_bytes": 2228826112,
+      "source_sha256": "e32e27fde52a1f701faeefe9d4aa2956e71fb9cab19e598c56b4145367f6b51f",
+      "target_sha256": "e32e27fde52a1f701faeefe9d4aa2956e71fb9cab19e598c56b4145367f6b51f",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 15142512,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20250901,
+        "last_trade_date": 20250930
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 32.046
+    },
+    {
+      "name": "bars_1m_SZ_202510.db",
+      "source_bytes": 1699221504,
+      "target_bytes": 1699221504,
+      "source_sha256": "7e45c6a0634239ed7173673a1cf92db667069175750579467a4fd08d3df51073",
+      "target_sha256": "7e45c6a0634239ed7173673a1cf92db667069175750579467a4fd08d3df51073",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 11555106,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251009,
+        "last_trade_date": 20251031
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 22.898
+    },
+    {
+      "name": "bars_1m_SZ_202511.db",
+      "source_bytes": 1986301952,
+      "target_bytes": 1986301952,
+      "source_sha256": "e965dc6e0b404cc5fd6e00411b0da0a063980994700677d41e203ea29b495829",
+      "target_sha256": "e965dc6e0b404cc5fd6e00411b0da0a063980994700677d41e203ea29b495829",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 13501994,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251103,
+        "last_trade_date": 20251128
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 25.84
+    },
+    {
+      "name": "bars_1m_SZ_202512.db",
+      "source_bytes": 2288926720,
+      "target_bytes": 2288926720,
+      "source_sha256": "32b365a25ce9956174e381fe641da7fd1c841cca9cc61f8cda21704dab36a0c0",
+      "target_sha256": "32b365a25ce9956174e381fe641da7fd1c841cca9cc61f8cda21704dab36a0c0",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 15572324,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20251201,
+        "last_trade_date": 20251231
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 32.21
+    },
+    {
+      "name": "bars_1m_SZ_202601.db",
+      "source_bytes": 1991323648,
+      "target_bytes": 1991323648,
+      "source_sha256": "cbf20e9981c75b99802158160849f5fe916e9c9a4fe9114ae0a0ef2bc4376993",
+      "target_sha256": "cbf20e9981c75b99802158160849f5fe916e9c9a4fe9114ae0a0ef2bc4376993",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 13534953,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260105,
+        "last_trade_date": 20260130
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 34.62
+    },
+    {
+      "name": "bars_1m_SZ_202602.db",
+      "source_bytes": 1398321152,
+      "target_bytes": 1398321152,
+      "source_sha256": "e96bdec6fac8de73c749bf549e65a8d9e31d3229f5c49e4fbb83413625d1b00a",
+      "target_sha256": "e96bdec6fac8de73c749bf549e65a8d9e31d3229f5c49e4fbb83413625d1b00a",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 9517088,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260202,
+        "last_trade_date": 20260227
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 19.013
+    },
+    {
+      "name": "bars_1m_SZ_202603.db",
+      "source_bytes": 2193178624,
+      "target_bytes": 2193178624,
+      "source_sha256": "d5afc18b3c6ab5be99492483745a6d1526c5b269de282f7ac6295a3f974a423b",
+      "target_sha256": "d5afc18b3c6ab5be99492483745a6d1526c5b269de282f7ac6295a3f974a423b",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 14910111,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260302,
+        "last_trade_date": 20260331
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 37.305
+    },
+    {
+      "name": "bars_1m_SZ_202604.db",
+      "source_bytes": 2093768704,
+      "target_bytes": 2093768704,
+      "source_sha256": "bf400ac1af7658ffbab2750e91c1ee121bdf77388855150eda44a455a415d390",
+      "target_sha256": "bf400ac1af7658ffbab2750e91c1ee121bdf77388855150eda44a455a415d390",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 14226018,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260401,
+        "last_trade_date": 20260430
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 26.696
+    },
+    {
+      "name": "bars_1m_SZ_202605.db",
+      "source_bytes": 1799168000,
+      "target_bytes": 1799168000,
+      "source_sha256": "b39cfa8a8ab9e6390c7140cf26d10aedfd1148d24fd7f5a2471c4bb5e53a42c9",
+      "target_sha256": "b39cfa8a8ab9e6390c7140cf26d10aedfd1148d24fd7f5a2471c4bb5e53a42c9",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 12231632,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260506,
+        "last_trade_date": 20260529
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 22.17
+    },
+    {
+      "name": "bars_1m_SZ_202606.db",
+      "source_bytes": 2097500160,
+      "target_bytes": 2097500160,
+      "source_sha256": "3da9c172b685767ae81dc224db4be9f4a3a2504af9056aafe43199a797032206",
+      "target_sha256": "3da9c172b685767ae81dc224db4be9f4a3a2504af9056aafe43199a797032206",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 14267250,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260601,
+        "last_trade_date": 20260630
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 20.967
+    },
+    {
+      "name": "bars_1m_SZ_202607.db",
+      "source_bytes": 1301405696,
+      "target_bytes": 1301405696,
+      "source_sha256": "d282f45c2c8664e6134c07c78de970ef4931c06f892aa2fdbefbcf7c33d8dc67",
+      "target_sha256": "d282f45c2c8664e6134c07c78de970ef4931c06f892aa2fdbefbcf7c33d8dc67",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "bars": 8853129,
+        "schema_migrations": 2
+      },
+      "date_bounds": {
+        "first_trade_date": 20260701,
+        "last_trade_date": 20260717
+      },
+      "duplicate_primary_keys": {
+        "bars": false,
+        "schema_migrations": false
+      },
+      "seconds": 13.654
+    },
+    {
+      "name": "catalog.db",
+      "source_bytes": 137740288,
+      "target_bytes": 137740288,
+      "source_sha256": "9623847da7dc9dfc4262b1100f2bf54e19f5f58786b6d3b4f924d0e8b5b87e3c",
+      "target_sha256": "9623847da7dc9dfc4262b1100f2bf54e19f5f58786b6d3b4f924d0e8b5b87e3c",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "archive_manifest": 1,
+        "corporate_actions": 57167,
+        "data_quality_issues": 8,
+        "dataset_watermarks": 11056,
+        "index_weight_catalog": 610,
+        "index_weight_snapshots": 106804,
+        "instruments": 5557,
+        "job_items": 117389,
+        "job_runs": 36,
+        "process_locks": 0,
+        "schema_migrations": 3,
+        "sector_catalog": 7049,
+        "sector_snapshots": 685680,
+        "shard_manifest": 4,
+        "trading_calendar": 1842
+      },
+      "date_bounds": {},
+      "duplicate_primary_keys": {
+        "archive_manifest": false,
+        "corporate_actions": false,
+        "data_quality_issues": false,
+        "dataset_watermarks": false,
+        "index_weight_catalog": false,
+        "index_weight_snapshots": false,
+        "instruments": false,
+        "job_items": false,
+        "job_runs": false,
+        "process_locks": false,
+        "schema_migrations": false,
+        "sector_catalog": false,
+        "sector_snapshots": false,
+        "shard_manifest": false,
+        "trading_calendar": false
+      },
+      "seconds": 1.933
+    },
+    {
+      "name": "dyadtetrade.db",
+      "source_bytes": 50180096,
+      "target_bytes": 50180096,
+      "source_sha256": "0726026343321ed69bb8c878424a92d8ce03a7bf68563fa708019bbbcbe7b984",
+      "target_sha256": "0726026343321ed69bb8c878424a92d8ce03a7bf68563fa708019bbbcbe7b984",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "alembic_version": 1,
+        "audit_events": 375,
+        "backtest_daily_equity": 1091,
+        "backtest_orders": 667,
+        "backtest_results": 16,
+        "backtest_tasks": 16,
+        "backtest_trades": 761,
+        "broker_settlements": 0,
+        "data_files": 30844,
+        "download_task_items": 15586,
+        "download_tasks": 12,
+        "execution_universe_members": 17934,
+        "execution_universe_releases": 3,
+        "factor_definitions": 2,
+        "factor_runs": 103,
+        "instruments": 30104,
+        "ledger_quarantine": 1,
+        "optimization_tasks": 103,
+        "orders": 1868,
+        "paper_accounts": 2,
+        "portfolio_targets": 0,
+        "portfolios": 0,
+        "positions": 18,
+        "quality_issues": 2369,
+        "risk_events": 3902,
+        "sector_member_snapshots": 50819,
+        "sector_members": 50819,
+        "sectors": 142,
+        "stock_pool_member_snapshots": 3,
+        "stock_pool_members": 3,
+        "stock_pools": 1,
+        "strategies": 0,
+        "strategy_execution_releases": 0,
+        "strategy_files": 1,
+        "strategy_runs": 2,
+        "strategy_versions": 0,
+        "trades": 132,
+        "trading_days": 10281,
+        "trading_risk_states": 2
+      },
+      "date_bounds": {},
+      "duplicate_primary_keys": {
+        "alembic_version": false,
+        "audit_events": false,
+        "backtest_daily_equity": false,
+        "backtest_orders": false,
+        "backtest_results": false,
+        "backtest_tasks": false,
+        "backtest_trades": false,
+        "broker_settlements": false,
+        "data_files": false,
+        "download_task_items": false,
+        "download_tasks": false,
+        "execution_universe_members": false,
+        "execution_universe_releases": false,
+        "factor_definitions": false,
+        "factor_runs": false,
+        "instruments": false,
+        "ledger_quarantine": false,
+        "optimization_tasks": false,
+        "orders": false,
+        "paper_accounts": false,
+        "portfolio_targets": false,
+        "portfolios": false,
+        "positions": false,
+        "quality_issues": false,
+        "risk_events": false,
+        "sector_member_snapshots": false,
+        "sector_members": false,
+        "sectors": false,
+        "stock_pool_member_snapshots": false,
+        "stock_pool_members": false,
+        "stock_pools": false,
+        "strategies": false,
+        "strategy_execution_releases": false,
+        "strategy_files": false,
+        "strategy_runs": false,
+        "strategy_versions": false,
+        "trades": false,
+        "trading_days": false,
+        "trading_risk_states": false
+      },
+      "seconds": 0.623
+    },
+    {
+      "name": "fundamentals_2024.db",
+      "source_bytes": 677724160,
+      "target_bytes": 677724160,
+      "source_sha256": "3ec3c8210d81d4c230903749811e0e92fc9ab46b4421004356bf3ddfd675a56d",
+      "target_sha256": "3ec3c8210d81d4c230903749811e0e92fc9ab46b4421004356bf3ddfd675a56d",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "financial_records": 644356,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_report_date": 20240102,
+        "last_report_date": 20241231,
+        "last_announcement_date": 20260714
+      },
+      "duplicate_primary_keys": {
+        "financial_records": false,
+        "schema_migrations": false
+      },
+      "seconds": 4.493
+    },
+    {
+      "name": "fundamentals_2025.db",
+      "source_bytes": 641966080,
+      "target_bytes": 641966080,
+      "source_sha256": "25e0d0bf365d6fd8f9e7c68043047a704a01c71bd9444cce23641ab74cd956b4",
+      "target_sha256": "25e0d0bf365d6fd8f9e7c68043047a704a01c71bd9444cce23641ab74cd956b4",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "financial_records": 647635,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_report_date": 20250101,
+        "last_report_date": 20251231,
+        "last_announcement_date": 20260714
+      },
+      "duplicate_primary_keys": {
+        "financial_records": false,
+        "schema_migrations": false
+      },
+      "seconds": 4.214
+    },
+    {
+      "name": "fundamentals_2026.db",
+      "source_bytes": 168411136,
+      "target_bytes": 168411136,
+      "source_sha256": "a7bf42f8f28fe8121548aa1e1f6f3dd293498c530ade2384b2cca6e5b9384b0b",
+      "target_sha256": "a7bf42f8f28fe8121548aa1e1f6f3dd293498c530ade2384b2cca6e5b9384b0b",
+      "hash_equal": true,
+      "integrity": "ok",
+      "rows": {
+        "financial_records": 189079,
+        "schema_migrations": 1
+      },
+      "date_bounds": {
+        "first_report_date": 20260101,
+        "last_report_date": 20260717,
+        "last_announcement_date": 20260717
+      },
+      "duplicate_primary_keys": {
+        "financial_records": false,
+        "schema_migrations": false
+      },
+      "seconds": 1.115
+    }
+  ]
+}

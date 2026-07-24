@@ -1,0 +1,89 @@
+{
+  "citation": {
+    "authors": [
+      "Narasimhan Jegadeesh",
+      "Sheridan Titman"
+    ],
+    "identifier": "DOI:10.1111/j.1540-6261.1993.tb04702.x",
+    "title": "Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency",
+    "url": "https://doi.org/10.1111/j.1540-6261.1993.tb04702.x",
+    "year": 1993
+  },
+  "classification": "EXPLORATORY_ONLY",
+  "data": {
+    "artifacts": [
+      "bars_1d.db"
+    ],
+    "end": 20240325,
+    "fingerprint": "5d2378c0c23fe984a456e7e1a1ded9eacf9f7e49f176aa0dac0d24c8775caf9a",
+    "period": "1d",
+    "rows": 300,
+    "source_classification": "SYNTHETIC DATA",
+    "start": 20240102,
+    "symbols": [
+      "000001.SZ",
+      "159915.SZ",
+      "510300.SH",
+      "510500.SH",
+      "600001.SH"
+    ]
+  },
+  "factor_result_hash": "17c2f20d1dd7252dca673e98f06948ade64e74df075a23e2e782188e1da5b530",
+  "id": "momentum-synthetic",
+  "latest_ranking": [
+    {
+      "rank": 1,
+      "symbol": "600001.SH",
+      "trade_date": 20240325,
+      "value": "0.007756563245823389021479714"
+    },
+    {
+      "rank": 2,
+      "symbol": "159915.SZ",
+      "trade_date": 20240325,
+      "value": "0.007738979692917285785042100"
+    },
+    {
+      "rank": 3,
+      "symbol": "510500.SH",
+      "trade_date": 20240325,
+      "value": "0.001822423093745443942265636"
+    },
+    {
+      "rank": 4,
+      "symbol": "000001.SZ",
+      "trade_date": 20240325,
+      "value": "0.001735508503991669559180840"
+    },
+    {
+      "rank": 5,
+      "symbol": "510300.SH",
+      "trade_date": 20240325,
+      "value": "-0.0043196544276457883369330454"
+    }
+  ],
+  "limitations": [
+    "The five symbols and prices are deterministic synthetic examples, not investable securities history.",
+    "This validates method plumbing and reproducibility, not the paper's empirical return claim.",
+    "The 60-day window is too short for statistical inference or transaction-cost conclusions."
+  ],
+  "method": {
+    "description": "Compute 20-bar close-to-close momentum and rank the latest synthetic cross-section from high to low.",
+    "direction": "high",
+    "factor": "momentum_20",
+    "factor_version": "1"
+  },
+  "metrics": {
+    "count": 205.0,
+    "coverage_ratio": 1.0,
+    "latest_cross_section_count": 5,
+    "maximum": 0.11183961669398562,
+    "mean": 0.009159143700227912,
+    "minimum": -0.012179550142422158
+  },
+  "reproduce": "dyadresearch reproduce run reproductions/specs/momentum.yaml --output reproductions/generated",
+  "research_question": "Can the research pipeline calculate and rank a 20-bar momentum signal without hidden data dependencies?",
+  "result_hash": "193e3658f5f48b8d5a5b78501efeddfa5d5c2377bc3227d5bb58c85ccf12b5f7",
+  "schema_version": "1.0.0",
+  "title": "Momentum signal mechanics on deterministic A-share-shaped data"
+}

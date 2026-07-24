@@ -1,0 +1,9 @@
+{
+  "schema": "dyadresearch.backtest.golden.v1",
+  "data_fingerprint": "golden-v1",
+  "result_hash": "43c8e42c537719c0f6888fc36a3abfb5e5df2b6fcaacc07cc1e637a123267fe7",
+  "trade_count": 1,
+  "fill_ts": 2,
+  "fill_price": "11",
+  "final_quantity": 9000
+}

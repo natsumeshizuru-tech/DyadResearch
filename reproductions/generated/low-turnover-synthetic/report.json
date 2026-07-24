@@ -1,0 +1,88 @@
+{
+  "citation": {
+    "authors": [
+      "Yakov Amihud"
+    ],
+    "identifier": "DOI:10.1016/S0304-405X(01)00024-6",
+    "title": "Illiquidity and Stock Returns: Cross-Section and Time-Series Effects",
+    "url": "https://doi.org/10.1016/S0304-405X(01)00024-6",
+    "year": 2002
+  },
+  "classification": "EXPLORATORY_ONLY",
+  "data": {
+    "artifacts": [
+      "bars_1d.db"
+    ],
+    "end": 20240325,
+    "fingerprint": "5d2378c0c23fe984a456e7e1a1ded9eacf9f7e49f176aa0dac0d24c8775caf9a",
+    "period": "1d",
+    "rows": 300,
+    "source_classification": "SYNTHETIC DATA",
+    "start": 20240102,
+    "symbols": [
+      "000001.SZ",
+      "159915.SZ",
+      "510300.SH",
+      "510500.SH",
+      "600001.SH"
+    ]
+  },
+  "factor_result_hash": "ea679ba989b255a05003ac30afa8d9bbaab337deb773522bca384430fb35d9a1",
+  "id": "low-turnover-synthetic",
+  "latest_ranking": [
+    {
+      "rank": 1,
+      "symbol": "000001.SZ",
+      "trade_date": 20240325,
+      "value": "1299824.70"
+    },
+    {
+      "rank": 2,
+      "symbol": "600001.SH",
+      "trade_date": 20240325,
+      "value": "1596673.30"
+    },
+    {
+      "rank": 3,
+      "symbol": "510300.SH",
+      "trade_date": 20240325,
+      "value": "2041127.00"
+    },
+    {
+      "rank": 4,
+      "symbol": "510500.SH",
+      "trade_date": 20240325,
+      "value": "2477152.10"
+    },
+    {
+      "rank": 5,
+      "symbol": "159915.SZ",
+      "trade_date": 20240325,
+      "value": "3046956.75"
+    }
+  ],
+  "limitations": [
+    "Average traded amount is not Amihud's return-to-volume illiquidity ratio.",
+    "Synthetic volumes and prices do not represent market liquidity.",
+    "The report demonstrates a reproducible research contract, not a return premium."
+  ],
+  "method": {
+    "description": "Compute 20-bar average traded amount and rank low values first as a simple activity proxy.",
+    "direction": "low",
+    "factor": "average_turnover_20",
+    "factor_version": "1"
+  },
+  "metrics": {
+    "count": 205.0,
+    "coverage_ratio": 1.0,
+    "latest_cross_section_count": 5,
+    "maximum": 3046956.75,
+    "mean": 1841509.9680487805,
+    "minimum": 864297.25
+  },
+  "reproduce": "dyadresearch reproduce run reproductions/specs/low-turnover.yaml --output reproductions/generated",
+  "research_question": "Can the research pipeline rank a 20-bar traded-amount proxy with deterministic inputs and hashes?",
+  "result_hash": "dd5375b74ba279f74e1d4e5cf29e53fe644b65ebfd254ce5f4b3def56f019009",
+  "schema_version": "1.0.0",
+  "title": "Low-turnover ranking mechanics on deterministic A-share-shaped data"
+}

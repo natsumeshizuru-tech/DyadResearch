@@ -1,0 +1,79 @@
+{
+  "root": "data/sqlite (private local dataset)",
+  "database_count": 45,
+  "instruments": {
+    "etf": 1657,
+    "excluded_non_equity": 29,
+    "stock": 5528
+  },
+  "watermarks": [
+    {
+      "dataset": "bars",
+      "period": "1d",
+      "symbols": 7125,
+      "rows": 4003125,
+      "first_ts": 1704124800000,
+      "last_ts": 1784217600000
+    },
+    {
+      "dataset": "bars",
+      "period": "1m",
+      "symbols": 7125,
+      "rows": 394298652,
+      "first_ts": 1752197400000,
+      "last_ts": 1784271600000
+    }
+  ],
+  "etf_watermarks": [
+    {
+      "period": "1d",
+      "symbols": 1597,
+      "rows": 712314,
+      "first_ts": 1704124800000,
+      "last_ts": 1784217600000
+    },
+    {
+      "period": "1m",
+      "symbols": 1597,
+      "rows": 79220733,
+      "first_ts": 1752549060000,
+      "last_ts": 1784271600000
+    }
+  ],
+  "financial": [
+    {
+      "database": "fundamentals_2024.db",
+      "rows": 644356,
+      "symbols": 5338,
+      "tables": 8,
+      "first_report_date": 20240102,
+      "last_report_date": 20241231
+    },
+    {
+      "database": "fundamentals_2025.db",
+      "rows": 647635,
+      "symbols": 5456,
+      "tables": 8,
+      "first_report_date": 20250101,
+      "last_report_date": 20251231
+    },
+    {
+      "database": "fundamentals_2026.db",
+      "rows": 189079,
+      "symbols": 5528,
+      "tables": 8,
+      "first_report_date": 20260101,
+      "last_report_date": 20260717
+    }
+  ],
+  "reference": {
+    "sector_memberships": 687337,
+    "sector_snapshot_dates": [
+      20260717
+    ],
+    "index_weight_components": 106804,
+    "index_weight_snapshot_dates": [
+      20260717
+    ]
+  }
+}

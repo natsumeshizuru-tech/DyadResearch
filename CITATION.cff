@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use DyadResearch, cite this software and the original sources named by each reproduction."
+title: "DyadResearch"
+type: software
+version: 0.1.0
+date-released: 2026-07-19
+license: Apache-2.0
+authors:
+  - alias: natsumeshizuru-tech
+repository-code: "https://github.com/natsumeshizuru-tech/DyadResearch"

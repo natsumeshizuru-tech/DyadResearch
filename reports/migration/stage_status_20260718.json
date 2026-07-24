@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-18T22:00:00+08:00",
+  "project": ".",
+  "source_project": "../DyadTetrade",
+  "stages": {
+    "0_baseline_audit": "complete",
+    "1_independent_skeleton": "complete",
+    "2_readonly_sqlite_data_layer": "complete",
+    "3_unified_backtest_kernel": "complete",
+    "4_factor_strategy_research_store": "complete",
+    "5_reproducibility_robustness_reports": "complete",
+    "6_dyadtetrade_thin_compatibility": "complete",
+    "7_physical_data_migration": "complete",
+    "8_web_frontend": "awaiting_visual_direction_selection"
+  },
+  "deferred_by_design": [
+    "live subscriptions",
+    "trading and account APIs"
+  ],
+  "physical_data_root": "data/sqlite",
+  "physical_migration_validation": "reports/migration/physical_data_validation_20260718.json",
+  "physical_migration_accepted": true,
+  "frontend_scope": [
+    "data explorer",
+    "factor research",
+    "strategy research",
+    "backtest experiments and reports"
+  ],
+  "dependency_direction": "DyadTetrade -> DyadResearch",
+  "reverse_dependency_detected": false
+}

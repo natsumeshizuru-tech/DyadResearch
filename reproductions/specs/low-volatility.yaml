@@ -1,0 +1,25 @@
+schema_version: "1.0.0"
+id: low-volatility-synthetic
+title: "Low-volatility ranking mechanics on deterministic A-share-shaped data"
+classification: EXPLORATORY_ONLY
+research_question: "Can the research pipeline measure 20-bar realized volatility and rank a synthetic cross-section without future data?"
+citation:
+  title: "The Cross-Section of Volatility and Expected Returns"
+  authors: ["Andrew Ang", "Robert J. Hodrick", "Yuhang Xing", "Xiaoyan Zhang"]
+  year: 2006
+  identifier: "DOI:10.1111/j.1540-6261.2006.00836.x"
+  url: "https://doi.org/10.1111/j.1540-6261.2006.00836.x"
+method:
+  factor: volatility_20
+  direction: low
+  description: "Compute the population volatility of simple close returns over 20 bars and rank low values first."
+dataset:
+  source_classification: "SYNTHETIC DATA"
+  symbols: ["000001.SZ", "600001.SH", "510300.SH", "510500.SH", "159915.SZ"]
+  period: 1d
+  start: 20240102
+  end: 20240325
+limitations:
+  - "The exercise uses total volatility, not the paper's exact idiosyncratic-volatility construction."
+  - "Synthetic prices cannot support an expected-return claim."
+  - "No industry neutralization, risk model, portfolio formation or inference is performed."

@@ -1,0 +1,15 @@
+{
+  "source_commit": "2fbb5b9d7d0555f2af4d0f62ff960334039fb2cd",
+  "inventoried_at": "2026-07-18T00:00:00+08:00",
+  "areas": {
+    "dyadtetrade.data": {"python_files": 35, "lines": 6579, "disposition": "independent readonly reimplementation"},
+    "dyadtetrade.modules.backtest": {"python_files": 13, "lines": 1166, "disposition": "semantic source for unified kernel"},
+    "dyadtetrade.data.backtest": {"python_files": 7, "lines": 669, "disposition": "SQLite/QMT adapter semantic source"},
+    "dyadtetrade.modules.research": {"python_files": 4, "lines": 468, "disposition": "FactorSpec and evaluator redesign"},
+    "dyadtetrade.modules.strategy": {"python_files": 6, "lines": 884, "disposition": "minimal research-only SDK"},
+    "dyadtetrade.modules.optimization": {"python_files": 4, "lines": 786, "disposition": "experiment services"},
+    "dyadtetrade.modules.performance": {"python_files": 2, "lines": 142, "disposition": "pure metrics"},
+    "dyadtetrade.modules.reporting": {"python_files": 2, "lines": 370, "disposition": "static reports"}
+  },
+  "excluded": ["execution", "oms", "paper_trading", "realtime", "xttrader", "accounts"]
+}

@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dyadresearch"
+version = "0.1.0"
+description = "Independent point-in-time factor research and historical backtesting for A-shares"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+authors = [{ name = "DyadResearch" }]
+dependencies = ["jsonschema>=4.23,<5.0", "PyYAML>=6.0.2"]
+
+[project.optional-dependencies]
+core = []
+research = ["numpy>=2.0", "pandas>=2.2"]
+qmt-ingest = []
+web = ["fastapi>=0.115", "uvicorn>=0.32"]
+notebook = ["jupyterlab>=4.3", "matplotlib>=3.9"]
+dev = [
+  "coverage[toml]>=7.6", "hypothesis>=6.120", "mypy>=1.13",
+  "pandas-stubs>=2.2", "pytest>=8.3", "pytest-cov>=6.0", "ruff>=0.8",
+  "types-jsonschema>=4.23", "types-PyYAML>=6.0",
+]
+
+[project.scripts]
+dyadresearch = "dyadresearch.cli:main"
+dyadresearch-web = "dyadresearch.web:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dyadresearch"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-config --strict-markers -ra"
+testpaths = ["tests"]
+markers = [
+  "integration: read-only integration tests against real SQLite data",
+  "performance: performance-budget tests",
+  "parity: native/QMT adapter parity tests",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["dyadresearch"]
+
+[tool.coverage.report]
+# The public CI explicitly enforces 75% on the allowlist export. The private
+# tree contains additional adapters and operational routes; keep its default
+# gate above the public floor without claiming an unmaintained 90% target.
+fail_under = 80
+show_missing = true
+skip_covered = true
+exclude_also = ["if TYPE_CHECKING:", '\.\.\.', "raise NotImplementedError"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+packages = ["dyadresearch"]
+
+[tool.dyad.publication.license-overrides]
+jupyterlab = { license = "BSD-3-Clause", source = "https://github.com/jupyterlab/jupyterlab/blob/main/LICENSE" }
+matplotlib = { license = "Matplotlib-License", source = "https://matplotlib.org/stable/project/license.html" }

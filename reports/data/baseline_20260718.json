@@ -1,0 +1,13 @@
+{
+  "source_root": "private-local-data/sqlite",
+  "readonly": true,
+  "database_count": 45,
+  "total_bytes": 49645076480,
+  "integrity_ok": true,
+  "duplicate_primary_keys": 0,
+  "daily": {"rows": 3290811, "symbols": 5528, "first": 20240102, "last": 20260717},
+  "minute": {"rows": 315077919, "sh_sz_first": 20250711, "bj_first": 20250716, "last": 20260717},
+  "financial": {"rows": 1481070, "first": 20240102, "last": 20260717, "tables": 8},
+  "reference_snapshot": {"date": 20260717, "sectors": 7049, "indices": 610},
+  "source_validation": "private-local-report:full_validation_20260718_after_supplement.json"
+}
